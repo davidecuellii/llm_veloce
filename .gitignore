@@ -1,0 +1,23 @@
+# Sistema
+.DS_Store
+# Obsidian: stato locale
+.obsidian/workspace*.json
+.obsidian/cache
+# Dipendenze e cache
+node_modules/
+.cache/
+# File pesanti (video/audio): restano solo in locale
+*.mov
+*.mp4
+*.mp3
+*.wav
+*.m4a
+*.mkv
+*.avi
+
+# Esclusi dalla versione pubblica: contengono codici fiscali e indirizzi personali
+agenzia/identita.md
+export-soci/agenzia~identita.md
+raw/clients/teresa-srl/2026-09-01-contratto-tc-non-firmato.md
+export-soci/raw~clients~teresa-srl~2026-09-01-contratto-tc-non-firmato.md
+raw/clients/teresa-srl/allegati/2026-09-01-contratto-tc-non-firmato.pdf

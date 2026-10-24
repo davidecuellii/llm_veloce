@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<title>Amen — Le nuove collezioni</title>
+<style>
+  @page { size: A4 portrait; margin: 16mm 15mm 14mm; }
+  @page :first { margin: 0; }
+
+  :root{
+    --ink:#202020; --body:#33322E; --muted:#6B6B6B; --line:#DAD8CF; --soft:#EFEDE6;
+    --giallo:#FFEE32; --oro:#8A7B00; --paper:#FFFFFF;
+    --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  body{margin:0; font-family:var(--sans); font-size:10.8pt; line-height:1.55;
+       color:var(--body); background:var(--paper);}
+
+  /* ---------- copertina ---------- */
+  .cover{background:#202020; color:#D6D6D6; height:297mm; width:100%;
+         padding:70mm 22mm 22mm; page-break-after:always; position:relative;}
+  .cover .kicker{font-size:9.5pt; letter-spacing:.22em; text-transform:uppercase; color:#8C8C8C; margin:0 0 14mm;}
+  .cover h1{font-size:40pt; line-height:1.02; letter-spacing:-.02em; color:var(--giallo);
+            margin:0 0 6mm; font-weight:800;}
+  .cover .sub{font-size:16pt; color:#D6D6D6; margin:0 0 3mm; font-weight:400;}
+  .cover .meta{font-size:11pt; color:#8C8C8C; margin:0;}
+  .cover .foot{position:absolute; bottom:22mm; left:22mm; right:22mm;
+               border-top:1px solid #3A3A3A; padding-top:5mm; font-size:9.5pt; color:#8C8C8C;
+               display:flex; justify-content:space-between;}
+
+  /* ---------- tipografia ---------- */
+  h2{font-size:17pt; line-height:1.15; letter-spacing:-.01em; color:var(--ink);
+     margin:0 0 2mm; font-weight:800;}
+  h2 .num{color:var(--oro);}
+  h3{font-size:9pt; letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+     margin:7mm 0 2mm; font-weight:700;}
+  p{margin:0 0 3mm;} strong{color:var(--ink); font-weight:700;}
+  em{color:var(--muted);}
+  ul{margin:0 0 3mm; padding-left:5mm;} li{margin-bottom:1.5mm;}
+
+  .scheda{font-size:9.5pt; color:var(--muted); border-bottom:1px solid var(--line);
+          padding-bottom:3mm; margin-bottom:4mm;}
+  .scheda b{color:var(--ink);}
+
+  .intro{font-size:11pt; color:var(--body); margin-bottom:4mm;}
+
+  /* ---------- battute ---------- */
+  .beat{margin:0 0 4mm; page-break-inside:avoid;}
+  .tc{display:inline-block; background:var(--ink); color:var(--giallo);
+      font-size:8pt; font-weight:700; letter-spacing:.1em; padding:1mm 2.5mm;
+      border-radius:1mm; margin-bottom:2mm; text-transform:uppercase;}
+  .tc span{color:#D6D6D6; font-weight:400;}
+  .righe{border-left:2.5px solid var(--giallo); padding-left:4mm; margin-left:.5mm;}
+  .r{margin:0 0 2.2mm;}
+  .chi{font-weight:800; color:var(--ink); letter-spacing:.02em;}
+  .az{color:var(--muted); font-style:italic;}
+  .vuoto{display:inline-block; min-width:20mm; border-bottom:1.5px solid var(--ink);
+         background:var(--soft); height:1.15em; vertical-align:-.2em; margin:0 1px;}
+
+  .nota{background:var(--soft); border-left:3px solid var(--ink); padding:3mm 4mm;
+        font-size:9.8pt; margin:4mm 0; page-break-inside:avoid;}
+  .nota b{color:var(--ink);}
+
+  table{width:100%; border-collapse:collapse; font-size:10pt; margin:0 0 4mm;}
+  thead{display:table-header-group;}
+  tr{page-break-inside:avoid;}
+  h3{page-break-after:avoid;}
+  h2{page-break-after:avoid;}
+  .scheda, .intro{page-break-after:avoid;}
+  ul{page-break-inside:avoid;}
+  th{text-align:left; font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase;
+     color:var(--muted); border-bottom:1.5px solid var(--ink); padding:0 3mm 1.5mm 0;}
+  td{padding:2mm 3mm 2mm 0; border-bottom:1px solid var(--line); vertical-align:top;}
+  td:first-child{white-space:nowrap;}
+
+  .page{page-break-before:always;}
+  .titolone{font-size:26pt; font-weight:800; color:var(--ink); letter-spacing:-.02em;
+            margin:0 0 2mm;}
+  .occhiello{font-size:9pt; letter-spacing:.2em; text-transform:uppercase; color:var(--oro);
+             margin:0 0 2mm; font-weight:700;}
+
+code{font-family:var(--sans);font-weight:700;color:var(--ink);}*{overflow-wrap:break-word;}ol{margin:0 0 3mm;padding-left:6.5mm;}li{margin-bottom:1.5mm;}ul{page-break-inside:auto;}ol.keep,ul.keep{page-break-inside:avoid;}ul.chk{list-style:none;padding-left:0;}ul.chk li{padding-left:6.5mm;text-indent:-6.5mm;}table{table-layout:fixed;}td:first-child{white-space:normal;}h2{hyphens:none;line-height:1.18;}</style></head><body>
+<div class="cover">
+  <p class="kicker">Teresa Chiuduno &times; Amen &middot; Script</p>
+  <h1>Amen<br>Le nuove<br>collezioni</h1>
+  <p class="sub">Script video</p>
+  <p class="meta">Essential &middot; Signature &middot; Heritage</p>
+  <div class="foot"><span>21 ottobre 2026</span><span>Davide &middot; 331 204 3165</span></div>
+</div>
+<p>Script per i video sulle tre nuove linee Amen: <strong>Essential, Signature e Heritage</strong>. Partono dalla presentazione che abbiamo ascoltato in fabbrica e dagli appunti sulle collezioni.</p>
+<p class="scheda"><strong>Dove</strong>: showroom Amen · <strong>Chi</strong>: Chiara, Anna e la guida · <strong>Tono</strong>: pulito, chiaro, nessuna battuta pesante</p>
+<h2 style="margin-top:8mm;font-size:15pt">Le tre linee</h2>
+<table><thead><tr><th>Linea</th><th>Materiale</th><th>Il rosario</th><th>In una riga</th></tr></thead><tbody><tr><td><strong>Essential</strong></td><td>Acciaio</td><td>19 €</td><td>Stessa montatura e stessa grandezza dell&#x27;argento</td></tr><tr><td><strong>Signature</strong></td><td>Lega Amen</td><td>29 €</td><td>Il mondo divertente: da portare, smontare, giocare</td></tr><tr><td><strong>Heritage</strong></td><td>Argento</td><td>49 €</td><td>La lavorazione da gioielleria</td></tr></tbody></table>
+<p><strong>Tre mondi, una sola essenza.</strong> Lo stesso gioiello in tre materiali, per tre fasce di prezzo e per clienti diversi: chi cerca la qualità, chi cerca un regalo.</p>
+<h2 style="margin-top:8mm;font-size:15pt">I cinque script</h2>
+<table><thead><tr><th>#</th><th>Video</th><th>Durata</th><th>Cosa spiega</th></tr></thead><tbody><tr><td>1</td><td><strong>Le nuove linee Amen</strong></td><td>circa 90 sec</td><td>Perché nascono, e le tre linee a confronto</td></tr><tr><td>2</td><td><strong>Essential</strong>, in acciaio</td><td>circa 40 sec</td><td>Un gioiello Amen a 19 euro, con la stessa montatura</td></tr><tr><td>3</td><td><strong>Signature, Icon</strong>, in lega Amen</td><td>circa 50 sec</td><td>Un solo gioiello, tre modi di portarlo</td></tr><tr><td>4</td><td><strong>Heritage</strong>, in argento (Credo e Sacro)</td><td>circa 70 sec</td><td>Il disegno e il materiale</td></tr><tr><td>5</td><td><strong>Solo da Teresa Chiuduno</strong>: angeli e diavoli</td><td>circa 35 sec</td><td>La collezione che si trova solo da noi</td></tr></tbody></table>
+<p>Dopo ci sono altre idee, una per collezione, già pronte per i reel.</p>
+<h2 style="margin-top:8mm;font-size:15pt">Da confermare con la guida prima di girare</h2>
+<ul class="chk keep"><li>☐ <strong>I prezzi</strong> (rosario 19, 29, 49; Icon 99; croce Sacro 79,90; bracciale 99,99; Polar 79,90 e 69,90) sono quelli di listino di oggi?</li><li>☐ <strong>Lo scontrino medio con l&#x27;argento, intorno ai 50 €</strong>: si può dire in camera?</li><li>☐ <strong>"Lega Amen"</strong>: è il nome giusto del materiale, e come si spiega in una frase?</li><li>☐ <strong>Icon e la "Perla Nera"</strong>: è il nome di una linea o solo il colore della perla?</li><li>☐ <strong>Angeli e diavoli</strong>: "ideale per battesimi e 18" vuol dire diciottesimi? E l&#x27;esclusiva per Teresa Chiuduno vale per quanto tempo?</li><li>☐ <strong>Jake La Furia</strong>: si può dire in camera che ha scritto per chiedere Icon? È una persona vera, serve il via libera di Amen</li><li>☐ <strong>Quali linee arrivano da Teresa Chiuduno</strong>: serve per la chiusura dello script 1</li><li>☐ <strong>"Il cuore e l&#x27;infinito sono i soggetti più venduti"</strong>: lo dice la guida come dato Amen, e noi lo attribuiamo a loro</li></ul>
+<p><strong>Una regola per tutti i video</strong>: <strong>nessun altro marchio nominato</strong>, e le frasi sui dati sono sempre "secondo Amen", mai in prima persona.</p>
+<div class="page"></div><p class="occhiello">Copione 1</p>
+<h2><span class="num">LE NUOVE LINEE AMEN</span> — Essential, Signature, Heritage</h2>
+<p class="scheda"><strong>Dove</strong>: showroom, davanti alla parete delle collezioni · <strong>Chi</strong>: Chiara + Anna + la guida · <strong>Durata</strong>: circa 90 secondi</p>
+<p><strong>Cosa spiega</strong>: perché Amen ha fatto tre nuove linee, e come si distinguono. <strong>Il rosario è l&#x27;esempio da tenere in mano</strong>: lo stesso gioiello in tre materiali, con il prezzo a schermo.</p>
+<p class="scheda"><strong>Serve</strong>: tre rosari allineati sul tavolo in ordine di prezzo (acciaio, lega, argento).</p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-8 <span>· gancio</span></span>
+<p class="intro" style="font-size:9.8pt">Chiara davanti alla parete delle collezioni</p>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Oggi siamo da Amen per scoprire le nuove collezioni e cosa portiamo da noi."</p><p class="r"><span class="chi">ANNA:</span> "Visto l&#x27;enorme richiesta che hanno da parte vostra, hanno deciso di fare queste nuove tre linee, alla portata di tutti."</p></div>
+</div><div class="beat"><span class="tc">8-28 <span>· perché nascono</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> <em>(alla guida)</em> "Cosa vi chiedevano di più?"</p><p class="r"><span class="chi">GUIDA:</span> "Una fascia di prezzo più accessibile. Con l&#x27;argento il nostro scontrino medio è intorno ai 50 euro: volevamo tornare su una fascia più bassa, senza perdere la qualità."</p><p class="r"><span class="chi">CHIARA:</span> "E come avete fatto?"</p><p class="r"><span class="chi">GUIDA:</span> "Abbiamo cambiato materiale."</p></div>
+</div><div class="beat"><span class="tc">28-65 <span>· i tre mondi</span></span>
+<p class="intro" style="font-size:9.8pt">Chiara indica un rosario alla volta, il nome compare a schermo</p>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "<strong>Essential</strong>, in acciaio. Il rosario costa 19 euro."</p><p class="r"><span class="chi">GUIDA:</span> "Ha la stessa montatura dell&#x27;argento, e le croci hanno la stessa grandezza."</p><p class="r"><span class="chi">CHIARA:</span> "<strong>Signature</strong>, in lega Amen. Il rosario costa 29 euro."</p><p class="r"><span class="chi">CHIARA:</span> "<strong>Heritage</strong>, in argento. Il rosario costa 49 euro."</p><p class="r"><span class="chi">ANNA:</span> "Quindi è lo stesso rosario, in tre materiali."</p><p class="r"><span class="chi">GUIDA:</span> "Sì. Cambia il materiale, e di conseguenza il prezzo: così ognuno trova la sua fascia, che cerchi un regalo o che cerchi la qualità."</p></div>
+<p><em>(Regia: tre primi piani, uno per rosario, sempre dalla stessa distanza, così il confronto si legge. Nome e prezzo a schermo mentre Chiara li dice.)</em></p>
+</div><div class="beat"><span class="tc">65-80 <span>· per tutti</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "E una cosa che ci tengono a dire: tantissimi pezzi si portano in due, e da tutti."</p><p class="r"><span class="chi">GUIDA:</span> "Molti gioielli sono unisex: li può indossare chiunque."</p></div>
+</div><div class="beat"><span class="tc">80-95 <span>· chiusura</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Da noi, a Chiuduno, arrivano <span class="vuoto"></span>. E c&#x27;è una collezione che trovate solo da noi."</p><p class="r"><span class="chi">ANNA:</span> "Tre mondi, una sola essenza. E tu dove ti riconosci? Scrivilo nei commenti."</p></div>
+<p><em>(La frase "una collezione che trovate solo da noi" si dice solo se Amen conferma l&#x27;esclusiva.)</em></p>
+</div><h3>CAPTION</h3>
+<div class="nota"><p class="r" style="margin:0 0 1mm">Tre nuove linee Amen: <strong>Essential</strong>, in acciaio. <strong>Signature</strong>, in lega Amen. <strong>Heritage</strong>, in argento.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Lo stesso rosario, tre materiali, tre prezzi: 19, 29 o 49 euro.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Tre mondi, una sola essenza. E tu dove ti riconosci? Scrivilo nei commenti.</p></div>
+<h3>Ganci alternativi</h3>
+<ol class="keep"><li>(C) "Lo stesso rosario, tre materiali, tre prezzi: 19, 29 e 49 euro."</li><li>(A) "Amen ha fatto tre nuove linee. Siamo qui per capire cosa cambia."</li><li>(C+A) "Acciaio, lega o argento? Oggi vediamo la differenza."</li></ol>
+<div class="page"></div><p class="occhiello">Copione 2</p>
+<h2><span class="num">ESSENTIAL</span> — il gioiello Amen in acciaio</h2>
+<p class="scheda"><strong>Dove</strong>: showroom, tavolo con i gioielli in acciaio · <strong>Chi</strong>: Chiara + la guida · <strong>Durata</strong>: circa 40 secondi</p>
+<p><strong>Cosa spiega</strong>: che l&#x27;acciaio non è "la versione povera": ha <strong>la stessa montatura e la stessa grandezza</strong> dell&#x27;argento. Per questo costa meno.</p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-5 <span>· gancio</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Un gioiello Amen a 19 euro? Sì, ed è questo."</p></div>
+</div><div class="beat"><span class="tc">5-20 <span>· la stessa montatura</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> <em>(alla guida)</em> "Cosa cambia rispetto all&#x27;argento?"</p><p class="r"><span class="chi">GUIDA:</span> "La montatura è la stessa, e la grandezza delle croci è la stessa. Cambia il materiale. Le finiture sono quelle dell&#x27;argento, e quelle oro sono placcate oro."</p></div>
+</div><div class="beat"><span class="tc">20-32 <span>· love knots</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "E i Love Knots?"</p><p class="r"><span class="chi">GUIDA:</span> "In acciaio li abbiamo fatti più grossi."</p><p class="r az">(Regia: primo piano sul pezzo in acciaio accanto al corrispondente in argento, se c&#x27;è.)</p></div>
+</div><div class="beat"><span class="tc">32-42 <span>· chiusura</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Le linee Essential si possono chiedere anche in argento. Li trovi da noi e sul sito."</p><p class="r"><span class="chi">CHIARA:</span> "Tu in che mondo ti riconosci?"</p></div>
+</div><h3>Ganci alternativi</h3>
+<ol class="keep"><li>(A) "Acciaio non vuol dire meno qualità. Ve lo mostriamo."</li><li>(C) "Stessa montatura dell&#x27;argento, a meno. Come si fa?"</li></ol>
+<div class="page"></div><p class="occhiello">Copione 3</p>
+<h2><span class="num">SIGNATURE</span> — Icon, in lega Amen</h2>
+<p class="scheda"><strong>Dove</strong>: showroom, tavolo con Icon montata e smontata · <strong>Chi</strong>: Chiara + Anna + la guida · <strong>Durata</strong>: circa 50 secondi</p>
+<p><strong>Cosa spiega</strong>: Icon è un gioiello che <strong>si trasforma</strong>. È disegnata apposta per Amen, richiama il rosario e la Miracolosa, ed è il pezzo più divertente della linea.</p>
+<p class="scheda"><strong>Serve</strong>: un&#x27;Icon, che si possa smontare davanti alla camera.</p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-5 <span>· gancio</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Un solo gioiello, tre modi di portarlo. Guardate."</p></div>
+</div><div class="beat"><span class="tc">5-18 <span>· cos&#x27;è</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> <em>(alla guida)</em> "Cos&#x27;è Icon?"</p><p class="r"><span class="chi">GUIDA:</span> "È disegnata apposta per Amen. Richiama il rosario e la Miracolosa."</p></div>
+</div><div class="beat"><span class="tc">18-38 <span>· le tre versioni</span></span>
+<p class="intro" style="font-size:9.8pt">Chiara smonta e rimonta il gioiello, tre stacchi netti</p>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Montata: è un rosario classico."</p><p class="r"><span class="chi">CHIARA:</span> <em>(la smonta)</em> "Smontata: diventa una seconda collana, un girocollo."</p><p class="r"><span class="chi">CHIARA:</span> "Oppure un bracciale."</p><p class="r"><span class="chi">GUIDA:</span> "La chiusura è a infinito, e si apre da entrambe le parti: per questo si può trasformare."</p></div>
+</div><div class="beat"><span class="tc">38-50 <span>· le varianti e il prezzo</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Base oro o rodio, perla nera o bianca. E si trova solo in lega Amen, non in argento."</p><p class="r"><span class="chi">CHIARA:</span> "Tutto insieme costa 99 euro. È un gioiello da giocarci."</p><p class="r"><span class="chi">ANNA:</span> "Tu come la porteresti? Scrivilo nei commenti."</p></div>
+</div><h3>Ganci alternativi</h3>
+<ol class="keep"><li>(C) "Questo gioiello è tre gioielli. Ti faccio vedere come."</li><li>(A) "Un rosario che diventa un girocollo. Si può?"</li><li><em>(solo con il via libera di Amen)</em> (C+A) "Jake La Furia ha scritto per averla. Eccola."</li></ol>
+<div class="page"></div><p class="occhiello">Copione 4</p>
+<h2><span class="num">HERITAGE</span> — Credo e Sacro, in argento</h2>
+<p class="scheda"><strong>Dove</strong>: showroom, vetrina Heritage · <strong>Chi</strong>: Chiara + Anna + la guida · <strong>Durata</strong>: circa 70 secondi</p>
+<p><strong>Cosa spiega</strong>: <strong>il disegno e il materiale</strong>. Heritage è l&#x27;argento, con linee disegnate da Amen. Il video mostra due collezioni, Credo e Sacro, e dice quali sono i gioielli più venduti.</p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-6 <span>· gancio</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Heritage, la linea in argento. Vi facciamo vedere due collezioni."</p></div>
+</div><div class="beat"><span class="tc">6-26 <span>· credo</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "La prima si chiama Credo. La Miracolosa, dentro una corona di croci."</p><p class="r"><span class="chi">GUIDA:</span> "Il disegno è nostro."</p><p class="r"><span class="chi">ANNA:</span> "E c&#x27;è anche l&#x27;orecchino, piccolo e liscio: è unisex, pensato anche per gli uomini."</p><p class="r"><span class="chi">CHIARA:</span> "Poi le fedine, che si incastrano: si possono abbinare."</p></div>
+</div><div class="beat"><span class="tc">26-50 <span>· sacro</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "La seconda è Sacro, una capsule sulle croci. La croce grande costa 79,90, ed esiste anche bicolore."</p><p class="r"><span class="chi">CHIARA:</span> "Il bracciale è unisex: il cordino è doppio e passante. Costa 99,99."</p><p class="r"><span class="chi">ANNA:</span> "E poi il cuore inscatolato, e la croce double face: zircone bianco da una parte e nero dall&#x27;altra."</p></div>
+</div><div class="beat"><span class="tc">50-62 <span>· i più venduti</span></span>
+
+<div class="righe"><p class="r"><span class="chi">GUIDA:</span> "Il cuore e l&#x27;infinito sono i soggetti che vendiamo di più, secondo i nostri dati."</p><p class="r"><span class="chi">CHIARA:</span> "Quindi se non sapete cosa regalare…"</p></div>
+</div><div class="beat"><span class="tc">62-72 <span>· chiusura</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Heritage lo trovate da noi, a Chiuduno e sul sito."</p><p class="r"><span class="chi">CHIARA:</span> "Tu quale scegli? Scrivilo nei commenti."</p></div>
+</div><h3>Ganci alternativi</h3>
+<ol class="keep"><li>(A) "Argento, e disegni fatti da Amen. Vi mostriamo i nostri preferiti."</li><li>(C) "Il gioiello più venduto al mondo, dice Amen, è il cuore. Guardate."</li><li>(C+A) "Una croce che si porta in due. Ve la facciamo vedere."</li></ol>
+<div class="page"></div><p class="occhiello">Copione 5</p>
+<h2><span class="num">SOLO DA TERESA CHIUDUNO</span> — angeli e diavoli</h2>
+<p class="scheda"><strong>Dove</strong>: showroom, il banco con la collezione · <strong>Chi</strong>: Chiara + Anna · <strong>Durata</strong>: circa 35 secondi</p>
+<p><strong>Cosa spiega</strong>: che c&#x27;è una collezione <strong>che si trova solo da noi</strong>. È la cosa che distingue Teresa Chiuduno da qualsiasi altro negozio che vende Amen, e non serve nominare nessuno.</p>
+<p class="scheda"><strong>Serve</strong>: un angelo e un diavolo, in plexi rosso fuoco, da tenere in mano.</p>
+<p class="scheda"><strong>Da compilare</strong>: prezzo <span class="vuoto"></span> · come si porta <span class="vuoto"></span></p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-5 <span>· gancio</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Questa collezione la trovate solo da noi."</p></div>
+</div><div class="beat"><span class="tc">5-22 <span>· la collezione</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Angeli e diavoli. In plexi, rosso fuoco."</p><p class="r"><span class="chi">CHIARA:</span> <em>(li tiene uno per mano)</em> "Uno protegge, l&#x27;altro fa il dispetto."</p><p class="r"><span class="chi">ANNA:</span> "Costano <span class="vuoto"></span> euro."</p></div>
+</div><div class="beat"><span class="tc">22-35 <span>· per chi</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Sono pensati per i battesimi, e per i diciottesimi."</p><p class="r"><span class="chi">ANNA:</span> "Se avete un&#x27;occasione, venite a vederli o scriveteci."</p></div>
+<p><em>(Il dettaglio sull&#x27;esclusiva si dice solo se Amen lo conferma. Se la collezione è "solo per Teresa Chiuduno" per un periodo, lo si dice: "per ora".)</em></p>
+</div><h3>Ganci alternativi</h3>
+<ol class="keep"><li>(A) "Una collezione Amen che trovate solo da noi. Guardate."</li><li>(C) "Un angelo e un diavolo, in plexi rosso fuoco. Per chi sono?"</li></ol>
+<div class="page"></div><p class="occhiello">Teresa Chiuduno &times; Amen</p><h2>ALTRE IDEE DAGLI APPUNTI</h2>
+<p>Ognuna è un reel da 25-40 secondi. <strong>Il gancio è già pronto</strong>: se ne vuole uno, si scrive subito.</p>
+<table><thead><tr><th>Collezione</th><th>Cosa dire</th><th>Gancio</th></tr></thead><tbody><tr><td><strong>Luce</strong>, argento e lega Amen</td><td>Il punto forte sono gli zirconi e le montature: tre griffe, tonde, che ricordano la forma di un cuore. Indossata sembra una collana vera. Si porta ovunque</td><td>"Questa sembra una collana importante, e lo è. Anche in lega Amen."</td></tr><tr><td><strong>Polar</strong>, ottobre</td><td>Quattro collane (79,90) e quattro orecchini (69,90), nei quattro colori canonici</td><td>"Quattro colori, quattro collane, quattro orecchini. Quale sei?"</td></tr><tr><td><strong>Dalia</strong></td><td>Lavorazione da alta gioielleria, per questo costa un po&#x27; di più. Rosso ciliegia e verde acqua, con il tocco del rubino all&#x27;interno</td><td>"Questa lavorazione è da alta gioielleria. Guardate l&#x27;interno."</td></tr><tr><td><strong>Rosarium Heritage</strong></td><td>L&#x27;anello rosario rinnovato: micro pavé tra un grano e l&#x27;altro, nei colori delle quattro pietre. Tutto in argento</td><td>"L&#x27;anello rosario, rifatto. Guardate cosa c&#x27;è tra un grano e l&#x27;altro."</td></tr><tr><td><strong>Sacro</strong>, capsule</td><td>La croce grande a 79,90, anche bicolore. Il cuore inscatolato, la croce double face</td><td>"Una croce grande a un prezzo accessibile: 79,90."</td></tr><tr><td><strong>Love Knots</strong>, Essential</td><td>In acciaio sono fatti più grossi</td><td>"Gli stessi Love Knots, ma più grossi. In acciaio."</td></tr><tr><td><strong>Tutto unisex</strong></td><td>Tantissimi pezzi si possono portare da tutti: orecchino liscio, bracciale con cordino passante, fedine</td><td>"Questo gioiello è da uomo o da donna? Tutti e due."</td></tr></tbody></table>
+</body></html>

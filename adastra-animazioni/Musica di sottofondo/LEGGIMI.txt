@@ -1,0 +1,6 @@
+Sottofondi cinematici originali (sintesi, nessun copyright di terzi). WAV 48 kHz stereo 24 bit, circa -20 LUFS: abbassali di 15-20 dB sotto la voce.
+01-drone-oscuro (60 s): drone grave, battito lento, onde di rumore. Serio, tensione bassa. Per hook e problema (video 1, 5).
+02-pulse-minimal (60 s, 100 bpm): impulsi di synth e sub, ritmo leggero. Per i video 2 e 3, stile business/ADV.
+03-pad-caldo (60 s): accordi morbidi Am-F-C-G. Per lower third e CTA, tono piu' umano.
+04-tensione-cinematica (45 s): crescendo con impatto a 38 s e coda. Posizionalo cosi' che l'impatto cada sul CTA.
+Fade in 2,5 s e fade out 4 s gia' inclusi.

@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<title>Teresa Chiuduno — Copioni</title>
+<style>
+  @page { size: A4 portrait; margin: 16mm 15mm 14mm; }
+  @page :first { margin: 0; }
+
+  :root{
+    --ink:#202020; --body:#33322E; --muted:#6B6B6B; --line:#DAD8CF; --soft:#EFEDE6;
+    --giallo:#FFEE32; --oro:#8A7B00; --paper:#FFFFFF;
+    --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  body{margin:0; font-family:var(--sans); font-size:10.8pt; line-height:1.55;
+       color:var(--body); background:var(--paper);}
+
+  /* ---------- copertina ---------- */
+  .cover{background:#202020; color:#D6D6D6; height:297mm; width:100%;
+         padding:70mm 22mm 22mm; page-break-after:always; position:relative;}
+  .cover .kicker{font-size:9.5pt; letter-spacing:.22em; text-transform:uppercase; color:#8C8C8C; margin:0 0 14mm;}
+  .cover h1{font-size:40pt; line-height:1.02; letter-spacing:-.02em; color:var(--giallo);
+            margin:0 0 6mm; font-weight:800;}
+  .cover .sub{font-size:16pt; color:#D6D6D6; margin:0 0 3mm; font-weight:400;}
+  .cover .meta{font-size:11pt; color:#8C8C8C; margin:0;}
+  .cover .foot{position:absolute; bottom:22mm; left:22mm; right:22mm;
+               border-top:1px solid #3A3A3A; padding-top:5mm; font-size:9.5pt; color:#8C8C8C;
+               display:flex; justify-content:space-between;}
+
+  /* ---------- tipografia ---------- */
+  h2{font-size:17pt; line-height:1.15; letter-spacing:-.01em; color:var(--ink);
+     margin:0 0 2mm; font-weight:800;}
+  h2 .num{color:var(--oro);}
+  h3{font-size:9pt; letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+     margin:7mm 0 2mm; font-weight:700;}
+  p{margin:0 0 3mm;} strong{color:var(--ink); font-weight:700;}
+  em{color:var(--muted);}
+  ul{margin:0 0 3mm; padding-left:5mm;} li{margin-bottom:1.5mm;}
+
+  .scheda{font-size:9.5pt; color:var(--muted); border-bottom:1px solid var(--line);
+          padding-bottom:3mm; margin-bottom:4mm;}
+  .scheda b{color:var(--ink);}
+
+  .intro{font-size:11pt; color:var(--body); margin-bottom:4mm;}
+
+  /* ---------- battute ---------- */
+  .beat{margin:0 0 4mm; page-break-inside:avoid;}
+  .tc{display:inline-block; background:var(--ink); color:var(--giallo);
+      font-size:8pt; font-weight:700; letter-spacing:.1em; padding:1mm 2.5mm;
+      border-radius:1mm; margin-bottom:2mm; text-transform:uppercase;}
+  .tc span{color:#D6D6D6; font-weight:400;}
+  .righe{border-left:2.5px solid var(--giallo); padding-left:4mm; margin-left:.5mm;}
+  .r{margin:0 0 2.2mm;}
+  .chi{font-weight:800; color:var(--ink); letter-spacing:.02em;}
+  .az{color:var(--muted); font-style:italic;}
+  .vuoto{display:inline-block; min-width:20mm; border-bottom:1.5px solid var(--ink);
+         background:var(--soft); height:1.15em; vertical-align:-.2em; margin:0 1px;}
+
+  .nota{background:var(--soft); border-left:3px solid var(--ink); padding:3mm 4mm;
+        font-size:9.8pt; margin:4mm 0; page-break-inside:avoid;}
+  .nota b{color:var(--ink);}
+
+  table{width:100%; border-collapse:collapse; font-size:10pt; margin:0 0 4mm;}
+  thead{display:table-header-group;}
+  tr{page-break-inside:avoid;}
+  h3{page-break-after:avoid;}
+  h2{page-break-after:avoid;}
+  .scheda, .intro{page-break-after:avoid;}
+  ul{page-break-inside:avoid;}
+  th{text-align:left; font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase;
+     color:var(--muted); border-bottom:1.5px solid var(--ink); padding:0 3mm 1.5mm 0;}
+  td{padding:2mm 3mm 2mm 0; border-bottom:1px solid var(--line); vertical-align:top;}
+  td:first-child{white-space:nowrap;}
+
+  .page{page-break-before:always;}
+  .titolone{font-size:26pt; font-weight:800; color:var(--ink); letter-spacing:-.02em;
+            margin:0 0 2mm;}
+  .occhiello{font-size:9pt; letter-spacing:.2em; text-transform:uppercase; color:var(--oro);
+             margin:0 0 2mm; font-weight:700;}
+</style></head><body>
+
+<div class="cover">
+  <p class="kicker">Veloce Digital &nbsp;·&nbsp; Piano contenuti</p>
+  <h1>Teresa<br>Chiuduno</h1>
+  <p class="sub">I copioni da girare</p>
+  <p class="meta">Dieci video &nbsp;·&nbsp; Una giornata di riprese</p>
+  <div class="foot"><span>Settembre 2026</span><span>Davide · 331 204 3165</span></div>
+</div>
+
+<p class="occhiello">Prima di iniziare</p>
+<h2>Come funzionano questi video</h2>
+
+<h3>Chiara e Anna hanno due ruoli diversi</h3>
+<p><strong>Chiara apre e chiude.</strong> Battuta pronta, maliziosa. Tiene i primi tre secondi
+e porta a casa l'ultima riga.</p>
+<p><strong>Anna dice la verità.</strong> Diretta, sfacciata, senza giri di parole. Spiega, dà
+ragione all'obiezione, dice la cosa che un negozio normalmente non direbbe.</p>
+<div class="nota">
+  Non è un dettaglio di stile. <em>"Sì, si annerisce"</em> detta da Anna suona come esperienza.
+  Detta da Chiara suonerebbe come una scusa. <b>Per questo le battute sono già assegnate.</b>
+</div>
+
+<h3>Quattro regole valide per tutti</h3>
+<ul>
+  <li><strong>Nei primi 3 secondi non si vede il prodotto.</strong> Si vede un problema, o una faccia.</li>
+  <li><strong>Il prezzo si dice ad alta voce.</strong> Mai solo scritto nella descrizione.</li>
+  <li><strong>La battuta finale è l'ultimo fotogramma.</strong> Dopo, stop. Non si aggiunge niente.</li>
+  <li><strong>Ogni video funziona per chi non vi ha mai visto.</strong> Niente riferimenti a video
+      precedenti, niente battute interne.</li>
+</ul>
+
+<h3>Come sono costruiti i 40 secondi</h3>
+<table>
+  <tr><th>Secondi</th><th>Cosa succede</th></tr>
+  <tr><td><strong>0-3</strong></td><td><strong>Gancio.</strong> Il problema, detto da chi lo ha</td></tr>
+  <tr><td><strong>3-9</strong></td><td><strong>Rilancio.</strong> Anna ribalta o alza la posta</td></tr>
+  <tr><td><strong>9-17</strong></td><td><strong>Spiegazione.</strong> Perché succede</td></tr>
+  <tr><td><strong>17-26</strong></td><td><strong>Prova.</strong> Si mostra, non si racconta</td></tr>
+  <tr><td><strong>26-33</strong></td><td><strong>Prodotto e prezzo</strong>, detto ad alta voce</td></tr>
+  <tr><td><strong>33-38</strong></td><td><strong>Invito a scrivere</strong></td></tr>
+  <tr><td><strong>38-42</strong></td><td><strong>Battuta.</strong> Ultimo fotogramma</td></tr>
+</table>
+<p>Il prezzo sta <strong>prima</strong> dell'invito: chi lo sente per ultimo esce subito, e il
+video perde proprio sul finale.</p>
+
+<h3>Ogni video si chiude due volte</h3>
+<p>Si gira la stessa scena finale in due versioni, <strong>una dietro l'altra</strong>. Stessa
+posizione, stessa luce, cambia solo l'ultima riga.</p>
+<table>
+  <tr><th>Dove va il video</th><th>Come si chiude</th></tr>
+  <tr><td><strong>Instagram</strong></td><td>"Lo trovate sul sito, <strong>link in bio</strong>"</td></tr>
+  <tr><td><strong>TikTok</strong></td><td>"<strong>Carrellino arancione</strong> qui sotto"</td></tr>
+</table>
+<p><em>Su Instagram il carrello non esiste, su TikTok il link in bio non lo tocca quasi nessuno.
+Usare la stessa chiusura su entrambi vuol dire sprecare metà del contenuto.</em></p>
+
+<div class="page"></div>
+<p class="occhiello">Organizzazione</p>
+<h2>La giornata e cosa serve</h2>
+
+<h3>Sei postazioni, in quest'ordine</h3>
+<table>
+  <tr><th></th><th>Postazione</th><th>Video</th></tr>
+  <tr><td><strong>1</strong></td><td>Bancone</td><td>3 · Contorno occhi &nbsp;·&nbsp; 4 · Maschera capelli</td></tr>
+  <tr><td><strong>2</strong></td><td>Vetrina gioielli</td><td>1A · Questo o quello &nbsp;·&nbsp; 1B · Le tre fasce</td></tr>
+  <tr><td><strong>3</strong></td><td>Borse e AMEN</td><td>7 · Borse &nbsp;·&nbsp; 6 · Portafogli</td></tr>
+  <tr><td><strong>4</strong></td><td>Camerino e collezione</td><td>2 · Tailleur &nbsp;·&nbsp; 9 · Passaggio di stagione</td></tr>
+  <tr><td><strong>5</strong></td><td>Giro negozio</td><td>5 · Regalo da 50 euro</td></tr>
+  <tr><td><strong>6</strong></td><td>Scaffali sguarniti</td><td>8 · Guardate cosa è rimasto</td></tr>
+</table>
+
+<h3>Cosa preparare</h3>
+<table>
+  <tr><th>Cosa</th><th>Per quale video</th></tr>
+  <tr><td><strong>Cavalletto</strong></td><td>Video 4. Senza non si gira: il prima e dopo funziona solo con la camera ferma</td></tr>
+  <tr><td><strong>Banconote vere</strong></td><td>Video 5. La carta si vede</td></tr>
+  <tr><td>Quattro <strong>coppie di gioielli</strong> diversi tra loro</td><td>Video 1A</td></tr>
+  <tr><td>Tre gioielli su <strong>tre fasce di prezzo</strong></td><td>Video 1B</td></tr>
+  <tr><td>Due giacche, una che veste male e una bene</td><td>Video 2</td></tr>
+  <tr><td>Il <strong>contorno occhi carico</strong></td><td>Video 3</td></tr>
+  <tr><td>Tre o quattro capi della <strong>collezione nuova</strong></td><td>Video 9</td></tr>
+  <tr><td>Uno scaffale <strong>effettivamente sguarnito</strong></td><td>Video 8</td></tr>
+</table>
+
+<div class="page"></div>
+<p class="occhiello">Da decidere prima</p>
+<h2>Gli spazi da riempire</h2>
+<p>Nei copioni trovate degli spazi come questo <span class="vuoto"></span>. Sono i prezzi, e li
+sapete voi. Vanno decisi <strong>prima</strong> di girare, non durante.</p>
+<table>
+  <tr><th>Video</th><th>Cosa serve</th></tr>
+  <tr><td>1A · 1B</td><td>Prezzi delle quattro coppie e delle tre fasce</td></tr>
+  <tr><td>2</td><td>Prezzo <strong>e taglie disponibili</strong></td></tr>
+  <tr><td>3 · 4</td><td>Prezzo</td></tr>
+  <tr><td>5</td><td>Tre prodotti, totale e resto. <strong>Il conto deve tornare davvero</strong></td></tr>
+  <tr><td>6</td><td>Prezzo, e se la confezione è inclusa</td></tr>
+  <tr><td>7</td><td>Prezzo della vera pelle</td></tr>
+  <tr><td>8 · 9</td><td>Prezzi dei capi e quantità</td></tr>
+</table>
+
+<div class="page"></div>
+<p class="occhiello">Copione 1A</p>
+<h2><span class="num">Gioielli</span> — "Questo o quello?"</h2>
+<p class="scheda"><b>Vetrina gioielli</b> · Chiara + Anna · <b>35 secondi</b><br>
+Serve: quattro coppie di gioielli, ogni coppia con due pezzi molto diversi tra loro.</p>
+<p class="intro">Nessuna spiegazione, nessuna lezione. Due persone che non sono d'accordo e chi
+guarda deve scegliere. È il tipo di video che raccoglie commenti perché costringe a prendere
+posizione.</p>
+
+<div class="beat"><span class="tc">0-4 <span>· si parte a metà discussione</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> "No, questo."</p>
+<p class="r"><span class="chi">ANNA:</span> "Assolutamente questo."</p>
+<p class="r az">(guardano insieme in camera)</p>
+<p class="r"><span class="chi">CHIARA:</span> "Decidete voi."</p>
+</div></div>
+
+<div class="beat"><span class="tc">4-26 <span>· quattro coppie, cinque secondi ciascuna</span></span>
+<p>Un pezzo a testa in mano, primo piano sulle mani, una riga ciascuna <strong>col prezzo
+dentro</strong>.</p>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> "Sottile, <span class="vuoto"></span> euro. Lo metti e te lo dimentichi."</p>
+<p class="r"><span class="chi">ANNA:</span> "Grosso, <span class="vuoto"></span> euro. Lo metti e te lo dimenticano gli altri."</p>
+<p class="r az">(seconda coppia)</p>
+<p class="r"><span class="chi">CHIARA:</span> "<span class="vuoto"></span>, <span class="vuoto"></span> euro."</p>
+<p class="r"><span class="chi">ANNA:</span> "<span class="vuoto"></span>, <span class="vuoto"></span> euro. E si vede da lontano."</p>
+<p class="r az">(terza coppia, poi quarta)</p>
+</div></div>
+
+<div class="beat"><span class="tc">26-31 <span>· il verdetto</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> "Comunque vinco io tre a uno."</p>
+<p class="r"><span class="chi">CHIARA:</span> "Non hai vinto niente, deve dirlo la gente."</p>
+</div></div>
+
+<div class="beat"><span class="tc">31-35 <span>· invito e chiusura</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> "Scriveteci nei commenti quale prendereste. Il più
+votato ve lo mostriamo addosso nel prossimo video."</p>
+<p class="r"><span class="chi">CHIARA (Instagram):</span> "Sono tutti sul sito, link in bio."</p>
+<p class="r"><span class="chi">CHIARA (TikTok):</span> "Sono tutti nel carrellino arancione qui sotto."</p>
+</div></div>
+
+<div class="page"></div>
+<p class="occhiello">Copione 1B</p>
+<h2><span class="num">Gioielli</span> — "Con 40, 60 e 80 euro"</h2>
+<p class="scheda"><b>Vetrina gioielli</b> · Anna, Chiara entra alla fine · <b>40 secondi</b><br>
+Serve: tre gioielli, uno per fascia, sul banco coperti da un panno.</p>
+<p class="intro">Il formato più semplice che esista: si fissa un budget e si mostra cosa ci si
+porta a casa. Chi guarda cerca <strong>la sua</strong> fascia, e per trovarla deve arrivare in
+fondo al video.</p>
+
+<div class="beat"><span class="tc">0-4 <span>· gancio</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> "Quaranta euro, sessanta, ottanta. Vi faccio vedere
+la differenza."</p>
+</div></div>
+
+<div class="beat"><span class="tc">4-14 <span>· prima fascia</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(scopre il primo)</span> "Con
+quaranta: <span class="vuoto"></span>. Argento vero, tutti i giorni, non ci pensi. Se lo perdi
+ti dispiace ma sopravvivi."</p>
+</div></div>
+
+<div class="beat"><span class="tc">14-25 <span>· seconda fascia</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(scopre il secondo)</span> "Con
+sessanta: <span class="vuoto"></span>. Qui si vede che hai scelto qualcosa, non che hai preso il
+primo che c'era."</p>
+</div></div>
+
+<div class="beat"><span class="tc">25-34 <span>· terza fascia</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(scopre il terzo)</span> "Con
+ottanta: <span class="vuoto"></span>. Questo è quello che ti fanno notare. Ed è anche quello che
+regali quando vuoi far capire qualcosa."</p>
+</div></div>
+
+<div class="beat"><span class="tc">34-40 <span>· invito e chiusura</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> <span class="az">(entra e prende il più caro)</span> "Io intanto prendo questo."</p>
+<p class="r"><span class="chi">ANNA:</span> "Con i tuoi soldi."</p>
+<p class="r"><span class="chi">CHIARA (Instagram):</span> "Scriveteci il vostro budget e vi
+diciamo cosa prendere. Tutti sul sito, link in bio."</p>
+<p class="r"><span class="chi">CHIARA (TikTok):</span> "Scriveteci il vostro budget e vi diciamo
+cosa prendere. Carrellino arancione qui sotto."</p>
+</div></div>
+
+<div class="page"></div>
+<p class="occhiello">Copione 2</p>
+<h2><span class="num">Tailleur</span> — "Le giacche mi tirano sul petto"</h2>
+<p class="scheda"><b>Camerino</b> · Chiara + Anna · <b>40 secondi</b><br>
+Serve: tre giacche, due che vestono male e una che veste bene.</p>
+
+<div class="beat"><span class="tc">0-9 <span>· il messaggio</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> <span class="az">(legge)</span> "Ho una quinta di
+seno, le giacche mi tirano tutte sul petto. Ho smesso di provarle."</p>
+<p class="r"><span class="chi">ANNA:</span> "Allora hai smesso di provare la taglia sbagliata."</p>
+<p class="r"><span class="chi">CHIARA:</span> "Cioè?"</p>
+</div></div>
+
+<div class="beat"><span class="tc">9-26 <span>· le tre giacche</span></span>
+<p>Anna se le prova addosso, tre di fila, davanti allo specchio. Ogni giacca dura cinque
+secondi: la mette, si guarda, dà il verdetto in <strong>una riga sola</strong>.</p>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(prima giacca)</span> "Questa tira."</p>
+<p class="r az">(se la toglie, ne prende un'altra)</p>
+<p class="r"><span class="chi">ANNA:</span> "Questa mi fa le spalle da rugbista."</p>
+<p class="r"><span class="chi">CHIARA:</span> <span class="az">(fuori campo)</span> "Un po' sì."</p>
+<p class="r"><span class="chi">ANNA:</span> "Zitta."</p>
+<p class="r az">(terza giacca, si ferma, si guarda)</p>
+<p class="r"><span class="chi">ANNA:</span> "Questa. E vi dico perché."</p>
+<p class="r"><span class="az">(si indica la spalla)</span> "La giacca si sceglie qui, non sul
+petto. Se la spalla cade giusta, il resto viene da sé."</p>
+<p class="r"><span class="az">(la apre)</span> "Aperta, mai abbottonata."</p>
+<p class="r"><span class="az">(pizzica il tessuto)</span> "E che si allunghi un po'. Se è
+rigida, tira e basta."</p>
+<p class="r"><span class="chi">CHIARA:</span> "Vabbè, però così non vale."</p>
+</div></div>
+
+<div class="nota"><b>Nota di ripresa.</b> La camera resta <b>ferma nello stesso punto</b> per
+tutte e tre le giacche: è il confronto a fare il video, e si legge solo se l'inquadratura non
+cambia. Le prime due vanno scelte apposta perché vestano male.</div>
+
+<div class="beat"><span class="tc">26-38 <span>· prezzo e invito</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> "Questo è <span class="vuoto"></span> euro, ce
+l'abbiamo dalla <span class="vuoto"></span>."</p>
+<p class="r"><span class="chi">CHIARA (Instagram):</span> "In negozio a Chiuduno, oppure sul
+sito, link in bio."</p>
+<p class="r"><span class="chi">CHIARA (TikTok):</span> "In negozio a Chiuduno, oppure carrellino
+arancione qui sotto."</p>
+<p class="r"><span class="chi">CHIARA:</span> "Scriveteci il vostro problema di vestibilità, lo
+risolviamo nel prossimo video."</p>
+</div></div>
+
+<div class="beat"><span class="tc">38-42 <span>· battuta</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> "E non compratela su internet che poi tornate qui a
+farvela sistemare."</p>
+</div></div>
+
+<div class="page"></div>
+<p class="occhiello">Copione 3</p>
+<h2><span class="num">Contorno occhi</span> — "Il correttore si accumula"</h2>
+<p class="scheda"><b>Bancone</b> · Chiara + Anna · <b>38 secondi</b><br>
+Serve: il contorno occhi VT carico e funzionante.</p>
+
+<div class="beat"><span class="tc">0-3 <span>· il messaggio</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> <span class="az">(legge)</span> "Metto il
+correttore e dopo un'ora si è tutto accumulato nelle pieghe sotto l'occhio."</p>
+</div></div>
+
+<div class="beat"><span class="tc">3-9 <span>· rilancio</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> "Non è il correttore. È che sotto sei gonfia."</p>
+<p class="r"><span class="chi">CHIARA:</span> "Grazie eh."</p>
+<p class="r"><span class="chi">ANNA:</span> "Lo siamo tutte la mattina."</p>
+</div></div>
+
+<div class="beat"><span class="tc">9-17 <span>· spiegazione</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> "Di notte i liquidi ristagnano. La mattina la pelle
+è gonfia, il correttore si deposita nella piega e si vede tutto. Quindi non ti serve più
+correttore. Ti serve sgonfiare prima."</p>
+</div></div>
+
+<div class="beat"><span class="tc">17-27 <span>· la prova</span></span>
+<p>Primo piano stretto sul viso di Chiara, applicatore acceso.</p>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> <span class="az">(reazione vera, qualunque
+sia)</span> "...ah. Ok. È freddo."</p>
+<p class="r"><span class="chi">ANNA:</span> "Vibra e raffredda: massaggia e fa defluire. Trenta
+secondi per lato, prima del trucco."</p>
+</div></div>
+
+<div class="nota"><b>Nota di ripresa.</b> Girate <b>il primo tentativo</b>, non il terzo. Se
+viene una faccia strana, quella è il video.</div>
+
+<div class="beat"><span class="tc">27-38 <span>· prezzo, invito, battuta</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA (Instagram):</span> "<span class="vuoto"></span> euro, sul
+sito, link in bio."</p>
+<p class="r"><span class="chi">CHIARA (TikTok):</span> "<span class="vuoto"></span> euro,
+carrellino arancione qui sotto."</p>
+<p class="r"><span class="chi">CHIARA:</span> "Scriveteci il vostro problema, lo risolviamo nel
+prossimo video."</p>
+<p class="r az">(pausa, poi guarda l'applicatore)</p>
+<p class="r"><span class="chi">CHIARA:</span> "Comunque vibra parecchio."</p>
+<p class="r"><span class="chi">ANNA:</span> "Eh, l'ho notato."</p>
+</div></div>
+
+<div class="page"></div>
+<p class="occhiello">Copione 4</p>
+<h2><span class="num">Maschera capelli</span> — "Dopo agosto sembrano paglia"</h2>
+<p class="scheda"><b>Bancone, luce laterale</b> · Chiara e Anna · <b>35 secondi</b><br>
+Serve: <b>il cavalletto</b>, e capelli su cui la differenza si veda davvero.</p>
+
+<div class="beat"><span class="tc">0-4 <span>· il messaggio</span></span>
+<p>Si parte in macro su una ciocca crespa, poi il messaggio a schermo.</p>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> <span class="az">(legge)</span> "Dopo agosto ho i
+capelli che sembrano paglia. Li taglio?"</p>
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(fuori campo, secca)</span> "Aspetta
+a tagliare."</p>
+</div></div>
+
+<div class="beat"><span class="tc">4-11 <span>· la causa, una riga</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> "Sale, sole e cloro aprono la cuticola. Il capello
+non è morto, è aperto. Se lo tagli, ricresce e si riapre uguale."</p>
+</div></div>
+
+<div class="beat"><span class="tc">11-25 <span>· la prova</span></span>
+<p>Applicazione, poi stacco netto sul risultato.</p>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(sopra le immagini)</span> "Maschera
+Fino. Dieci minuti. Effetto specchio."</p>
+<p class="r az">(silenzio sulle immagini del dopo, tre secondi pieni)</p>
+</div></div>
+
+<div class="nota"><b>Nota di ripresa. Serve il cavalletto.</b> Il prima e il dopo devono avere
+inquadratura, luce e distanza <b>identiche</b>. Se la camera si sposta anche di poco, il
+confronto non si legge e il video non funziona. È l'unica cosa tecnica che conta qui.</div>
+
+<div class="beat"><span class="tc">25-35 <span>· prezzo, invito, battuta</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA (Instagram):</span> "<span class="vuoto"></span> euro, link
+in bio. E il taglio lo rimandi a Natale."</p>
+<p class="r"><span class="chi">ANNA (TikTok):</span> "<span class="vuoto"></span> euro,
+carrellino arancione. E il taglio lo rimandi a Natale."</p>
+<p class="r"><span class="chi">CHIARA:</span> <span class="az">(si tocca i capelli)</span>
+"Scriveteci il vostro problema, lo risolviamo nel prossimo video."</p>
+<p class="r"><span class="chi">ANNA:</span> "Il suo l'abbiamo risolto."</p>
+</div></div>
+
+<div class="page"></div>
+<p class="occhiello">Copione 5</p>
+<h2><span class="num">Regalo</span> — "Ho 50 euro e domani è il compleanno di mia zia"</h2>
+<p class="scheda"><b>Giro del negozio</b>, finisce al bancone · Chiara, Anna e chi entra ·
+<b>45 secondi</b><br>Serve: banconote vere, e tre prodotti che stiano nel budget.</p>
+
+<div class="beat"><span class="tc">0-4 <span>· gancio</span></span>
+<p>Qualcuno entra con i soldi in mano e va dritto al bancone.</p>
+<div class="righe">
+<p class="r"><span class="chi">CLIENTE:</span> "Ho cinquanta euro e domani è il compleanno di
+mia zia. Cinquantesimo."</p>
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(prende i soldi e li conta a favore
+di camera)</span> "Cinquanta. Vieni."</p>
+</div></div>
+
+<div class="beat"><span class="tc">4-10 <span>· rilancio</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(camminando)</span> "Cinquant'anni
+non le regali una crema. Sembra che le stai dicendo qualcosa."</p>
+<p class="r"><span class="chi">CHIARA:</span> "Anna!"</p>
+<p class="r"><span class="chi">ANNA:</span> "È così."</p>
+</div></div>
+
+<div class="beat"><span class="tc">10-30 <span>· il giro</span></span>
+<p>Anna cammina e prende, un pezzo alla volta, ognuno con il prezzo.</p>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(il primo)</span>
+"<span class="vuoto"></span>. <span class="vuoto"></span> euro."</p>
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(il secondo)</span> "Questo
+<span class="vuoto"></span> euro."</p>
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(il terzo)</span> "E questo, che è
+il pezzo che si ricorda. <span class="vuoto"></span>."</p>
+<p class="r"><span class="chi">CHIARA:</span> <span class="az">(al banco, incarta)</span>
+"Confezione inclusa."</p>
+</div></div>
+
+<div class="beat"><span class="tc">30-38 <span>· il conto</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> "Totale <span class="vuoto"></span>. Ti restano
+<span class="vuoto"></span> euro."</p>
+<p class="r"><span class="chi">CLIENTE:</span> <span class="az">(se li rimette in tasca)</span>
+"Me li tengo."</p>
+</div></div>
+
+<div class="nota"><b>Il conto finale deve tornare davvero.</b> È l'unica prova che ha questo
+video: se i numeri non quadrano, si vede.</div>
+
+<div class="beat"><span class="tc">38-45 <span>· invito e battuta</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> "Scriveteci quanto avete e per chi. Vi facciamo il
+pacchetto nel prossimo video."</p>
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(alla cliente)</span> "E non dirle
+che li hai spesi tutti."</p>
+</div></div>
+
+<div class="nota"><b>Subito dopo si gira la seconda versione.</b> Stesso set, stesso cast,
+cambia solo la cifra: <b>"Ho venti euro."</b> Il vincolo più stretto è più divertente. Sono due
+video al costo di uno.</div>
+
+<div class="page"></div>
+<p class="occhiello">Copione 6</p>
+<h2><span class="num">Regalo per lui</span> — "Finisco sempre col solito profumo"</h2>
+<p class="scheda"><b>Espositore AMEN</b> · Chiara, Anna e un uomo per quattro secondi ·
+<b>38 secondi</b></p>
+<p class="intro">Chi guarda la pagina sono in gran parte donne: il portafoglio non lo comprano
+per sé, lo comprano per lui. Per questo il copione è scritto per chi regala, non per chi lo usa.</p>
+
+<div class="beat"><span class="tc">0-4 <span>· il messaggio</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> <span class="az">(legge)</span> "Ogni anno gli
+regalo un profumo perché non so mai cosa prendergli."</p>
+</div></div>
+
+<div class="beat"><span class="tc">4-10 <span>· rilancio</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> "E ogni anno lui fa la stessa faccia."</p>
+<p class="r"><span class="chi">CHIARA:</span> "Quale faccia?"</p>
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(la fa)</span></p>
+</div></div>
+
+<div class="beat"><span class="tc">10-20 <span>· spiegazione</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> "Il problema dei regali agli uomini è che o costano
+troppo o sembrano un ripiego. La via di mezzo è una cosa che usa <strong>tutti i giorni</strong>."</p>
+</div></div>
+
+<div class="beat"><span class="tc">20-28 <span>· la prova</span></span>
+<p>Macro sul portafoglio: aperto, cuciture, materiale.</p>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> "Portafoglio AMEN. Lo tira fuori dieci volte al
+giorno e ogni volta si ricorda chi gliel'ha regalato."</p>
+<p class="r"><span class="chi">CHIARA:</span> "Che poi è il vero motivo per cui glielo regali."</p>
+</div></div>
+
+<div class="beat"><span class="tc">28-34 <span>· prezzo</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA (Instagram):</span> "<span class="vuoto"></span> euro,
+confezione inclusa. Link in bio."</p>
+<p class="r"><span class="chi">CHIARA (TikTok):</span> "<span class="vuoto"></span> euro,
+confezione inclusa. Carrellino arancione qui sotto."</p>
+</div></div>
+
+<div class="beat"><span class="tc">34-38 <span>· battuta</span></span>
+<p>Un uomo passa dietro.</p>
+<div class="righe">
+<p class="r"><span class="chi">UOMO:</span> "A me nessuno ha mai regalato niente."</p>
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(senza girarsi)</span> "Eh."</p>
+</div></div>
+
+<div class="page"></div>
+<p class="occhiello">Copione 7</p>
+<h2><span class="num">Borse</span> — "Tessuto o vera pelle?"</h2>
+<p class="scheda"><b>Espositore borse</b> · Chiara + Anna · <b>42 secondi</b><br>
+Serve: tre borse allineate sul bancone, e roba da infilarci dentro.</p>
+
+<div class="beat"><span class="tc">0-4 <span>· gancio</span></span>
+<p>Tre borse allineate, la mano le indica una a una.</p>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> "Ventinove euro. <span class="vuoto"></span>.
+<span class="vuoto"></span>. La differenza non è quella che pensate."</p>
+</div></div>
+
+<div class="beat"><span class="tc">4-10 <span>· rilancio</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> "Perché tutte pensano che quella cara sia meglio.
+Non è così, servono a due cose diverse."</p>
+</div></div>
+
+<div class="beat"><span class="tc">10-22 <span>· la fascia bassa</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(prende quella in tessuto)</span>
+"Tessuto, ventinove euro. Leggera, ci sta dentro tutto, la butti in lavatrice. È quella che usi
+tutti i giorni e non ti dispiace se si rovina."</p>
+<p class="r az">(ci infila dentro tutto quello che ha sul bancone, una cosa dopo l'altra, senza
+commentare)</p>
+</div></div>
+
+<div class="beat"><span class="tc">22-32 <span>· la fascia alta</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(prende quella in pelle)</span>
+"Vera pelle, <span class="vuoto"></span>. Pesa di più, costa di più, e tra cinque anni ce l'hai
+ancora. Questa non la compri per l'estate. La compri e basta."</p>
+</div></div>
+
+<div class="beat"><span class="tc">32-38 <span>· il verdetto</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> "Se la usi tutti i giorni e la maltratti, tessuto.
+Se la vuoi per dieci anni, pelle."</p>
+<p class="r"><span class="chi">CHIARA (Instagram):</span> "Sono tutte sul sito, link in bio."</p>
+<p class="r"><span class="chi">CHIARA (TikTok):</span> "Sono tutte nel carrellino arancione qui
+sotto."</p>
+</div></div>
+
+<div class="beat"><span class="tc">38-42 <span>· battuta</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> "Oppure le prendi tutte e due, che è quello che
+fanno tutte."</p>
+<p class="r"><span class="chi">CHIARA:</span> "Confermo."</p>
+</div></div>
+
+<div class="nota"><b>Versione corta per TikTok, 20 secondi.</b> Solo la borsa da 29. Anna chiede
+<em>"ti serve una borsa che regga tutto e non ti dispiaccia rovinare?"</em>, poi dieci secondi
+in cui ci infila dentro tutto senza parlare, poi <em>"tessuto, si lava, ventinove euro"</em> e
+il carrellino. Si gira subito dopo, stessa postazione.</div>
+
+<div class="page"></div>
+<p class="occhiello">Copione 8</p>
+<h2><span class="num">Negozio</span> — "Guardate cosa è rimasto"</h2>
+<p class="scheda"><b>In mezzo agli scaffali</b> · Chiara + Anna · <b>40 secondi</b><br>
+Serve: uno scaffale effettivamente sguarnito. Nessun arrivo di merce.</p>
+<p class="intro">Non è pubblicità, è una notizia dal negozio. Per questo funziona: raccontate
+cosa vi hanno portato via, cosa torna e cosa no.</p>
+
+<div class="beat"><span class="tc">0-4 <span>· gancio</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> <span class="az">(indica lo scaffale mezzo
+vuoto)</span> "Allora. Guardate cosa è rimasto."</p>
+</div></div>
+
+<div class="beat"><span class="tc">4-12 <span>· il danno</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(arriva, guarda lo scaffale, poi la
+camera)</span> "Questa settimana ci avete portato via <span class="vuoto"></span>,
+<span class="vuoto"></span> e <strong>tutti</strong> i <span class="vuoto"></span>."</p>
+<p class="r"><span class="chi">CHIARA:</span> "Tutti tutti."</p>
+<p class="r"><span class="chi">ANNA:</span> "Non ne è rimasto uno."</p>
+</div></div>
+
+<div class="beat"><span class="tc">12-24 <span>· cosa torna e cosa no</span></span>
+<p>Camminano lungo lo scaffale indicando i vuoti.</p>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> "Questo torna giovedì."</p>
+<p class="r"><span class="chi">ANNA:</span> "Questo torna, ma in un altro colore."</p>
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(si ferma su un vuoto)</span>
+"Questo non torna. Era l'ultimo lotto e non lo rifanno."</p>
+<p class="r"><span class="chi">CHIARA:</span> "Quindi se lo volevate, l'avete perso."</p>
+</div></div>
+
+<div class="beat"><span class="tc">24-32 <span>· cosa c'è ancora</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(prende quello che è
+rimasto)</span> "È rimasto questo, <span class="vuoto"></span> euro. E ne abbiamo
+<span class="vuoto"></span>."</p>
+</div></div>
+
+<div class="beat"><span class="tc">32-42 <span>· invito e battuta</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> "Scriveteci cosa volete che riordiniamo, che poi
+lo ordiniamo davvero."</p>
+<p class="r"><span class="chi">CHIARA (Instagram):</span> "Quello che c'è, è sul sito, link in bio."</p>
+<p class="r"><span class="chi">CHIARA (TikTok):</span> "Quello che c'è, è nel carrellino arancione."</p>
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(guarda lo scaffale vuoto)</span>
+"E adesso chi lo riempie."</p>
+<p class="r"><span class="chi">CHIARA:</span> "Tu."</p>
+</div></div>
+
+<div class="nota"><b>Se invece arriva merce nuova</b>, si gira la struttura rovesciata: scatolone
+chiuso che si apre in campo, i pezzi tirati fuori uno alla volta con il prezzo, e quante ce ne
+sono per taglia. Ma solo il giorno in cui arriva <b>davvero</b> qualcosa: se ogni settimana è
+arrivato qualcosa di incredibile, smette di essere una notizia.</div>
+
+<div class="page"></div>
+<p class="occhiello">Copione 9</p>
+<h2><span class="num">Stagione</span> — "L'estate è finita, e adesso cosa si mette"</h2>
+<p class="scheda"><b>Collezione nuova</b> · Anna guida, Chiara prova · <b>45 secondi</b><br>
+Serve: tre o quattro capi della collezione nuova, più un capo estivo per l'apertura.</p>
+<p class="intro">Funziona perché è una notizia vera: il cambio di stagione è successo davvero, e
+risponde a una domanda che in questi giorni si fanno tutte.</p>
+
+<div class="beat"><span class="tc">0-5 <span>· gancio</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> <span class="az">(tiene in mano un capo estivo, lo
+guarda, lo appende via)</span> "Questo mettetelo via. Non lo tirate più fuori fino a giugno."</p>
+</div></div>
+
+<div class="beat"><span class="tc">5-12 <span>· rilancio</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> "Ma fa ancora caldo."</p>
+<p class="r"><span class="chi">ANNA:</span> "Fa caldo adesso. Fra due settimane esci la mattina
+e ti penti. Vi dico tre cose che quest'autunno vedrete ovunque."</p>
+</div></div>
+
+<div class="beat"><span class="tc">12-36 <span>· i tre trend</span></span>
+<p>Otto secondi ciascuno, Chiara li indossa mentre Anna parla. Dopo ogni prezzo, una riga sul
+perché funziona: con cosa si abbina, a chi sta bene.</p>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> "Uno: <span class="vuoto"></span>.
+<span class="vuoto"></span>, <span class="vuoto"></span> euro."</p>
+<p class="r"><span class="chi">ANNA:</span> "Due: <span class="vuoto"></span>.
+<span class="vuoto"></span>, <span class="vuoto"></span> euro."</p>
+<p class="r"><span class="chi">ANNA:</span> "Tre: <span class="vuoto"></span>.
+<span class="vuoto"></span>, <span class="vuoto"></span> euro."</p>
+</div></div>
+
+<div class="nota"><b>I tre trend li scegliete voi.</b> Un consiglio sulla scelta: prendete
+<b>un colore, un tessuto e una forma</b>, non tre capi a caso. Tre categorie diverse fanno
+capire che sapete di cosa parlate. Tre vestiti sembrano un magazzino da svuotare.</div>
+
+<div class="beat"><span class="tc">36-41 <span>· il consiglio vero</span></span>
+<div class="righe">
+<p class="r"><span class="chi">ANNA:</span> "E se ne dovete comprare uno solo, prendete
+<span class="vuoto"></span>. Perché ve lo mettete da adesso a dicembre, non tre volte a ottobre."</p>
+</div></div>
+
+<div class="nota">Questa è la riga più importante del video. Un negozio che dice
+<em>"compratene uno solo"</em> si guadagna la fiducia per quando dirà <em>"compratene tre"</em>.</div>
+
+<div class="beat"><span class="tc">41-45 <span>· invito e chiusura</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> "Scriveteci cosa dovete rinnovare quest'autunno e
+vi diciamo da dove partire."</p>
+<p class="r"><span class="chi">CHIARA (Instagram):</span> "La collezione nuova è sul sito, link
+in bio."</p>
+<p class="r"><span class="chi">CHIARA (TikTok):</span> "La collezione nuova è nel carrellino
+arancione qui sotto."</p>
+</div></div>
+
+<div class="page"></div>
+<p class="occhiello">Da riusare quando volete</p>
+<h2>Un modello per qualsiasi prodotto</h2>
+<p class="intro">Quando serve un contenuto nuovo e non sapete da dove partire, si riempiono sei
+caselle e il copione è pronto. La struttura resta sempre la stessa.</p>
+
+<h3>Le sei cose da decidere</h3>
+<table>
+  <tr><th></th><th>Cosa serve</th><th>Esempio già usato</th></tr>
+  <tr><td><strong>1</strong></td><td>Il <strong>problema</strong>, con parole da cliente</td>
+      <td>"Metto il correttore e dopo un'ora si è accumulato tutto"</td></tr>
+  <tr><td><strong>2</strong></td><td>Il <strong>ribaltamento</strong></td>
+      <td>"Non è il correttore. È che sotto sei gonfia"</td></tr>
+  <tr><td><strong>3</strong></td><td>La <strong>causa vera</strong>, due righe</td>
+      <td>"Di notte i liquidi ristagnano e il prodotto si deposita nella piega"</td></tr>
+  <tr><td><strong>4</strong></td><td>La <strong>prova visiva</strong></td>
+      <td>Chiara che lo prova per la prima volta, primo piano</td></tr>
+  <tr><td><strong>5</strong></td><td><strong>Prodotto e prezzo</strong>, ad alta voce</td>
+      <td>"<span class="vuoto"></span> euro"</td></tr>
+  <tr><td><strong>6</strong></td><td>La <strong>battuta finale</strong>, una riga</td>
+      <td>"Comunque vibra parecchio"</td></tr>
+</table>
+
+<h3>Lo stampo</h3>
+<div class="beat"><span class="tc">0-4 <span>· gancio</span></span>
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "<span class="vuoto"></span>
+<span class="vuoto"></span> <span class="vuoto"></span>" <span class="az">(il problema)</span></p></div></div>
+
+<div class="beat"><span class="tc">4-10 <span>· rilancio</span></span>
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "<span class="vuoto"></span>
+<span class="vuoto"></span>" <span class="az">(perché quello che pensano è sbagliato)</span></p></div></div>
+
+<div class="beat"><span class="tc">10-18 <span>· spiegazione</span></span>
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "<span class="vuoto"></span>
+<span class="vuoto"></span> <span class="vuoto"></span>" <span class="az">(la causa vera)</span></p></div></div>
+
+<div class="beat"><span class="tc">18-28 <span>· prova</span></span>
+<div class="righe"><p class="r az">(l'azione: cosa si vede fare)</p></div></div>
+
+<div class="beat"><span class="tc">28-34 <span>· prodotto e prezzo</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> "<span class="vuoto"></span>,
+<span class="vuoto"></span> euro."</p>
+<p class="r"><span class="chi">CHIARA (Instagram):</span> "Sul sito, link in bio."</p>
+<p class="r"><span class="chi">CHIARA (TikTok):</span> "Carrellino arancione qui sotto."</p>
+</div></div>
+
+<div class="beat"><span class="tc">34-42 <span>· invito e battuta</span></span>
+<div class="righe">
+<p class="r"><span class="chi">CHIARA:</span> "Scriveteci il vostro problema, lo risolviamo nel
+prossimo video." <span class="az">(sempre uguale, non cambiatelo)</span></p>
+<p class="r"><span class="chi">ANNA o CHIARA:</span> "<span class="vuoto"></span>"
+<span class="az">(una riga, poi stop)</span></p>
+</div></div>
+
+<h3>Come scegliere il prodotto</h3>
+<p>In quest'ordine, e ci si ferma al primo che c'è:</p>
+<ul>
+  <li>Quello per cui <strong>un cliente vi ha fatto una domanda questa settimana</strong></li>
+  <li>Quello che <strong>sta finendo</strong></li>
+  <li>Quello con il <strong>margine migliore</strong></li>
+</ul>
+
+<h3>Tre controlli prima di girare</h3>
+<ul>
+  <li><strong>C'è qualcosa da far vedere?</strong> Se il prodotto non si può mostrare in azione,
+      questo stampo non è quello giusto: meglio il modello delle fasce di prezzo, come il
+      copione 1B.</li>
+  <li><strong>Il problema è di qualcun altro, o ce lo siamo inventati?</strong> Se non l'ha mai
+      chiesto nessuno, probabilmente non interessa a nessuno.</li>
+  <li><strong>Sapete il prezzo?</strong> Se non si può dire, il video perde il pezzo che
+      converte.</li>
+</ul>
+
+<div class="nota" style="margin-top:10mm">
+Per qualsiasi dubbio durante le riprese: <b>Davide · 331 204 3165</b><br>
+Buone riprese.
+</div>
+
+</body></html>

@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<title>Teresa Chiuduno — Copioni secondo shooting</title>
+<style>
+  @page { size: A4 portrait; margin: 16mm 15mm 14mm; }
+  @page :first { margin: 0; }
+
+  :root{
+    --ink:#202020; --body:#33322E; --muted:#6B6B6B; --line:#DAD8CF; --soft:#EFEDE6;
+    --giallo:#FFEE32; --oro:#8A7B00; --paper:#FFFFFF;
+    --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  body{margin:0; font-family:var(--sans); font-size:10.8pt; line-height:1.55;
+       color:var(--body); background:var(--paper);}
+
+  /* ---------- copertina ---------- */
+  .cover{background:#202020; color:#D6D6D6; height:297mm; width:100%;
+         padding:70mm 22mm 22mm; page-break-after:always; position:relative;}
+  .cover .kicker{font-size:9.5pt; letter-spacing:.22em; text-transform:uppercase; color:#8C8C8C; margin:0 0 14mm;}
+  .cover h1{font-size:40pt; line-height:1.02; letter-spacing:-.02em; color:var(--giallo);
+            margin:0 0 6mm; font-weight:800;}
+  .cover .sub{font-size:16pt; color:#D6D6D6; margin:0 0 3mm; font-weight:400;}
+  .cover .meta{font-size:11pt; color:#8C8C8C; margin:0;}
+  .cover .foot{position:absolute; bottom:22mm; left:22mm; right:22mm;
+               border-top:1px solid #3A3A3A; padding-top:5mm; font-size:9.5pt; color:#8C8C8C;
+               display:flex; justify-content:space-between;}
+
+  /* ---------- tipografia ---------- */
+  h2{font-size:17pt; line-height:1.15; letter-spacing:-.01em; color:var(--ink);
+     margin:0 0 2mm; font-weight:800;}
+  h2 .num{color:var(--oro);}
+  h3{font-size:9pt; letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+     margin:7mm 0 2mm; font-weight:700;}
+  p{margin:0 0 3mm;} strong{color:var(--ink); font-weight:700;}
+  em{color:var(--muted);}
+  ul{margin:0 0 3mm; padding-left:5mm;} li{margin-bottom:1.5mm;}
+
+  .scheda{font-size:9.5pt; color:var(--muted); border-bottom:1px solid var(--line);
+          padding-bottom:3mm; margin-bottom:4mm;}
+  .scheda b{color:var(--ink);}
+
+  .intro{font-size:11pt; color:var(--body); margin-bottom:4mm;}
+
+  /* ---------- battute ---------- */
+  .beat{margin:0 0 4mm; page-break-inside:avoid;}
+  .tc{display:inline-block; background:var(--ink); color:var(--giallo);
+      font-size:8pt; font-weight:700; letter-spacing:.1em; padding:1mm 2.5mm;
+      border-radius:1mm; margin-bottom:2mm; text-transform:uppercase;}
+  .tc span{color:#D6D6D6; font-weight:400;}
+  .righe{border-left:2.5px solid var(--giallo); padding-left:4mm; margin-left:.5mm;}
+  .r{margin:0 0 2.2mm;}
+  .chi{font-weight:800; color:var(--ink); letter-spacing:.02em;}
+  .az{color:var(--muted); font-style:italic;}
+  .vuoto{display:inline-block; min-width:20mm; border-bottom:1.5px solid var(--ink);
+         background:var(--soft); height:1.15em; vertical-align:-.2em; margin:0 1px;}
+
+  .nota{background:var(--soft); border-left:3px solid var(--ink); padding:3mm 4mm;
+        font-size:9.8pt; margin:4mm 0; page-break-inside:avoid;}
+  .nota b{color:var(--ink);}
+
+  table{width:100%; border-collapse:collapse; font-size:10pt; margin:0 0 4mm;}
+  thead{display:table-header-group;}
+  tr{page-break-inside:avoid;}
+  h3{page-break-after:avoid;}
+  h2{page-break-after:avoid;}
+  .scheda, .intro{page-break-after:avoid;}
+  ul{page-break-inside:avoid;}
+  th{text-align:left; font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase;
+     color:var(--muted); border-bottom:1.5px solid var(--ink); padding:0 3mm 1.5mm 0;}
+  td{padding:2mm 3mm 2mm 0; border-bottom:1px solid var(--line); vertical-align:top;}
+  td:first-child{white-space:nowrap;}
+
+  .page{page-break-before:always;}
+  .titolone{font-size:26pt; font-weight:800; color:var(--ink); letter-spacing:-.02em;
+            margin:0 0 2mm;}
+  .occhiello{font-size:9pt; letter-spacing:.2em; text-transform:uppercase; color:var(--oro);
+             margin:0 0 2mm; font-weight:700;}
+
+code{font-family:var(--sans); font-weight:700; color:var(--ink);}a{color:var(--oro); text-decoration:none;}.ref{margin:0 0 5mm;}.btn{display:inline-block; background:var(--giallo); color:var(--ink) !important; font-weight:700; font-size:9.5pt; padding:1.8mm 4.5mm; border-radius:1.5mm; text-decoration:none; border:1px solid #E2D000;}.ref .rest{display:block; font-size:9.5pt; color:var(--muted); margin-top:2mm;}.ref .u{display:block; font-size:7.5pt; color:var(--muted); margin-top:1.5mm; word-break:break-all;}ol{margin:0 0 3mm; padding-left:6mm;}
+</style></head><body>
+<div class="cover">
+  <p class="kicker">Veloce Digital &nbsp;·&nbsp; Piano contenuti</p>
+  <h1>Teresa<br>Chiuduno</h1>
+  <p class="sub">I copioni del secondo shooting</p>
+  <p class="meta">Dieci copioni &nbsp;·&nbsp; Un format nuovo &nbsp;·&nbsp; Una giornata di riprese</p>
+  <div class="foot"><span>Settembre 2026</span><span>Davide · 331 204 3165</span></div>
+</div>
+<p>Documento di lavoro condiviso tra <strong>Veloce Digital</strong> e <strong>Teresa Chiuduno</strong>. Contiene cosa si gira, in che ordine, cosa serve e i copioni completi.</p>
+<p>Secondo dei due shooting del mese. Il primo è stato il <strong>3 settembre</strong> (dieci copioni, documento a parte): qui non si ripete nessuno di quei video.</p>
+<p><strong>Data delle riprese</strong>: <span class="vuoto"></span> · <strong>Presenti in scena</strong>: Chiara, Anna e un ragazzo (lo fa uno di noi, non serve che lo trovate voi).</p>
+<p><strong>Dieci copioni</strong>, più un <strong>nuovo format ripetibile</strong> da usare tutte le volte che c&#x27;è un prodotto da spingere e non c&#x27;è un&#x27;idea dedicata. Gli spazi <span class="vuoto"></span> vanno compilati prima di girare: sono quasi tutti prezzi.</p>
+<p>Le idee arrivano dal vocale di Davide del 22/09 e dai riferimenti che ha mandato. Dove il copione era già scritto da lui, <strong>è rimasto come lo ha scritto</strong>: qui sono solo assegnate le battute e i tempi.</p>
+<h2 style="margin-top:8mm">Le due protagoniste</h2>
+<p><strong>Chiara</strong> apre e chiude. Battuta pronta, maliziosa. È lei che tiene i primi tre secondi e porta a casa l&#x27;ultima riga.</p>
+<p><strong>Anna</strong> dice la verità. Diretta, sfacciata, senza giri di parole. È lei che spiega, che dà ragione all&#x27;obiezione, che dice la cosa che un negozio normalmente non direbbe.</p>
+<p>Regola pratica: <strong>se la battuta è spinta la dice Anna, se è sottile la dice Chiara.</strong> Non è un dettaglio di stile. La stessa frase detta da Anna suona come esperienza, detta da Chiara suona ammiccante: sono due registri diversi e uno dei due è più rischioso.</p>
+<p><strong>Il ragazzo</strong>, dove compare, è una comparsa: entra, dice due righe, esce. Lo fa uno di noi.</p>
+<h2 style="margin-top:8mm">Cinque regole valide per tutti i video</h2>
+<ol><li>Nei <strong>primi 3 secondi</strong> non si vede il prodotto. Si vede un problema o una faccia.</li><li>Il <strong>prezzo si dice ad alta voce</strong>, mai solo in didascalia.</li><li>La <strong>battuta finale è l&#x27;ultimo fotogramma.</strong> Dopo, stop. Non si aggiunge niente.</li><li>Ogni video deve funzionare per chi non vi ha mai visto: niente riferimenti a video precedenti, niente battute interne.</li><li><strong>Ogni video si chiude due volte.</strong> Stessa scena, due versioni di fila, cambia solo l&#x27;ultima riga.</li></ol>
+<h2 style="margin-top:8mm">La doppia chiusura</h2>
+<p>Si girano <strong>una dietro l&#x27;altra, senza rifare nient&#x27;altro</strong>: stessa posizione, stessa luce, si ripete solo la battuta finale.</p>
+<table><thead><tr><th>Dove va il video</th><th>Come si chiude</th></tr></thead><tbody><tr><td><strong>Instagram</strong></td><td>"Lo trovate sul sito, <strong>link in bio</strong>."</td></tr><tr><td><strong>TikTok</strong></td><td>"<strong>Carrellino arancione</strong> qui sotto."</td></tr></tbody></table>
+<p>Due secondi di lavoro in più per video, e raddoppiano le destinazioni utili.</p>
+<h2 style="margin-top:8mm">Piano della giornata</h2>
+<p>Sette blocchi, ordinati per <strong>postazione</strong>, così la camera si sposta il meno possibile. Dentro ogni blocco i video si girano di fila senza rifare le luci.</p>
+<table><thead><tr><th>Blocco</th><th>Postazione</th><th>Video</th><th>Chi serve</th></tr></thead><tbody><tr><td><strong>1</strong></td><td>Muro liscio / angolo neutro</td><td>2 · Camice e commento (maschera capelli) + lo stampo da rigirare</td><td>Anna o Chiara, una alla volta</td></tr><tr><td><strong>2</strong></td><td>Espositore profumi</td><td>4 · Equivalenze "se vuoi questo" · 5 · "Ho 300 euro"</td><td>Chiara + Anna, ragazzo nel 5</td></tr><tr><td><strong>3</strong></td><td>Bancone</td><td>6 · Tris LPDO · 7 · Tris LPDO versione spinta</td><td>Chiara + Anna</td></tr><tr><td><strong>4</strong></td><td>Camerino</td><td>3 · Il tailleur che non le sta mai bene</td><td>Chiara + Anna</td></tr><tr><td><strong>5</strong></td><td>Vetrina gioielli</td><td>8 · "Devi essere più aggressiva"</td><td>Chiara + Anna + ragazzo</td></tr><tr><td><strong>6</strong></td><td>Espositore borse</td><td>10 · "Quanto costa questa borsa?"</td><td>Chiara + Anna + ragazzo</td></tr><tr><td><strong>7</strong></td><td>Ingresso e giro negozio</td><td>1 · "Chiuduno è un paese sperduto?" · 9 · "Devi flirtare un po&#x27;"</td><td>Chiara + Anna, ragazzo nel 9</td></tr></tbody></table>
+<p><strong>Consigli sull&#x27;ordine.</strong> Il blocco 1 per primo: il camice si mette una volta sola e in quella mezz&#x27;ora si girano <strong>tutte</strong> le puntate della rubrica, anche quelle che pubblicherete tra un mese. I blocchi 2 e 3 stanno attaccati, sono entrambi profumi e si gira senza spostare niente. Il ragazzo serve nei blocchi 2, 5, 6 e 7: conviene concentrarli e liberarlo. Il blocco 7 va per ultimo, quando il negozio è già "vissuto" e in ordine.</p>
+<h2 style="margin-top:8mm">Cosa serve, prima di iniziare</h2>
+<table><thead><tr><th>Serve</th><th>Per quale video</th></tr></thead><tbody><tr><td><strong>Un camice bianco</strong> (o casacca da farmacia)</td><td>Video 2 e tutte le puntate della rubrica</td></tr><tr><td><strong>Uno sfondo sempre uguale</strong>: muro liscio, niente scaffali dietro</td><td>Video 2 e la rubrica</td></tr><tr><td>La <strong>maschera capelli Fino ancora incartata</strong>, non aperta</td><td>Video 2</td></tr><tr><td><strong>Una ciocca di capelli rovinati</strong> da far vedere, o una foto prima</td><td>Video 2</td></tr><tr><td><strong>Cinque o sei capi</strong>, tra cui due o tre che vestono palesemente male</td><td>Video 3</td></tr><tr><td>La <strong>lista delle equivalenze</strong>: quale profumo equivale a quale originale</td><td>Video 4 e 5</td></tr><tr><td><strong>Banconote vere</strong>, 300 euro in mano al ragazzo</td><td>Video 5. La carta si vede</td></tr><tr><td><strong>Mousse doccia, crema corpo e acqua profumata LPDO della stessa fragranza</strong></td><td>Video 6 e 7</td></tr><tr><td><strong>Una collana AMEN</strong>, in due misure se esistono</td><td>Video 8</td></tr><tr><td><strong>Una borsa disponibile in più colori</strong>, tutti tirati fuori</td><td>Video 10</td></tr></tbody></table>
+<h2 style="margin-top:8mm">I prezzi da compilare</h2>
+<p>Il prezzo detto ad alta voce è il centro di questo tipo di contenuto. Sono gli unici spazi <span class="vuoto"></span> che restano da riempire.</p>
+<table><thead><tr><th>Video</th><th>Cosa serve</th></tr></thead><tbody><tr><td>2 · Maschera capelli</td><td>Prezzo, e quante applicazioni rende una confezione</td></tr><tr><td>4 · Equivalenze</td><td>Almeno tre coppie originale → equivalenza, con i due prezzi</td></tr><tr><td>5 · "Ho 300 euro"</td><td>Prezzo del profumo, e quanto resta di resto su 300</td></tr><tr><td>6 e 7 · Tris LPDO</td><td>I tre prezzi singoli e il prezzo del tris. <strong>E se il tris supera i 79 euro</strong>, perché in quel caso la spedizione è gratis e va detto</td></tr><tr><td>8 · Collana AMEN</td><td>Prezzo, e se esiste in più misure</td></tr><tr><td>10 · Borsa</td><td>Prezzo, quanti colori, e se ci sono tutti online</td></tr></tbody></table>
+<h2 style="margin-top:8mm">Una nota sulla pubblicazione</h2>
+<p>I video <strong>3, 8 e 10</strong> riguardano abbigliamento, gioielli e borse. Si girano senza problemi, ma vanno pubblicati <strong>quando quei prodotti sono online sullo shop</strong>: mandare traffico su articoli non acquistabili spreca il contenuto migliore che abbiamo.</p>
+<p>Il video <strong>7</strong> ha il registro più spinto del pacchetto. È scritto così su richiesta vostra e resta com&#x27;è, ma tenetelo come <strong>secondo giro</strong>: si gira subito dopo il video 6, stessa postazione, e si decide dopo quale dei due pubblicare. Su Instagram il linguaggio esplicito può costare copertura, su TikTok ancora di più.</p>
+<div class="page"></div>
+<p class="occhiello">Copione 1</p>
+<h2><span class="num">"CHIUDUNO È UN PAESE SPERDUTO?"</span> — il negozio e il sito</h2>
+<p class="scheda"><strong>Dove</strong>: ingresso e giro negozio · <strong>Chi</strong>: Chiara + Anna · <strong>Durata</strong>: 40 sec</p>
+<p class="ref"><a class="btn" href="https://www.instagram.com/reel/DZNYI6cu5Ew/?stkn=MTlsOGJvdmJxc2hpNw==">&#9654;&nbsp; Guarda il reel</a><span class="rest">"è vero che [paese] è sperduto?": si difende il paese e nel frattempo si elenca cosa ci trovi.</span><span class="u">https://www.instagram.com/reel/DZNYI6cu5Ew/?stkn=MTlsOGJvdmJxc2hpNw==</span></p>
+<p>Il testo è quello scritto da Davide, <strong>non è stato riscritto</strong>: qui sono solo divise le battute e messi i tempi. È il video che annuncia il sito, quindi se ne gira uno solo e va bene così.</p>
+<p class="scheda"><strong>Serve</strong>: niente di particolare. Meglio girarlo a negozio in ordine e con la luce del mattino.</p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-5 <span>· gancio</span></span>
+<p class="intro" style="font-size:9.8pt">Chiara davanti all&#x27;insegna o sulla porta, dritta in camera, tono polemico</p>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "È vero che <strong>Chiuduno</strong> è un paese sperduto in provincia di Bergamo?"</p></div>
+</div><div class="beat"><span class="tc">5-9 <span>· rilancio</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> <em>(entra in campo)</em> "Attenti a cosa dite."</p><p class="r"><span class="chi">CHIARA:</span> "Però qui c&#x27;è <strong>Teresa Chiuduno</strong>."</p></div>
+</div><div class="beat"><span class="tc">9-24 <span>· cosa ci trovi</span></span>
+<p class="intro" style="font-size:9.8pt">tre stacchi secchi, una cosa per stacco, camera che si muove dentro il negozio</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> <em>(espositore profumi)</em> "Abbiamo portato profumi arabi. Originali, non come tanti di voi."</p><p class="r"><span class="chi">CHIARA:</span> <em>(zona abbigliamento)</em> "Abbigliamento nuovo ogni settimana."</p><p class="r"><span class="chi">ANNA:</span> <em>(vetrina gioielli)</em> "Gioielli di tutti i <strong>tipi</strong>."</p></div>
+</div><div class="beat"><span class="tc">24-31 <span>· il colpo</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "E te lo portiamo fino a casa tua."</p><p class="r"><span class="chi">ANNA:</span> "Cioè non noi. Il corriere."</p></div>
+</div><div class="beat"><span class="tc">31-38 <span>· il sito</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Ordina dal nuovo sito <strong>teresachiuduno.it</strong>. Stessi prezzi che trovi in negozio, ma direttamente a casa tua."</p></div>
+</div><div class="beat"><span class="tc">38-42 <span>· chiusura</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Se non trovi qualcosa sul sito, scrivici. Abbiamo prodotti nuovi ogni giorno."</p><p class="r"><span class="chi">CHIARA:</span> <em>(ultima riga, in camera)</em> "Sperduto un corno."</p></div>
+<p><em>(Regia: il nome del sito va anche scritto a schermo mentre Chiara lo dice. È l&#x27;unica informazione del video che nessuno si ricorda a orecchio.)</em></p>
+</div><h3>CAPTION</h3>
+<div class="nota"><p class="r" style="margin:0 0 1mm">È vero che Chiuduno è un paese sperduto in provincia di Bergamo? Attenti a cosa dite.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">🧴 Profumi arabi originali 👗 Abbigliamento nuovo ogni settimana 💍 Gioielli di tutti i tipi</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">E te lo portiamo fino a casa tua. Cioè: il corriere. Ordina su <strong>teresachiuduno.it</strong>, stessi prezzi del negozio. Non trovi quello che cerchi? Scrivici, arrivano prodotti nuovi ogni giorno.</p></div>
+<div class="page"></div>
+<p class="occhiello">Copione 2</p>
+<h2><span class="num">NUOVO FORMAT</span> — CAMICE E COMMENTO</h2>
+<p><strong>La rubrica.</strong> Camice bianco, un commento forte che compare <strong>sopra la testa</strong>, e il prodotto che risolve quel problema. Si apre in camera e si descrive in tre righe.</p>
+<p class="scheda"><strong>Dove</strong>: muro liscio, niente scaffali dietro · <strong>Chi</strong>: una alla volta · <strong>Durata</strong>: 25-35 sec</p>
+<p class="ref"><a class="btn" href="https://www.tiktok.com/@x2marco">&#9654;&nbsp; Guarda il profilo di @x2marco</a><span class="rest">è il modo di stare in camera da copiare: ritmo alto, una cosa per volta, prezzo sempre detto.</span><span class="u">https://www.tiktok.com/@x2marco</span></p>
+<p><strong>A cosa serve</strong>: è il format da usare <strong>tutte le volte che c&#x27;è un prodotto da spingere e non c&#x27;è un&#x27;idea dedicata.</strong> Non serve scrivere niente di nuovo: serve un commento e un prodotto.</p>
+<p><strong>Tre condizioni perché funzioni</strong>, e sono quelle che la rendono una rubrica invece che un video singolo:</p>
+<ol><li><strong>Stesso camice e stesso sfondo ogni volta.</strong> Alla terza uscita la gente riconosce il format prima di capire di cosa parlate</li><li><strong>Il commento deve essere vero.</strong> Uno inventato e riconoscibile brucia esattamente l&#x27;autorità che il camice costruisce. Le domande che vi fanno davvero bastano e avanzano</li><li><strong>Si descrive cosa fa il prodotto, mai cosa cura.</strong> Il camice è una gag, non un camice vero: sui cosmetici le promesse di tipo medico non si possono fare</li></ol>
+<p><strong>Chi lo indossa</strong>: se il commento è spinto o la risposta è scomoda, <strong>Anna</strong>. Se è una battuta, <strong>Chiara</strong>.</p>
+<div class="page"></div>
+<p class="occhiello">Copione 2A</p>
+<h2><span class="num">Prima puntata</span> — Maschera capelli Fino</h2>
+<p class="scheda"><strong>Serve</strong>: la maschera <strong>ancora incartata</strong> (l&#x27;unboxing è metà del video) e dei capelli rovinati da far vedere, anche solo in foto. <strong>Da compilare</strong>: prezzo <span class="vuoto"></span> · quante applicazioni rende una confezione <span class="vuoto"></span></p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-4 <span>· il commento</span></span>
+<p class="intro" style="font-size:9.8pt">Anna in camice, ferma, in silenzio. Il commento compare sopra la testa e si sente letto a voce.</p>
+
+<div class="righe"><p class="r"><em>(testo a schermo)</em> <strong>"I miei capelli sembrano una scopa, come devo fare?"</strong></p><p class="r"><span class="chi">ANNA:</span> <em>(guarda il commento, poi la camera)</em> "Allora. Sediamoci."</p></div>
+</div><div class="beat"><span class="tc">4-12 <span>· la diagnosi</span></span>
+<p class="intro" style="font-size:9.8pt">tono da referto, non da commessa</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Non è che hai i capelli rovinati. Hai i capelli <strong>vuoti</strong>. Mare, piastra, tinta: ti hanno portato via tutto quello che c&#x27;era dentro, e quello che resta è la paglia."</p><p class="r">"Per questo si spezzano quando li pettini."</p></div>
+</div><div class="beat"><span class="tc">12-22 <span>· l&#x27;unboxing</span></span>
+<p class="intro" style="font-size:9.8pt">apre la confezione in camera, senza fretta</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> <em>(scarta)</em> "Questa è una maschera giapponese, effetto specchio."</p><p class="r"><em>(apre, ne prende un po&#x27; con le dita, la fa vedere da vicino)</em> "Guarda che roba è. Questa non è una crema, è una pasta."</p><p class="r">"Si mette sui capelli <strong>bagnati e strizzati</strong>, dalle orecchie in giù, mai sulla radice. Dieci minuti. Si risciacqua."</p></div>
+</div><div class="beat"><span class="tc">22-30 <span>· prodotto e prezzo</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "<span class="vuoto"></span> euro, e ci fai <span class="vuoto"></span> applicazioni."</p><p class="r">"Non ti ricresce niente: quello che è rotto è rotto. Ti si richiude il capello, quindi non si spezza più e la luce torna."</p></div>
+</div><div class="beat"><span class="tc">30-35 <span>· chiusura fissa della rubrica</span></span>
+<p class="intro" style="font-size:9.8pt">questa non cambia mai, è la firma del format</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA (Instagram):</span> "Prossimo commento, prossimo problema. Scriveteli qui sotto. La maschera è sul sito, link in bio."</p><p class="r"><span class="chi">ANNA (TikTok):</span> "Prossimo commento, prossimo problema. Scriveteli qui sotto. La maschera è nel carrellino arancione."</p></div>
+</div><h3>CAPTION</h3>
+<div class="nota"><p class="r" style="margin:0 0 1mm">"I miei capelli sembrano una scopa." Diagnosi: non sono rovinati, sono <strong>vuoti</strong>.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">🇯🇵 Maschera giapponese effetto specchio 💧 Sui capelli bagnati e strizzati, dalle orecchie in giù ⏱️ 10 minuti, si risciacqua</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm"><span class="vuoto"></span>€, <span class="vuoto"></span> applicazioni. Link in bio.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Scrivete il vostro problema nei commenti: il prossimo lo risolviamo in video.</p></div>
+<div class="page"></div>
+<p class="occhiello">Copione 2B</p>
+<h2><span class="num">Lo stampo</span> — da rigirare con qualsiasi prodotto</h2>
+<p>Questo è lo schema vuoto. <strong>Il giorno dello shooting conviene girarne tre o quattro di fila</strong>, finché il camice è addosso e la luce è pronta: sono le puntate delle settimane successive e costano mezz&#x27;ora in tutto.</p>
+<table><thead><tr><th>Secondi</th><th>Cosa si dice</th></tr></thead><tbody><tr><td><strong>0-4</strong></td><td>Il commento compare sopra la testa. Una riga di reazione, niente di più</td></tr><tr><td><strong>4-12</strong></td><td><strong>La diagnosi.</strong> Perché il problema succede. Mai "questo prodotto è fantastico"</td></tr><tr><td><strong>12-22</strong></td><td><strong>Si apre il prodotto in camera</strong> e si spiega come si usa. Il gesto vale più della frase</td></tr><tr><td><strong>22-30</strong></td><td><strong>Prezzo ad alta voce</strong> e cosa succede davvero usandolo</td></tr><tr><td><strong>30-35</strong></td><td>Chiusura fissa: <em>"Prossimo commento, prossimo problema. Scriveteli qui sotto."</em></td></tr></tbody></table>
+<p><strong>Sei commenti già pronti, tutti presi da domande che vi fanno davvero:</strong></p>
+<ul><li>"Ma questi profumi durano o dopo due ore non sento più niente?"</li><li>"Il gioiello si annerisce?"</li><li>"Ho la pelle grassa, tutte le creme mi fanno lucido. Che faccio?"</li><li>"Mi si accumula il correttore sotto gli occhi e sembro più vecchia."</li><li>"Ho speso 80 euro di crema coreana e non ho visto niente."</li><li>"Sono sempre uguale in foto: cosa metto che si vede?"</li></ul>
+<p><strong>Tre controlli prima di girarne uno nuovo:</strong></p>
+<ul><li><strong>C&#x27;è qualcosa da aprire o da mostrare?</strong> Se il prodotto non si può mostrare in azione, questo stampo non è quello giusto</li><li><strong>Il problema l&#x27;ha chiesto qualcuno?</strong> Se non l&#x27;ha mai chiesto nessuno, probabilmente non interessa a nessuno</li><li><strong>Sapete il prezzo?</strong> Se non si può dire, il video perde il pezzo che vende</li></ul>
+<div class="page"></div>
+<p class="occhiello">Copione 3</p>
+<h2><span class="num">TAILLEUR</span> — "Questo mi fa grassa"</h2>
+<p class="scheda"><strong>Dove</strong>: camerino e zona abbigliamento · <strong>Chi</strong>: Chiara (cliente) + Anna (commessa) <strong>Durata</strong>: 35-40 sec</p>
+<p class="ref"><a class="btn" href="https://www.instagram.com/reel/DZ-DP1qDY4v/?stkn=MTMwbmV3NGNqZWs2Yw==">&#9654;&nbsp; Guarda il reel</a><span class="rest">la commessa che ne fa provare uno dopo l&#x27;altro finché non esplode.</span><span class="u">https://www.instagram.com/reel/DZ-DP1qDY4v/?stkn=MTMwbmV3NGNqZWs2Yw==</span></p>
+<p>L&#x27;idea è di Davide ed è rimasta com&#x27;è. <strong>Chiara fa la cliente che non va mai bene niente, Anna la commessa che tiene duro e alla fine la manda a quel paese.</strong> I ruoli vanno in quest&#x27;ordine: la pazienza che si rompe funziona su Anna, su Chiara sembrerebbe un capriccio.</p>
+<p class="scheda"><strong>Serve</strong>: cinque o sei capi, tra cui due o tre che vestono <strong>palesemente male</strong>. Camera <strong>ferma nello stesso punto</strong> per tutta la sequenza: è il confronto a fare il video.</p>
+<p class="scheda"><strong>Da compilare</strong>: prezzo del capo finale <span class="vuoto"></span> · taglie disponibili <span class="vuoto"></span></p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-4 <span>· gancio</span></span>
+<p class="intro" style="font-size:9.8pt">Anna fuori dal camerino con un tailleur in mano, Chiara esce</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Ecco. Cosa pensi di questo tailleur?"</p><p class="r"><span class="chi">CHIARA:</span> <em>(si guarda mezzo secondo)</em> "Questo mi fa grassa."</p></div>
+</div><div class="beat"><span class="tc">4-22 <span>· la sequenza</span></span>
+<p class="intro" style="font-size:9.8pt">cinque cambi, ognuno dura tre secondi. Chiara esce, una riga, rientra. Anna le passa il capo successivo sempre più velocemente.</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Aspetta, questo."</p><p class="r"><span class="chi">CHIARA:</span> "Questo mi fa larga."</p><p class="r"><span class="chi">ANNA:</span> "Questo."</p><p class="r"><span class="chi">CHIARA:</span> "Questo mi fa vecchia."</p><p class="r"><span class="chi">ANNA:</span> "Questo."</p><p class="r"><span class="chi">CHIARA:</span> "Questo mi fa le spalle."</p><p class="r"><span class="chi">ANNA:</span> <em>(già con il successivo in mano)</em> "Questo."</p><p class="r"><span class="chi">CHIARA:</span> "Questo è uguale a quello di prima."</p><p class="r"><span class="chi">ANNA:</span> "Non è uguale."</p><p class="r"><span class="chi">CHIARA:</span> "È uguale."</p></div>
+<p><em>(Regia: il ritmo è tutto. I cambi si montano stretti, si taglia sul movimento. La pila di capi scartati deve crescere in campo: è il contatore visivo della pazienza di Anna.)</em></p>
+</div><div class="beat"><span class="tc">22-32 <span>· prodotto e prezzo</span></span>
+<p class="intro" style="font-size:9.8pt">Anna cambia tono, si ferma, glielo mette addosso</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Questo. <span class="vuoto"></span> euro, ce l&#x27;abbiamo dalla <span class="vuoto"></span>. Non ti fa grassa, non ti fa vecchia, non ti fa le spalle. Mettitelo."</p><p class="r"><span class="chi">CHIARA:</span> <em>(pausa, si guarda allo specchio)</em> "...Mi fa grassa."</p></div>
+</div><div class="beat"><span class="tc">32-38 <span>· battuta</span></span>
+<p class="intro" style="font-size:9.8pt">ultimo fotogramma</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> <em>(in camera, piatta)</em> "Vaffanculo."</p></div>
+<p><em>(Se preferite tenerlo più leggero, la riga alternativa è: <strong>"Fuori dal camerino."</strong> Stessa risata, zero rischio di copertura limitata. Giratele tutte e due, si decide dopo.)</em></p>
+<p><strong>Doppia chiusura</strong>, da mettere subito prima della battuta:</p>
+<div class="righe"><p class="r"><span class="chi">ANNA (Instagram):</span> "È sul sito, link in bio."</p><p class="r"><span class="chi">ANNA (TikTok):</span> "È nel carrellino arancione qui sotto."</p></div>
+</div><h3>CAPTION</h3>
+<div class="nota"><p class="r" style="margin:0 0 1mm">POV: lavori in un negozio di abbigliamento.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Tailleur <span class="vuoto"></span>€, taglie <span class="vuoto"></span>. Link in bio.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Ditecelo nei commenti: siete più Chiara o più Anna?</p></div>
+<div class="page"></div>
+<p class="occhiello">Copione 4</p>
+<h2><span class="num">PROFUMI</span> — "Se vuoi questo, prendi questo"</h2>
+<p class="scheda"><strong>Dove</strong>: espositore profumi · <strong>Chi</strong>: Anna (Chiara entra in chiusura) · <strong>Durata</strong>: 35 sec</p>
+<p>Le equivalenze spiegate una per una. È il format più semplice che esista e funziona perché chi guarda cerca <strong>il suo</strong> profumo, e per sapere se c&#x27;è deve arrivare in fondo.</p>
+<p class="scheda"><strong>Serve</strong>: le boccette allineate sul banco, a coppie. <strong>Da compilare</strong>: almeno <strong>tre coppie</strong>, con il prezzo dell&#x27;originale e il vostro.</p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-4 <span>· gancio</span></span>
+<p class="intro" style="font-size:9.8pt">Anna in camera, le boccette già sul banco</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Quello che usi tu, da noi costa un terzo. Ti faccio vedere."</p></div>
+</div><div class="beat"><span class="tc">4-26 <span>· le tre coppie</span></span>
+<p class="intro" style="font-size:9.8pt">tre round da sette secondi, ritmo secco. Per ogni coppia: mano che prende l&#x27;originale, stacco, mano che appoggia l&#x27;equivalenza accanto.</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Se usi <span class="vuoto"></span>, che sta sui <span class="vuoto"></span> euro, tu prendi <strong>questo</strong>. <span class="vuoto"></span> euro."</p><p class="r"><span class="chi">ANNA:</span> "Se usi <span class="vuoto"></span>, <span class="vuoto"></span> euro: questo. <span class="vuoto"></span> euro."</p><p class="r"><span class="chi">ANNA:</span> "E se usi <span class="vuoto"></span>, e quello lo riconosco da lontano: questo. <span class="vuoto"></span> euro."</p></div>
+<p><em>(Regia: le boccette non si nascondono e non si gira l&#x27;etichetta. Il gesto è sempre lo stesso in tutti e tre i round, cambia solo il prodotto: è la ripetizione che rende il video leggibile.)</em></p>
+</div><div class="beat"><span class="tc">26-32 <span>· il punto</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Non è lo stesso profumo, è la <strong>stessa famiglia</strong>. Lo senti uguale addosso e dura uguale. Cambia la scatola e cambia quanto paghi la scatola."</p></div>
+</div><div class="beat"><span class="tc">32-38 <span>· invito e chiusura</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> <em>(entra)</em> "Scriveteci qui sotto quale usate voi e vi diciamo qual è il vostro."</p><p class="r"><span class="chi">CHIARA (Instagram):</span> "Ci sono tutti sul sito, link in bio."</p><p class="r"><span class="chi">CHIARA (TikTok):</span> "Ci sono tutti nel carrellino arancione."</p></div>
+<div class="nota"><strong>Nota di produzione.</strong> Dire il nome dell&#x27;originale a voce è normale e lo fanno tutti. <strong>Nella didascalia scritta conviene non scriverli</strong>: i nomi di marca in testo sono quelli che fanno scattare le segnalazioni automatiche. In caption basta "il vostro preferito" e l&#x27;invito a scrivere nei commenti, che tra l&#x27;altro è anche il motivo per cui il video raccoglie interazioni.</div>
+</div><h3>CAPTION</h3>
+<div class="nota"><p class="r" style="margin:0 0 1mm">Quello che usi tu, qui costa un terzo.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Non è lo stesso profumo: è la stessa famiglia. Lo senti uguale addosso, dura uguale, cambia quanto paghi la scatola.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Da <span class="vuoto"></span>€. Scrivi nei commenti quale usi e ti diciamo qual è il tuo. Link in bio.</p></div>
+<div class="page"></div>
+<p class="occhiello">Copione 5</p>
+<h2><span class="num">PROFUMI</span> — "Ho trecento euro per un profumo"</h2>
+<p class="scheda"><strong>Dove</strong>: espositore profumi e bancone · <strong>Chi</strong>: ragazzo (lo fa uno di noi) + Chiara + Anna <strong>Durata</strong>: 35-40 sec</p>
+<p>Stesso tema del video 4, esecuzione opposta: qui l&#x27;equivalenza non si spiega, <strong>si vede</strong>, perché il negozio rifiuta dei soldi. È l&#x27;idea di Davide ed è la più forte delle due, perché il gesto di ridare indietro le banconote è un&#x27;immagine e non un ragionamento.</p>
+<p class="scheda"><strong>Serve</strong>: <strong>trecento euro in banconote vere.</strong> La carta finta si vede subito. <strong>Da compilare</strong>: prezzo del profumo <span class="vuoto"></span> · il resto che torna indietro <span class="vuoto"></span></p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-5 <span>· gancio</span></span>
+<p class="intro" style="font-size:9.8pt">il ragazzo entra, appoggia i soldi sul bancone, in fretta</p>
+
+<div class="righe"><p class="r"><span class="chi">RAGAZZO:</span> "Ho trecento euro e devo comprare un profumo. Mi serve quello buono."</p></div>
+</div><div class="beat"><span class="tc">5-12 <span>· il gesto</span></span>
+<p class="intro" style="font-size:9.8pt">Chiara conta, ne tiene poche e gli ridà indietro il resto</p>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> <em>(gli rimette le banconote in mano)</em> "Allora, questi te li riprendi. Me ne servono molti meno."</p><p class="r"><span class="chi">RAGAZZO:</span> "In che senso."</p></div>
+</div><div class="beat"><span class="tc">12-26 <span>· la spiegazione</span></span>
+<p class="intro" style="font-size:9.8pt">Anna entra con due boccette</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Nel senso che quello che vuoi tu costa trecento euro perché ci paghi il nome e la pubblicità in televisione."</p><p class="r"><em>(appoggia la seconda boccetta di fianco alla prima)</em> "Questo è la stessa famiglia. Stesse note, stessa durata addosso."</p><p class="r"><span class="chi">ANNA:</span> "<span class="vuoto"></span> euro. E ti restano <span class="vuoto"></span> euro in tasca."</p></div>
+</div><div class="beat"><span class="tc">26-33 <span>· la prova</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> <em>(gli spruzza sul polso)</em> "Annusa e dimmi la differenza."</p><p class="r"><span class="chi">RAGAZZO:</span> <em>(annusa)</em> "...Nessuna."</p><p class="r"><span class="chi">CHIARA:</span> "Appunto."</p></div>
+</div><div class="beat"><span class="tc">33-40 <span>· chiusura</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA (Instagram):</span> "Li trovate tutti sul sito, link in bio."</p><p class="r"><span class="chi">CHIARA (TikTok):</span> "Li trovate tutti nel carrellino arancione qui sotto."</p><p class="r"><span class="chi">ANNA:</span> <em>(guardando i soldi che gli sono rimasti in mano)</em> "Con quello che ti avanza portala anche a cena."</p></div>
+</div><h3>CAPTION</h3>
+<div class="nota"><p class="r" style="margin:0 0 1mm">È entrato con trecento euro. Gliene abbiamo ridati <span class="vuoto"></span>.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Non è lo stesso profumo, è la stessa famiglia: stesse note, stessa durata addosso. Quello che paghi in più è il nome.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm"><span class="vuoto"></span>€. Link in bio.</p></div>
+<div class="page"></div>
+<p class="occhiello">Copione 6</p>
+<h2><span class="num">TRIS LPDO</span> — "Mi duravano due ore"</h2>
+<p class="scheda"><strong>Dove</strong>: espositore profumi, poi bancone · <strong>Chi</strong>: Chiara + Anna · <strong>Durata</strong>: 30-35 sec</p>
+<p>Prodotto chiesto direttamente da Chiara: <strong>mousse doccia + crema corpo + acqua profumata della stessa fragranza</strong>, proposti insieme perché è la stratificazione a far durare il profumo. L&#x27;hook è quello scritto da Davide.</p>
+<p class="scheda"><strong>Serve</strong>: i tre prodotti della <strong>stessa fragranza</strong>, allineati sul bancone. <strong>Da compilare</strong>: i tre prezzi singoli <span class="vuoto"></span> · prezzo del tris <span class="vuoto"></span> · <strong>il tris supera i 79 euro?</strong> <code>sì / no</code> (se sì, la spedizione è gratis e va detto nel video)</p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-5 <span>· gancio</span></span>
+<p class="intro" style="font-size:9.8pt">Chiara dritta in camera, <strong>niente prodotto in mano</strong>, tono normale</p>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Tutti i profumi mi duravano al massimo due ore. Fino a quando non ho provato questo."</p></div>
+<p><em>(Regia: nessuno stacco nei primi tre secondi. Il volto e la frase, basta.)</em></p>
+</div><div class="beat"><span class="tc">5-14 <span>· il meccanismo</span></span>
+<p class="intro" style="font-size:9.8pt">Anna entra di fianco a lei</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "E poi date la colpa al profumo. Il profumo non c&#x27;entra niente."</p><p class="r"><span class="chi">CHIARA:</span> "Il problema è che ve lo spruzzate sulla pelle asciutta. Sulla pelle asciutta il profumo non ha niente a cui aggrapparsi, e se ne va in due ore."</p></div>
+</div><div class="beat"><span class="tc">14-24 <span>· i tre passaggi</span></span>
+<p class="intro" style="font-size:9.8pt">Anna appoggia i prodotti sul bancone uno alla volta, tre stacchi netti a ritmo</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Si fa in tre passaggi, tutti della stessa fragranza. Mousse doccia."</p><p class="r"><em>(stacco)</em> "Crema corpo."</p><p class="r"><em>(stacco)</em> "E sopra, l&#x27;acqua profumata."</p><p class="r"><span class="chi">CHIARA:</span> "Uno strato sopra l&#x27;altro. Così la fragranza si aggrappa e te la porti dietro tutto il giorno. Non due ore."</p></div>
+</div><div class="beat"><span class="tc">24-30 <span>· prodotto e prezzo</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Il tris completo è <span class="vuoto"></span> euro. <code>[E con il tris la spedizione è gratis.]</code>"</p></div>
+<p><em>(La frase tra parentesi si dice <strong>solo se</strong> i tre pezzi insieme superano i 79 euro. Va verificato prima di girare.)</em></p>
+<div class="righe"><p class="r"><span class="chi">CHIARA (Instagram):</span> "Lo trovate sul sito, link in bio."</p><p class="r"><span class="chi">CHIARA (TikTok):</span> "È nel carrellino arancione qui sotto."</p></div>
+</div><div class="beat"><span class="tc">30-35 <span>· battuta</span></span>
+<p class="intro" style="font-size:9.8pt">ultimo fotogramma</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> <em>(in camera, piatta)</em> "Finalmente qualcosa che dura più di due ore."</p><p class="r"><span class="chi">CHIARA:</span> "Anna. Il profumo."</p><p class="r"><span class="chi">ANNA:</span> "Ho detto il profumo."</p></div>
+</div><h3>CAPTION</h3>
+<div class="nota"><p class="r" style="margin:0 0 1mm">"Mi durano due ore." Non è colpa del profumo.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Sulla pelle asciutta la fragranza non ha niente a cui aggrapparsi. Si stratifica la stessa fragranza in tre passaggi: 🧴 Mousse doccia 🤍 Crema corpo ✨ Acqua profumata LPDO</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Tris completo <span class="vuoto"></span>€. Link in bio.</p></div>
+<div class="page"></div>
+<p class="occhiello">Copione 7</p>
+<h2><span class="num">TRIS LPDO</span> — la versione spinta</h2>
+<p class="scheda"><strong>Dove</strong>: stesso bancone del video 6 · <strong>Chi</strong>: Anna, Chiara in chiusura · <strong>Durata</strong>: 20-25 sec</p>
+<p>Stesso prodotto, stesso meccanismo, <strong>un solo hook diverso</strong>. Si gira <strong>subito dopo il 6</strong>, senza spostare niente: sono due minuti di lavoro in più e si decide dopo quale pubblicare.</p>
+<p>L&#x27;apertura è quella scritta da Davide ed è rimasta identica. <strong>La dice Anna</strong>: a cinquant&#x27;anni passa come schiettezza, su Chiara diventerebbe un altro registro.</p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-6 <span>· gancio</span></span>
+<p class="intro" style="font-size:9.8pt">Anna dritta in camera, tono confidenziale, come se stesse dando un consiglio a un&#x27;amica</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Ragazze, se anche voi prima di scopare con il vostro ragazzo avete paura che vi puzzi la bernarda, fate questa cosa."</p></div>
+</div><div class="beat"><span class="tc">6-16 <span>· i tre passaggi</span></span>
+<p class="intro" style="font-size:9.8pt">veloce, tre stacchi</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Mousse doccia, crema corpo e acqua profumata. Tutti e tre della stessa fragranza."</p><p class="r">"Uno strato sopra l&#x27;altro. Così non se ne va dopo due ore e non ci pensate più."</p></div>
+</div><div class="beat"><span class="tc">16-22 <span>· prezzo</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Il tris è <span class="vuoto"></span> euro."</p><p class="r"><span class="chi">ANNA (Instagram):</span> "Sul sito, link in bio."</p><p class="r"><span class="chi">ANNA (TikTok):</span> "Carrellino arancione qui sotto."</p></div>
+</div><div class="beat"><span class="tc">22-25 <span>· battuta</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> <em>(entra in campo, la guarda)</em> "Anna."</p><p class="r"><span class="chi">ANNA:</span> "Che c&#x27;è, è un consiglio."</p></div>
+<div class="nota"><strong>Come regolarsi.</strong> Il registro è quello che avete chiesto voi e il copione resta così. Due cose pratiche: su Instagram il parlato esplicito può costare copertura, su TikTok di più, e questo video <strong>non va messo in sponsorizzata</strong>. Se volete la stessa battuta senza il rischio, la riga alternativa è: <em>"Ragazze, se avete paura di non profumare abbastanza nei momenti sbagliati, fate questa cosa."</em> Giratele tutte e due, costa quindici secondi.</div>
+</div><h3>CAPTION</h3>
+<div class="nota"><p class="r" style="margin:0 0 1mm">Il trucco è stratificare la stessa fragranza: mousse doccia, crema corpo, acqua profumata. Non se ne va dopo due ore.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Tris <span class="vuoto"></span>€. Link in bio.</p></div>
+<div class="page"></div>
+<p class="occhiello">Veloce Digital</p>
+<h2>LE LEZIONI DI VENDITA DI ANNA — video 8 e 9</h2>
+<p>I due copioni che seguono sono <strong>la stessa rubrica</strong>: Anna insegna a Chiara come si vende, il consiglio è pessimo, Chiara lo esegue alla lettera e succede un disastro.</p>
+<p>Conviene trattarli come una serie e non come due video sciolti: stessa sigla, stessa struttura, stesso tipo di finale. È seriale per costruzione, perché i consigli sbagliati sono infiniti, e ogni puntata può vendere una categoria diversa (gioielli, profumi, borse, abbigliamento). Si girano <strong>di fila</strong>, cambia solo la postazione.</p>
+<p>Struttura fissa delle puntate:</p>
+<table><thead><tr><th>Secondi</th><th>Cosa succede</th></tr></thead><tbody><tr><td><strong>0-6</strong></td><td>Anna dà il consiglio a Chiara. Tono da chi la sa lunga</td></tr><tr><td><strong>6-9</strong></td><td>Chiara accetta: <em>"Dai, ci provo."</em></td></tr><tr><td><strong>9-14</strong></td><td>Entra il cliente con una richiesta normalissima</td></tr><tr><td><strong>14-25</strong></td><td>Chiara esegue il consiglio <strong>troppo alla lettera</strong>. Qui dentro sta il prezzo</td></tr><tr><td><strong>25-32</strong></td><td>Reazione del cliente e intervento di Anna</td></tr><tr><td><strong>32-38</strong></td><td>Battuta finale su Chiara, in primo piano</td></tr></tbody></table>
+<div class="page"></div>
+<p class="occhiello">Copione 8</p>
+<h2>"Devi essere più aggressiva con gli uomini"</h2>
+<p class="scheda"><strong>Dove</strong>: vetrina gioielli · <strong>Chi</strong>: Anna + Chiara + un ragazzo · <strong>Durata</strong>: 35-38 sec</p>
+<p class="ref"><a class="btn" href="https://www.instagram.com/reel/DdEwJ6Uu1Dr/?stkn=YjdlbmY2ZXoyODg=">&#9654;&nbsp; Guarda il reel</a><span class="rest">il venditore che aggredisce il cliente in italiano sgrammaticato: <em>"io so che tu sei single, però tu vuoi ragazza, però tu hai soldi, tu compra profumo"</em>. È il tono che Chiara deve provare a imitare quando dice "ci provo": una che ha capito male e ci mette troppa energia.</span><span class="u">https://www.instagram.com/reel/DdEwJ6Uu1Dr/?stkn=YjdlbmY2ZXoyODg=</span></p>
+<p>Copione di Davide, rimasto com&#x27;è. <strong>Da compilare</strong>: prezzo della collana AMEN <span class="vuoto"></span> · esiste in più misure? <code>sì / no</code></p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-6 <span>· il consiglio</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Devi essere più aggressiva per vendere, con gli uomini, Chiara! Per questo non vengono qui..."</p></div>
+</div><div class="beat"><span class="tc">6-9 <span>· chiara ci prova</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Dai, ci provo."</p></div>
+</div><div class="beat"><span class="tc">9-14 <span>· entra il ragazzo</span></span>
+<p class="intro" style="font-size:9.8pt">si avvicina alla vetrina, gentile, indica</p>
+
+<div class="righe"><p class="r"><span class="chi">RAGAZZO:</span> "Scusami, mi piaceva questa collanina AMEN. Ma c&#x27;è più piccola?"</p></div>
+</div><div class="beat"><span class="tc">14-25 <span>· chiara esegue</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> <em>(gliela mette al collo senza chiedere)</em> "No. Tu la prendi così. Sono <span class="vuoto"></span> euro. E stai zitto."</p><p class="r az">(sberla)</p></div>
+<p><em>(Regia: la sberla è finta e si vede che è finta. Si gira <strong>di spalle</strong>, il suono lo mettiamo in montaggio: viene più forte e non fa male a nessuno. Il prezzo va detto <strong>dentro</strong> la battuta, con lo stesso tono: è quello che rende il video vendibile invece che solo divertente.)</em></p>
+</div><div class="beat"><span class="tc">25-32 <span>· la reazione</span></span>
+
+<div class="righe"><p class="r"><span class="chi">RAGAZZO:</span> <em>(pausa, si guarda la collana addosso)</em> "...La prendo."</p><p class="r"><span class="chi">ANNA:</span> <em>(a bordo campo, soddisfatta)</em> "Brava."</p></div>
+</div><div class="beat"><span class="tc">32-38 <span>· battuta</span></span>
+<p class="intro" style="font-size:9.8pt">zoom su Chiara, primo piano, guarda in camera</p>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Tanto ti avrebbe tradito."</p></div>
+<p><em>(Battuta alternativa, se la collana è una Madonnina: <strong>"Tanto la Madonna perdona."</strong> Giratele tutte e due, si sceglie in montaggio.)</em></p>
+<p><strong>Doppia chiusura</strong>, sovrimpressa o detta da Anna mentre il ragazzo paga:</p>
+<div class="righe"><p class="r"><span class="chi">ANNA (Instagram):</span> "Le collane AMEN sono sul sito, link in bio."</p><p class="r"><span class="chi">ANNA (TikTok):</span> "Collane AMEN nel carrellino arancione."</p></div>
+</div><h3>CAPTION</h3>
+<div class="nota"><p class="r" style="margin:0 0 1mm">Anna insegna a vendere. Prima lezione: con gli uomini bisogna essere aggressive.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Collana AMEN <span class="vuoto"></span>€, in negozio a Chiuduno e sul sito. Link in bio.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Seconda lezione nel prossimo video.</p></div>
+<div class="page"></div>
+<p class="occhiello">Copione 9</p>
+<h2>"Quando entrano i ragazzi devi flirtare un po&#x27;"</h2>
+<p class="scheda"><strong>Dove</strong>: espositore profumi · <strong>Chi</strong>: Anna + Chiara + un ragazzo · <strong>Durata</strong>: 35 sec</p>
+<p class="ref"><a class="btn" href="https://www.instagram.com/reel/DcgL7pbISqF/?stkn=MXVnMGZ3dWdycnNnMg==">&#9654;&nbsp; Guarda il reel</a><span class="u">https://www.instagram.com/reel/DcgL7pbISqF/?stkn=MXVnMGZ3dWdycnNnMg==</span></p>
+<p>Seconda puntata della rubrica. L&#x27;apertura è quella scritta da Davide; da "Salve, mi servirebbe un profumo" in poi il copione <strong>è nostro</strong>, quindi è la parte su cui potete intervenire senza problemi.</p>
+<p class="scheda"><strong>Da compilare</strong>: prezzo del profumo <span class="vuoto"></span></p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-6 <span>· il consiglio</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Chiara, mi raccomando: quando entrano i ragazzi, per vendere di più devi flirtare un po&#x27;."</p></div>
+</div><div class="beat"><span class="tc">6-9 <span>· chiara ci prova</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Un po&#x27; quanto?"</p><p class="r"><span class="chi">ANNA:</span> "Un po&#x27;."</p></div>
+</div><div class="beat"><span class="tc">9-14 <span>· entra il ragazzo</span></span>
+
+<div class="righe"><p class="r"><span class="chi">RAGAZZO:</span> "Salve, mi servirebbe un profumo."</p><p class="r"><span class="chi">CHIARA:</span> <em>(troppo vicina, troppo subito)</em> "Per te o per la tua ragazza?"</p><p class="r"><span class="chi">RAGAZZO:</span> "...Per mia mamma."</p></div>
+</div><div class="beat"><span class="tc">14-26 <span>· chiara esagera</span></span>
+<p class="intro" style="font-size:9.8pt">non si ferma, e il prezzo esce qui</p>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> <em>(gli spruzza sul polso, gli tiene il braccio)</em> "Senti qua. Senti che roba."</p><p class="r"><em>(si avvicina ad annusare)</em> "Ti sta benissimo."</p><p class="r"><span class="chi">RAGAZZO:</span> "È per mia mamma."</p><p class="r"><span class="chi">CHIARA:</span> "<span class="vuoto"></span> euro. E te lo incarto io, personalmente."</p><p class="r"><span class="chi">RAGAZZO:</span> <em>(guarda Anna, cerca aiuto)</em></p></div>
+</div><div class="beat"><span class="tc">26-32 <span>· anna interviene</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> <em>(la sposta con una mano)</em> "Chiara. Vai di là."</p><p class="r"><span class="chi">ANNA (al ragazzo):</span> "Glielo incarto io. E tua mamma sarà contenta."</p><p class="r"><span class="chi">RAGAZZO:</span> <em>(sollevato)</em> "Grazie."</p></div>
+</div><div class="beat"><span class="tc">32-38 <span>· battuta</span></span>
+<p class="intro" style="font-size:9.8pt">primo piano su Chiara che guarda in camera</p>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Comunque l&#x27;ho venduto io."</p></div>
+<p><strong>Doppia chiusura</strong>, detta da Anna mentre incarta:</p>
+<div class="righe"><p class="r"><span class="chi">ANNA (Instagram):</span> "I profumi li trovate anche sul sito, link in bio."</p><p class="r"><span class="chi">ANNA (TikTok):</span> "Carrellino arancione qui sotto."</p></div>
+</div><h3>CAPTION</h3>
+<div class="nota"><p class="r" style="margin:0 0 1mm">Seconda lezione di Anna: con i ragazzi bisogna flirtare un po&#x27;.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Un po&#x27;. Non così.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Profumo <span class="vuoto"></span>€. Link in bio.</p></div>
+<div class="page"></div>
+<p class="occhiello">Copione 10</p>
+<h2><span class="num">BORSE</span> — "Quanto costa?" e poi li vuole tutti i colori</h2>
+<p class="scheda"><strong>Dove</strong>: espositore borse · <strong>Chi</strong>: Chiara + Anna + un cliente (lo fa uno di noi) <strong>Durata</strong>: 30-35 sec</p>
+<p class="ref"><a class="btn" href="https://www.instagram.com/reel/Dah5gDMMtUr/?stkn=emNtYXZpenFyczBw">&#9654;&nbsp; Guarda il reel</a><span class="u">https://www.instagram.com/reel/Dah5gDMMtUr/?stkn=emNtYXZpenFyczBw</span></p>
+<p>Il video vive su una scena che vi succede ogni giorno, ed è per questo che fa ridere chi ci lavora e chi ci entra. In più mostra una cosa che vende davvero: <strong>quanti colori avete.</strong></p>
+<p class="scheda"><strong>Serve</strong>: una borsa disponibile in <strong>più colori possibili</strong>, tutti tirati fuori e impilati durante la scena. La pila che cresce è il video.</p>
+<p class="scheda"><strong>Da compilare</strong>: prezzo <span class="vuoto"></span> · quanti colori <span class="vuoto"></span> · <strong>ci sono tutti sul sito?</strong> <code>sì / no</code></p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-5 <span>· gancio</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CLIENTE:</span> "Bella questa borsa. Quanto costa?"</p><p class="r"><span class="chi">CHIARA:</span> "<span class="vuoto"></span> euro."</p><p class="r"><span class="chi">CLIENTE:</span> <em>(annuisce)</em> "Bella."</p></div>
+</div><div class="beat"><span class="tc">5-24 <span>· i colori</span></span>
+<p class="intro" style="font-size:9.8pt">ogni richiesta è uno stacco, Anna esce di campo e rientra con la borsa</p>
+
+<div class="righe"><p class="r"><span class="chi">CLIENTE:</span> "Ce l&#x27;ha in nero?"</p><p class="r"><span class="chi">ANNA:</span> <em>(la appoggia)</em> "Nero."</p><p class="r"><span class="chi">CLIENTE:</span> "E in beige?"</p><p class="r"><span class="chi">ANNA:</span> "Beige."</p><p class="r"><span class="chi">CLIENTE:</span> "Bordeaux?"</p><p class="r"><span class="chi">ANNA:</span> "Bordeaux."</p><p class="r"><span class="chi">CLIENTE:</span> "Bianca?"</p><p class="r"><span class="chi">ANNA:</span> <em>(la appoggia sulla pila, senza più espressione)</em> "Bianca."</p><p class="r"><span class="chi">CLIENTE:</span> "Verde?"</p><p class="r"><span class="chi">ANNA:</span> "Verde."</p></div>
+<p><em>(Regia: camera ferma sul banco. Le borse si accumulano nell&#x27;inquadratura e Anna rientra sempre dallo stesso lato, sempre più velocemente. Alla quarta, la faccia di Anna è il contenuto.)</em></p>
+</div><div class="beat"><span class="tc">24-30 <span>· il finale</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CLIENTE:</span> "Perfetto. Allora ci penso."</p><p class="r az">(silenzio, tre secondi, nessuno si muove)</p></div>
+</div><div class="beat"><span class="tc">30-36 <span>· prezzo e chiusura</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> <em>(in camera, mentre Anna rimette a posto)</em> "<span class="vuoto"></span> euro, <span class="vuoto"></span> colori. Sono tutti lì."</p><p class="r"><span class="chi">CHIARA (Instagram):</span> "E sono tutti sul sito, così ci pensate da casa. Link in bio."</p><p class="r"><span class="chi">CHIARA (TikTok):</span> "E sono tutti nel carrellino arancione, così ci pensate da casa."</p></div>
+<p><strong>Battuta finale</strong>, ultimo fotogramma:</p>
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> <em>(fuori campo)</em> "Ci pensa."</p></div>
+</div><h3>CAPTION</h3>
+<div class="nota"><p class="r" style="margin:0 0 1mm">"Quanto costa?" <span class="vuoto"></span>€. "Ce l&#x27;ha in nero? E in beige? E bordeaux?"</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Ce l&#x27;abbiamo in <span class="vuoto"></span> colori. E ci sono tutti sul sito, così ci pensate da casa.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Taggate quella che fa sempre così. 🫠</p></div>
+<div class="page"></div>
+<p class="occhiello">Veloce Digital</p>
+<h2>Se avanza tempo</h2>
+<p>Tre cose da girare <strong>solo se la giornata gira bene</strong>, in quest&#x27;ordine. Nessuna richiede preparazione.</p>
+<ol><li><strong>Altre puntate del camice.</strong> È la cosa che rende di più a parità di tempo: il camice è già addosso, lo sfondo è già pronto, e ogni puntata è un video pubblicabile. Tre o quattro commenti dalla lista del punto 2B e sono tre o quattro settimane coperte.</li><li><strong>Terza lezione di Anna.</strong> Stessa struttura dei video 8 e 9, consiglio nuovo: <em>"Devi sempre dire che è l&#x27;ultimo rimasto"</em> — e Chiara lo dice di un espositore pieno.</li><li><strong>Il venditore aggressivo</strong>, preso di peso dal <a href="https://www.instagram.com/reel/DdEwJ6Uu1Dr/?stkn=YjdlbmY2ZXoyODg=">reel di riferimento</a>: quindici secondi, Anna in camera che vende in italiano sgrammaticato — <em>"io so che tu sei single, però tu vuoi ragazza, tu compra profumo"</em>. Funziona come video a sé e come sigla della rubrica.</li></ol>
+<div class="page"></div>
+<p class="occhiello">Veloce Digital</p>
+<h2>Cosa serve da voi prima di girare</h2>
+<p>Sono le uniche cose che bloccano qualcosa. Il resto si risolve in negozio.</p>
+<ul><li>☐ <strong>I prezzi</strong> della tabella a inizio documento. Sono nove numeri e senza quelli i video perdono il pezzo che vende</li><li>☐ <strong>La lista delle equivalenze</strong> dei profumi: quale vostro corrisponde a quale originale. Serve per i video 4 e 5</li><li>☐ <strong>Il tris LPDO supera i 79 euro?</strong> Se sì, nel video 6 entra la spedizione gratuita</li><li>☐ <strong>La collana AMEN esiste in più misure?</strong> Se sì, la battuta del video 8 regge meglio</li><li>☐ <strong>Quanti colori</strong> avete della borsa del video 10, e se sono tutti caricati sul sito</li><li>☐ Un <strong>camice bianco</strong>. Se non ce l&#x27;avete lo portiamo noi</li></ul>
+<div class="page"></div>
+<p class="occhiello">Veloce Digital</p>
+<h2>Riepilogo</h2>
+<table><thead><tr><th>#</th><th>Video</th><th>Postazione</th><th>Chi</th><th>Categoria</th></tr></thead><tbody><tr><td>1</td><td>"Chiuduno è un paese sperduto?"</td><td>ingresso e giro negozio</td><td>Chiara + Anna</td><td>negozio e sito</td></tr><tr><td>2</td><td>Camice e commento — maschera capelli</td><td>muro liscio</td><td>una sola</td><td>capelli</td></tr><tr><td>2B</td><td>Camice — stampo da rigirare</td><td>muro liscio</td><td>una sola</td><td>qualsiasi</td></tr><tr><td>3</td><td>"Questo mi fa grassa"</td><td>camerino</td><td>Chiara + Anna</td><td>abbigliamento</td></tr><tr><td>4</td><td>"Se vuoi questo, prendi questo"</td><td>espositore profumi</td><td>Anna + Chiara</td><td>profumi</td></tr><tr><td>5</td><td>"Ho trecento euro"</td><td>profumi e bancone</td><td>+ ragazzo</td><td>profumi</td></tr><tr><td>6</td><td>Tris LPDO, "mi duravano due ore"</td><td>bancone</td><td>Chiara + Anna</td><td>profumeria</td></tr><tr><td>7</td><td>Tris LPDO, versione spinta</td><td>bancone</td><td>Anna + Chiara</td><td>profumeria</td></tr><tr><td>8</td><td>"Devi essere più aggressiva"</td><td>vetrina gioielli</td><td>+ ragazzo</td><td>gioielli</td></tr><tr><td>9</td><td>"Devi flirtare un po&#x27;"</td><td>espositore profumi</td><td>+ ragazzo</td><td>profumi</td></tr><tr><td>10</td><td>"Quanto costa?" e tutti i colori</td><td>espositore borse</td><td>+ cliente</td><td>borse</td></tr></tbody></table>
+<p><strong>Due rubriche nascono da questa giornata</strong> e vale la pena tenerle in piedi anche nei mesi prossimi: <em>Camice e commento</em> (video 2) e <em>Le lezioni di vendita di Anna</em> (video 8 e 9). Sono l&#x27;unica cosa che trasforma dei video singoli in qualcosa che il pubblico aspetta.</p>
+<p>Per qualsiasi dubbio durante le riprese: <strong>Davide · 331 204 3165</strong>. Buone riprese.</p>
+</body></html>

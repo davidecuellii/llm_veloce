@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<title>INTERNO — Teresa Chiuduno, dove si rompe il funnel</title>
+<style>
+  @page { size: A4 portrait; margin: 16mm 15mm 14mm; }
+  @page :first { margin: 0; }
+
+  :root{
+    --ink:#202020; --body:#33322E; --muted:#6B6B6B; --line:#DAD8CF; --soft:#EFEDE6;
+    --giallo:#FFEE32; --oro:#8A7B00; --paper:#FFFFFF;
+    --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  body{margin:0; font-family:var(--sans); font-size:10.8pt; line-height:1.55;
+       color:var(--body); background:var(--paper);}
+
+  /* ---------- copertina ---------- */
+  .cover{background:#202020; color:#D6D6D6; height:297mm; width:100%;
+         padding:70mm 22mm 22mm; page-break-after:always; position:relative;}
+  .cover .kicker{font-size:9.5pt; letter-spacing:.22em; text-transform:uppercase; color:#8C8C8C; margin:0 0 14mm;}
+  .cover h1{font-size:40pt; line-height:1.02; letter-spacing:-.02em; color:var(--giallo);
+            margin:0 0 6mm; font-weight:800;}
+  .cover .sub{font-size:16pt; color:#D6D6D6; margin:0 0 3mm; font-weight:400;}
+  .cover .meta{font-size:11pt; color:#8C8C8C; margin:0;}
+  .cover .foot{position:absolute; bottom:22mm; left:22mm; right:22mm;
+               border-top:1px solid #3A3A3A; padding-top:5mm; font-size:9.5pt; color:#8C8C8C;
+               display:flex; justify-content:space-between;}
+
+  /* ---------- tipografia ---------- */
+  h2{font-size:17pt; line-height:1.15; letter-spacing:-.01em; color:var(--ink);
+     margin:0 0 2mm; font-weight:800;}
+  h2 .num{color:var(--oro);}
+  h3{font-size:9pt; letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+     margin:7mm 0 2mm; font-weight:700;}
+  p{margin:0 0 3mm;} strong{color:var(--ink); font-weight:700;}
+  em{color:var(--muted);}
+  ul{margin:0 0 3mm; padding-left:5mm;} li{margin-bottom:1.5mm;}
+
+  .scheda{font-size:9.5pt; color:var(--muted); border-bottom:1px solid var(--line);
+          padding-bottom:3mm; margin-bottom:4mm;}
+  .scheda b{color:var(--ink);}
+
+  .intro{font-size:11pt; color:var(--body); margin-bottom:4mm;}
+
+  /* ---------- battute ---------- */
+  .beat{margin:0 0 4mm; page-break-inside:avoid;}
+  .tc{display:inline-block; background:var(--ink); color:var(--giallo);
+      font-size:8pt; font-weight:700; letter-spacing:.1em; padding:1mm 2.5mm;
+      border-radius:1mm; margin-bottom:2mm; text-transform:uppercase;}
+  .tc span{color:#D6D6D6; font-weight:400;}
+  .righe{border-left:2.5px solid var(--giallo); padding-left:4mm; margin-left:.5mm;}
+  .r{margin:0 0 2.2mm;}
+  .chi{font-weight:800; color:var(--ink); letter-spacing:.02em;}
+  .az{color:var(--muted); font-style:italic;}
+  .vuoto{display:inline-block; min-width:20mm; border-bottom:1.5px solid var(--ink);
+         background:var(--soft); height:1.15em; vertical-align:-.2em; margin:0 1px;}
+
+  .nota{background:var(--soft); border-left:3px solid var(--ink); padding:3mm 4mm;
+        font-size:9.8pt; margin:4mm 0; page-break-inside:avoid;}
+  .nota b{color:var(--ink);}
+
+  table{width:100%; border-collapse:collapse; font-size:10pt; margin:0 0 4mm;}
+  thead{display:table-header-group;}
+  tr{page-break-inside:avoid;}
+  h3{page-break-after:avoid;}
+  h2{page-break-after:avoid;}
+  .scheda, .intro{page-break-after:avoid;}
+  ul{page-break-inside:avoid;}
+  th{text-align:left; font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase;
+     color:var(--muted); border-bottom:1.5px solid var(--ink); padding:0 3mm 1.5mm 0;}
+  td{padding:2mm 3mm 2mm 0; border-bottom:1px solid var(--line); vertical-align:top;}
+  td:first-child{white-space:nowrap;}
+
+  .page{page-break-before:always;}
+  .titolone{font-size:26pt; font-weight:800; color:var(--ink); letter-spacing:-.02em;
+            margin:0 0 2mm;}
+  .occhiello{font-size:9pt; letter-spacing:.2em; text-transform:uppercase; color:var(--oro);
+             margin:0 0 2mm; font-weight:700;}
+
+a{color:var(--oro);text-decoration:none;}h2{font-size:20pt;margin-bottom:4mm;}table{font-size:10pt;}td:first-child{white-space:normal;}th:first-child{width:38%;}.cover h1{font-size:38pt;}ol{margin:0 0 3mm;padding-left:6mm;}li{margin-bottom:1.5mm;}
+</style></head><body>
+<div class="cover">
+  <p class="kicker">Veloce Digital &middot; Documento interno</p>
+  <h1>Dove si<br>rompe il<br>funnel</h1>
+  <p class="sub">Teresa Chiuduno &middot; 23 settembre 2026</p>
+  <p class="meta">Non consegnabile al cliente</p>
+  <div class="foot"><span>USO INTERNO</span><span>Davide &middot; 331 204 3165</span></div>
+</div>
+<p><strong>Documento interno Veloce Digital. Non consegnabile al cliente così com&#x27;è.</strong> Dati al 23 settembre 2026. Periodo analizzato: 1 luglio – 23 settembre.</p>
+<p>Fonti: Shopify Analytics (screenshot 23/09), catalogo via Shopify Admin API (22/09), profili pubblici Instagram e TikTok via API (22/09). Tutti i numeri qui sotto sono letti, non stimati. Dove serve un&#x27;ipotesi, è scritto che è un&#x27;ipotesi.</p>
+<h2 style="margin-top:9mm">La sintesi, senza giri di parole</h2>
+<p><strong>Il sito non ha mai venduto niente.</strong> 2.125 sessioni in dodici settimane, 41 carrelli, 13 checkout, <strong>zero acquisti completati</strong>. Tasso di conversione dello store: 0%.</p>
+<p>Le uniche <strong>4 vendite</strong> del periodo sono arrivate <strong>tutte da TikTok Shop</strong>, per 77,10 € totali. E di quelle quattro, <strong>una o due sono prodotti regalati a TikTok shopper</strong>: gli ordini realmente pagati sono <strong>due o tre</strong>.</p>
+<p>Quindi il quadro è rovesciato rispetto a come lo raccontavamo a settembre: <strong>TikTok ha il 3% delle visualizzazioni e il 100% delle vendite. Instagram ha il 97% delle visualizzazioni e zero vendite.</strong> Non è che TikTok non funziona: è l&#x27;unico pezzo che ha funzionato. Quello che non funziona è il percorso Instagram → link in bio → sito → checkout, e non funziona in <strong>tre punti diversi</strong>, uno dei quali potrebbe essere rotto tecnicamente.</p>
+<div class="page"></div>
+<p class="occhiello">Punto 1 · interno</p><h2>Il numero da guardare prima di tutti: 13 → 0</h2>
+<table><thead><tr><th>Passaggio</th><th>Persone</th><th>% sulle sessioni</th><th>Riferimento di settore (indicativo)</th></tr></thead><tbody><tr><td>Sessioni</td><td>2.125</td><td>100%</td><td>—</td></tr><tr><td>Aggiunto al carrello</td><td>41</td><td><strong>1,92%</strong></td><td>4-7%</td></tr><tr><td>Arrivato al checkout</td><td>13</td><td>0,61%</td><td>2-3%</td></tr><tr><td><strong>Acquisto completato</strong></td><td><strong>0</strong></td><td><strong>0%</strong></td><td>1-2%</td></tr></tbody></table>
+<p><em>(I riferimenti di settore sono ordini di grandezza tipici dell&#x27;e-commerce beauty/accessori, non un benchmark citato da una fonte specifica. Servono solo a dire se siamo dentro o fuori scala.)</em></p>
+<p><strong>Tredici persone hanno inserito i dati e sono arrivate alla cassa. Nessuna ha pagato.</strong></p>
+<p>Tredici sono pochi per trarre una conclusione statistica, ma 0 su 13 con un checkout che non abbiamo mai testato dopo la configurazione è un campanello che non possiamo ignorare. E c&#x27;è un precedente preciso: <strong>la configurazione dei pagamenti l&#x27;abbiamo lasciata fare a Chiara e Andrea</strong> ("i dati bancari li inserite voi"), e non abbiamo mai verificato che Shopify Payments e PayPal siano effettivamente attivi e in grado di incassare.</p>
+<p><strong>Azione, oggi, prima di qualsiasi altra cosa: ordine di prova reale.</strong> Carta vera, importo basso, fino alla conferma. Se il checkout è rotto o i pagamenti non sono attivi, tutto il resto di questo documento è secondario, e abbiamo mandato traffico per tre mesi verso una cassa che non incassa.</p>
+<p>Le altre due spiegazioni possibili, da escludere nello stesso ordine:</p>
+<ol><li><strong>Il costo di spedizione che appare alla fine.</strong> Fino a fine agosto erano 7,99 €: su un carrello da 29,90 € voleva dire <strong>+27%</strong>, ed è il punto classico di abbandono. <strong>Da inizio settembre è passata a 4,99 €</strong> (+16,7%), quindi il problema è già stato dimezzato. Conta però <em>quando</em> sono avvenuti i 13 checkout: il traffico è concentrato tra il 3 agosto e metà agosto, cioè <strong>quasi tutto nel periodo in cui la spedizione costava ancora 7,99</strong>. Da estrarre da Shopify: la data dei 13 checkout abbandonati. Se sono di agosto, questa causa è già stata rimossa e resta da verificare solo il resto.</li><li><strong>Fiducia.</strong> Negozio mai sentito, nessuna recensione prodotto, nessuna pagina resi. Al momento di inserire la carta, il dubbio vince.</li></ol>
+<div class="page"></div>
+<p class="occhiello">Punto 2 · interno</p><h2>Il sito non converte, e prima ancora non riceve la gente giusta</h2>
+<p><strong>L&#x27;80,7% delle sessioni atterra in homepage</strong> (1.714 su 2.125). Sulle schede prodotto atterrano <strong>33 sessioni in tutto</strong>: 18 sulla mystery box e 15 sulla borsa Winter Vibes.</p>
+<p>Questo è un difetto di percorso che è nostro al 100%: ogni video parla di <strong>un</strong> prodotto, e il link in bio porta a <strong>un negozio intero</strong>. La persona arriva in home, deve cercare, non trova (o trova la collezione Estate), esce. È esattamente ciò che dice il dato: 1,92% di aggiunta al carrello, cioè quattro volte sotto la norma.</p>
+<p>In mezzo c&#x27;è anche un passaggio di troppo: <strong>194 sessioni arrivano da `linktr`</strong>, cioè dal Linktree. Il percorso reale oggi è reel → profilo → Linktree → homepage → ricerca del prodotto → scheda. Sei passaggi. Ogni passaggio dimezza.</p>
+<p><strong>Il traffico vero, in tre mesi</strong>: 2.125 sessioni, cioè circa 175 a settimana, 25 al giorno. Di queste, 418 da Instagram e 25 da Facebook. Il picco è stato il lancio del 3 agosto (~380 sessioni in un giorno), poi discesa continua.</p>
+<p>Messo accanto alle visualizzazioni: <strong>solo nel mese di settembre Instagram ha fatto 231.770 visualizzazioni. Le sessioni Instagram di tutto il trimestre sono 418.</strong> Anche contando generosamente, <strong>meno di due persone su mille passano dal video al sito.</strong> Il collo di bottiglia non è la produzione di contenuti: è il tratto tra il contenuto e il sito.</p>
+<p><strong>Geografia</strong>, utile e non ovvia: Milano 202, Brescia 176, Bergamo 100. Il pubblico non è solo del paese, quindi l&#x27;argomento "tanto vengono in negozio" copre solo una parte.</p>
+<p><strong>Mobile 89,4%.</strong> Qualsiasi cosa si sistemi sul sito, si valuta da telefono.</p>
+<div class="page"></div>
+<p class="occhiello">Punto 3 · interno</p><h2>Le uniche 4 vendite, lette da vicino</h2>
+<table><tbody><tr><td>Fatturato lordo</td><td>164,90 €</td></tr><tr><td>Sconti</td><td><strong>-96,00 €</strong> (il 58,2% del lordo, in buona parte omaggi a creator)</td></tr><tr><td>Vendite totali</td><td>77,10 €</td></tr><tr><td>Ordini</td><td>4</td></tr><tr><td>Valore medio ordine</td><td>17,22 €</td></tr><tr><td>Clienti che hanno ricomprato</td><td>0</td></tr></tbody></table>
+<p>Prodotti venduti: <strong>solo profumi Lattafa e la crema PDRN di VT.</strong> Nessun gioiello, nessuna borsa, nessun portafoglio, nessun prodotto per capelli.</p>
+<p><strong>I 96 € di sconti non sono una promo: sono prodotti regalati.</strong> Chiarito da Davide il 23/09: una parte di quegli ordini è <strong>seeding, cioè prodotti mandati gratis a TikTok shopper</strong>. Almeno uno è sicuramente un omaggio, forse due. <strong>Quindi gli ordini realmente pagati del trimestre sono due o tre, non quattro.</strong></p>
+<p>Cambia la lettura in due modi, ed entrambi vanno tenuti presenti:</p>
+<ul><li><strong>In meglio</strong>: il 58% di sconto medio non dice che vendiamo sottocosto. È un numero sporcato dal seeding, non un problema di pricing</li><li><strong>In peggio</strong>: la base reale è ancora più sottile di quanto sembrasse. Due o tre ordini veri in dodici settimane</li></ul>
+<p><strong>Azione operativa, piccola ma da fare subito: gli omaggi ai creator vanno taggati su Shopify</strong> (tag `seeding` sull&#x27;ordine, o un codice sconto dedicato). Altrimenti sporcano per sempre ogni numero che leggiamo dopo: scontrino medio, sconto medio, tasso di conversione, sell-through. Oggi non possiamo dire con certezza quanti ordini veri abbiamo fatto, e questo è un problema nostro di strumentazione, non del cliente.</p>
+<p><strong>Il prodotto che vende è il profumo, che è anche la categoria a margine più basso</strong> e quella con più concorrenza online. I Lattafa si trovano ovunque: se il nostro prezzo non è competitivo, chi ci scopre da un video poi compra altrove. <strong>Da verificare prodotto per prodotto sui primi dieci per sessioni</strong>, confrontando il nostro prezzo con i due o tre siti italiani che li vendono. È una verifica da mezza giornata e non l&#x27;abbiamo mai fatta.</p>
+<div class="page"></div>
+<p class="occhiello">Punto 4 · interno</p><h2>Il catalogo: il 71% dell&#x27;attenzione punta a prodotti che non esistono</h2>
+<p>Dall&#x27;estrazione del 22/09 (95 prodotti attivi):</p>
+<ul><li><strong>Capi di abbigliamento a catalogo: 0</strong></li><li>A settembre, <strong>18 contenuti Instagram su 30 mostravano abbigliamento</strong>, per <strong>145.352 visualizzazioni, il 71% del totale del mese</strong></li><li>I contenuti più visti del mese sono il tailleur da 49,90 (15.283) e "le taglie uniche non sono mai uguali" (14.690). Due prodotti che online non si possono comprare</li><li>Le didascalie dichiarano i prezzi (39,90 / 49,90 / 69,90) e dicono "link in bio"</li></ul>
+<p><strong>I prodotti che generano più visualizzazioni in assoluto non sono sul sito. I prodotti che sono sul sito e generano sessioni sono quelli su cui siamo meno competitivi.</strong> Messe insieme, queste due frasi spiegano gran parte dei 77 euro.</p>
+<p>Ed è anche il motivo per cui il funnel è così stretto in alto: chi clicca sul link in bio dopo un video di abbigliamento non è un visitatore qualunque, è un visitatore <strong>con un&#x27;intenzione precisa che il sito non può soddisfare</strong>.</p>
+<div class="page"></div>
+<p class="occhiello">Punto 5 · interno</p><h2>Il paradosso TikTok, che ribalta la lettura di settembre</h2>
+<table><thead><tr><th></th><th>Instagram</th><th>TikTok</th></tr></thead><tbody><tr><td>Quota delle visualizzazioni</td><td>96,9%</td><td>3,1%</td></tr><tr><td>Sessioni portate al sito</td><td>418</td><td>non rilevate separatamente</td></tr><tr><td><strong>Vendite</strong></td><td><strong>0 €</strong></td><td><strong>77,10 €</strong></td></tr></tbody></table>
+<p>A settembre avevamo scritto che TikTok rende il 7% di Instagram e che è il problema di canale più grosso. <strong>Sui contenuti è vero, sulle vendite è esattamente il contrario.</strong> La differenza è una sola: su TikTok si compra dentro il video, su Instagram bisogna fare sei passaggi.</p>
+<p>Va detto che parliamo di due o tre ordini veri, quindi il confronto indica una direzione, non una misura. Ma la direzione è netta, perché da una parte c&#x27;è zero su 2.125 sessioni e dall&#x27;altra c&#x27;è qualcosa.</p>
+<p>Conseguenza operativa che cambia le priorità: <strong>il checkout in-app vale più del volume di visualizzazioni.</strong> Non significa abbandonare Instagram, dove c&#x27;è il pubblico. Significa che su Instagram serve accorciare il percorso (automazione in DM con il link diretto al prodotto, non il Linktree), e su TikTok serve sbloccare il negozio.</p>
+<h3>Stato TikTok Shop</h3>
+<p>Confronto aperto con l&#x27;assistenza <strong>da due settimane</strong>, seguito da un agente. Nodo dichiarato: <strong>verifica dell&#x27;originalità dei prodotti</strong>, cioè l&#x27;autorizzazione del brand sui profumi.</p>
+<p>Va trattato come un blocco operativo con una scadenza, non come una pratica in corso: è l&#x27;unico canale che ha prodotto fatturato. Serve sapere entro questa settimana <strong>quali documenti chiedono esattamente</strong> (fatture d&#x27;acquisto dei profumi, lettera di autorizzazione del distributore) e chi li ha: quasi certamente Chiara, perché i fornitori sono suoi.</p>
+<div class="page"></div>
+<p class="occhiello">Punto 6 · interno</p><h2>Gli attriti del sito, elenco interno</h2>
+<p>Verificati il 22-23/09. Sono tutti sistemabili in una settimana e <strong>sono quasi tutti lavoro nostro non fatto.</strong></p>
+<table><thead><tr><th>Cosa</th><th>Stato</th><th>Di chi è</th></tr></thead><tbody><tr><td>Pagina spedizioni e resi</td><td><strong>non esiste</strong></td><td>nostro</td></tr><tr><td>Pagina domande frequenti</td><td><strong>non esiste</strong></td><td>nostro</td></tr><tr><td>Recensioni sui prodotti</td><td><strong>non attive</strong> (solo badge Google del negozio)</td><td>nostro</td></tr><tr><td>Collezione "Estate" in vetrina a fine settembre</td><td><strong>ancora online</strong>, ed è la 2ª landing page del sito con 64 sessioni</td><td>nostro</td></tr><tr><td>Prodotti esauriti in evidenza</td><td>presenti</td><td>nostro</td></tr><tr><td>Foto prodotto</td><td>49 su 95 ne hanno <strong>una sola</strong></td><td>nostro (shooting)</td></tr><tr><td>Link in bio</td><td>passa da Linktree e porta alla home</td><td>nostro</td></tr><tr><td>Spedizione</td><td><strong>già scesa a 4,99 €</strong> da inizio settembre. Soglia gratuita da riconfermare</td><td>fatto, soglia da decidere insieme</td></tr><tr><td>Omaggi ai creator non taggati</td><td>sporcano tutti i numeri di vendita</td><td>nostro</td></tr><tr><td>Pezzi unici</td><td>16 prodotti con 1 sola unità</td><td>del negozio, ma dobbiamo saperlo prima di spingerli</td></tr><tr><td>Registrazione sessioni (Clarity o simili)</td><td>non installata</td><td>nostro</td></tr></tbody></table>
+<p>Sul Clarity: con 13 checkout abbandonati su 13, <strong>avere le registrazioni delle sessioni ci avrebbe detto in mezza giornata dove si fermano.</strong> Va installato adesso, costa zero.</p>
+<div class="page"></div>
+<p class="occhiello">Punto 7 · interno</p><h2>La fiducia, che è il pezzo che non stiamo affrontando</h2>
+<p>Il negozio è conosciuto a Chiuduno. Online è <strong>un nome mai sentito</strong> che chiede la carta di credito su un sito nuovo di due mesi, senza recensioni prodotto, senza una pagina resi e con una sola foto per prodotto.</p>
+<p>I 13 checkout abbandonati possono benissimo essere questo.</p>
+<p>Cosa lo sposta davvero, in ordine di efficacia:</p>
+<ol><li><strong>Far vedere il magazzino, le spedizioni, i pacchi che partono.</strong> È il contenuto che dice "esistiamo davvero" ed è quello che oggi non stiamo girando per niente</li><li><strong>Recensioni sui prodotti</strong>, chieste a chi ha comprato in negozio</li><li><strong>Mostrare persone vere che ricevono il pacco a casa</strong></li><li><strong>Dirlo nei video</strong>: che il sito esiste, che si ordina da lì, che arriva in 48 ore. Oggi la frase è "link in bio" e basta, e non dice niente a chi non ci conosce</li></ol>
+<p>Va messo nel piano editoriale come una <strong>rubrica fissa</strong>, non come un contenuto ogni tanto: almeno un contenuto su cinque deve parlare dell&#x27;e-commerce, non di un prodotto.</p>
+<div class="page"></div>
+<p class="occhiello">Punto 8 · interno</p><h2>Caricare l&#x27;abbigliamento in fretta, e la domanda su Danea</h2>
+<p>Decisione presa il 23/09: si prova il percorso corto. <strong>I capi che Chiara mostra nei video vengono caricati subito, non alla fine del mese.</strong> Il flusso diventa:</p>
+<div class="nota">Chiara gira il capo → ci manda <strong>subito</strong> le foto → noi lo carichiamo lo stesso giorno → il video esce con il link che punta a quel prodotto.</div>
+<p>È anche il modo più rapido per avere una risposta alla domanda che conta: <strong>se un capo è acquistabile nel momento in cui il video gira, si vende?</strong> Oggi non lo sappiamo, perché non è mai successo.</p>
+<p>Quello che serve da loro è solo una cosa, e va chiesta in modo semplice: <strong>foto del capo e prezzo, il giorno stesso.</strong> Non servono schede, non serve descrizione, le scriviamo noi.</p>
+<h3>La domanda: colleghiamo i nuovi capi a Danea EasyFatt?</h3>
+<p><strong>No, non i capi. Non adesso.</strong> Il ragionamento:</p>
+<ul><li>L&#x27;abbigliamento <strong>ruota in fretta e spesso è in taglia unica o in due pezzi</strong>. Il tempo di anagrafica su Danea per ogni capo è sproporzionato rispetto a quanto quel capo resta in magazzino</li><li><strong>Con due o tre ordini in dodici settimane, la riconciliazione manuale costa niente.</strong> Arriva un ordine, si scarica a mano da Danea. Il rischio di doppia vendita su un pezzo unico esiste, ma con questi volumi è teorico</li><li>Il collegamento Danea ha senso dove ha senso oggi: <strong>profumi, skincare, capelli</strong>, cioè referenze stabili, riassortite, con giacenze vere. Lì resta</li></ul>
+<p><strong>Quando si cambia idea</strong>: quando gli ordini online superano i cinque a settimana, o quando un capo viene venduto due volte perché nessuno ha aggiornato la giacenza. A quel punto il collegamento diventa conveniente e si fa.</p>
+<p><strong>Una cautela sui pezzi unici</strong>, che è il vero rischio del caricamento manuale: se un capo è in un pezzo solo e il video funziona, il primo ordine lo esaurisce e tutti gli altri trovano "non disponibile". Su quei capi conviene mettere la giacenza reale e controllarla il giorno dopo l&#x27;uscita del video.</p>
+<div class="page"></div>
+<p class="occhiello">Punto 9 · interno</p><h2>Priorità, in ordine</h2>
+<p><strong>Oggi</strong></p>
+<ol><li><strong>Ordine di prova sul sito con carta vera.</strong> Verificare che si possa pagare</li><li>Verificare che Shopify Payments e PayPal siano attivi e collegati al conto giusto</li><li>Installare Microsoft Clarity</li></ol>
+<p><strong>Questa settimana</strong></p>
+<ol><li>Caricare l&#x27;abbigliamento, partendo dai capi già mostrati nei video di settembre</li><li>Togliere "Estate" dalla vetrina e <strong>creare la collezione nuova di stagione</strong> (nome da concordare con Chiara: "Autunno", "Nuovi arrivi" o come la chiamano loro in negozio). Nascondere gli esauriti dalla home</li><li>Pagina spedizioni e resi + FAQ</li><li>Cambiare il link in bio: <strong>link diretto al prodotto del video</strong>, non Linktree, non homepage</li><li>Chiedere a Chiara i documenti per TikTok Shop e chiudere la pratica originalità</li><li><strong>Taggare gli ordini omaggio</strong> già fatti e stabilire la regola per i prossimi, così i numeri tornano leggibili</li><li>Aprire il flusso "foto il giorno stesso → prodotto online lo stesso giorno" con Chiara, e caricare per primi i capi dei video di settembre che hanno performato meglio</li></ol>
+<p><strong>Entro due settimane</strong></p>
+<ol><li>Confronto prezzi sui primi dieci prodotti per sessioni contro i concorrenti online</li><li>Automazione DM su Instagram: commento con parola chiave → link diretto al prodotto. <strong>È qui che va messo lo sforzo, non nel far funzionare TikTok</strong>: su Instagram c&#x27;è il pubblico e il percorso è accorciabile da noi, su TikTok il blocco dipende da una pratica che non controlliamo. <strong>Strumento</strong>: ManyChat non regge sul nostro volume di messaggi, l&#x27;alternativa è <strong>Open Reply</strong>, da attivare. Fino ad allora <strong>non va nominata nessuna automazione nei documenti al cliente</strong>: è una cosa che avremmo già dovuto avere, e prometterla per nome mette in luce il ritardo. Nella versione cliente si parla di prove sul percorso</li><li>Recensioni prodotto attivate</li><li>Decisione sulla soglia di spedizione gratuita, ora che il costo è sceso a 4,99 €</li><li>Seconda foto sui prodotti più visti</li></ol>
+<p><strong>Nel piano editoriale, da subito</strong></p>
+<ol><li>Una rubrica fissa sull&#x27;e-commerce: magazzino, pacchi, spedizioni, clienti che ricevono</li><li>Smettere di spingere pezzi unici nei contenuti, o metterli in giacenza reale e controllarli il giorno dopo l&#x27;uscita</li><li><strong>Più contenuti</strong>: con il catalogo che finalmente coprirà la moda, il limite torna a essere la produzione</li></ol>
+<div class="page"></div>
+<p class="occhiello">Punto 10 · interno</p><h2>Come lo raccontiamo al cliente</h2>
+<p>La versione per Chiara e Andrea va riscritta, non tagliata. Tre regole:</p>
+<p><strong>Quello che resta fuori</strong>: l&#x27;elenco delle cose nostre non fatte (FAQ, resi, Estate, foto, Linktree, Clarity). Quelle non si annunciano, si sistemano prima della riunione. Se alla riunione sono già fatte, diventano "abbiamo lavorato su questo", e la conversazione cambia completamente.</p>
+<p><strong>Quello che va detto, perché è vero e li riguarda</strong>: i prodotti che generano più visualizzazioni non sono acquistabili online, e serve il loro aiuto per caricarli in fretta. Il pubblico c&#x27;è e dice chiaramente cosa vuole. TikTok Shop è bloccato su una verifica documentale che possono sbloccare solo loro. Il prezzo di alcuni prodotti va confrontato con il mercato.</p>
+<p><strong>Quello che va detto con attenzione</strong>: lo zero. Non "il sito non ha venduto niente", ma il percorso: dodici settimane, 2.125 visite, 41 carrelli, e stiamo verificando un possibile problema tecnico sul pagamento. Il numero non si nasconde, si accompagna con la causa e con l&#x27;azione già in corso.</p>
+<p>Da dire anche, perché è una cosa fatta e va incassata: <strong>la spedizione è già scesa da 7,99 a 4,99 €</strong> da inizio settembre. È l&#x27;unico intervento sul funnel già in produzione.</p>
+<p><strong>Prima della riunione vanno chiusi i punti 1-8.</strong> Presentare questo documento con la vetrina ancora su "Estate" è il modo più veloce per perdere la stanza.</p>
+</body></html>

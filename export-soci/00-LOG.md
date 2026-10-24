@@ -1,0 +1,306 @@
+# Log
+
+Registro cronologico, append-only. Vedi [[CLAUDE]] per il formato.
+
+## [2026-09-01] setup | agency | Creazione del wiki
+Impostata la struttura iniziale: `CLAUDE.md`, `index.md`, `log.md`, cartelle
+`raw/`, `clients/`, `prospects/`, `concepts/`, `playbook/`, `output/`.
+
+## [2026-09-01] ingest | agency | Storico progetto VELOCE (export chat Claude)
+Ingerita `raw/agency/2026-09-01-storico-progetto-veloce-claude.md` (memoria di
+progetto + 4 chat esportate da claude.ai). Estesa la struttura dello schema con la
+sezione `agenzia/` (identità, posizionamento, pricing, processi/tool). Creati 7
+clienti/prospect: [[clients/teresa-srl/overview]], [[clients/fabio-sirigu/overview]],
+[[clients/dawok/overview]], [[clients/bar-solatio/overview]],
+[[clients/barbar/overview]], [[prospects/bresciani-assicurazioni/profile]],
+[[prospects/pancaldi-moto/profile]]. Formalizzati 3 format riutilizzabili in
+`concepts/formati/` e 1 pagina di settore in `concepts/settori/`. Avviato
+`playbook/preventivi.md` e `playbook/outreach.md`.
+
+**Punti aperti riportati dalla fonte** (già distribuiti nelle rispettive pagine):
+sync SKU Teresa↔Danea, banche idee Fabio Sirigu mancanti (mercoledì/sabato/esercizi
+assurdi), proposta Pancaldi Moto da finalizzare, follow-up Bresciani via Raffaella,
+proprietà IG Bar Solatio da chiarire, scadenze compliance cosmetica UE Teresa.
+
+**Gap noti per prossimo ingest**: dettagli operativi DaWok (piano editoriale,
+format, calendario) non ancora documentati in nessuna fonte; `playbook/risposte-clienti.md`
+non ancora creato per mancanza di casi concreti nella fonte.
+
+## [2026-09-01] ingest | agency | Panoramica ChatGPT su Veloce Digital (fonte salvata)
+Salvata la fonte grezza `raw/agency/2026-09-01-panoramica-chatgpt-veloce.md`: sintesi
+prodotta da ChatGPT su mesi di conversazioni precedenti (posizionamento, format, playbook
+commerciale, obiettivi, domande aperte). Fonte secondaria di natura mista
+(fatti/decisioni/ipotesi), da verificare prima della promozione nel wiki.
+Wiki **non ancora aggiornato**: punti chiave e contraddizioni in discussione con Davide
+prima di toccare [[agenzia/posizionamento]], [[agenzia/pricing]], [[playbook/outreach]].
+
+## [2026-09-01] ingest | teresa-srl | Contratto, onboarding e guida pagamenti
+Ingerite tre fonti fornite da Davide, con allegati originali in
+`raw/clients/teresa-srl/allegati/` e trascrizioni markdown a fianco: contratto "Piano Completo
+Start" non firmato (2.100€/mese, art. 3.3 obiettivo 1M views, clausole 1341-1342), risposte al
+modulo di onboarding compilate da Chiara, guida Shopify per l'attivazione dei pagamenti.
+Aggiornata [[clients/teresa-srl/overview]] con storia del brand, ICP, obiezioni dei loro
+clienti, competitor, margini, operativita' e tutte le clausole contrattuali. Creata
+[[clients/teresa-srl/tono-di-voce]].
+**Segnalato**: la guida pagamenti consegnata al cliente contiene la password Shopify in
+chiaro. Credenziale non replicata nel wiki, azioni correttive proposte nella trascrizione.
+
+## [2026-09-01] ingest | agency | Playbook commerciale e risoluzione contraddizioni
+Create [[playbook/risposte-clienti]] (obiezione principale "ho paura che non funzioni" piu'
+prezzo, prova di un mese, budget) e [[playbook/ricerca-format]] (metodo per cercare, smontare
+e scrivere format vincenti, con gli strumenti di analisi social disponibili). Riscritta
+[[playbook/outreach]] con ricerca competitor del prospect, call diagnostica in 12 domande e
+lettura critica del modulo di onboarding.
+**Contraddizioni risolte su indicazione di Davide**: la garanzia 1M views e' attiva e
+contrattualizzata (aggiunte a [[agenzia/pricing]] perimetro di calcolo, sezione "Rischi noti"
+e parametri contrattuali standard); **non esiste una soglia di budget fissa**, il riferimento
+di 1.200€/mese della fonte ChatGPT era solo un'ipotesi; assetto soci chiarito in
+[[agenzia/identita]] (Davide ideatore e fondatore, Matteo socio su BarBar, Gabriel socio su
+Teresa, ruoli oggi intercambiabili, obiettivo tre soci su lavori diversi).
+**Stati clienti corretti**: solo Teresa e BarBar sono attivi. Fabio Sirigu e DaWok portati a
+`past`, Bar Solatio a `prospect`, tutti e tre con nota "da confermare" in pagina.
+
+## [2026-09-01] ingest | agency | Stati clienti confermati e follow-up aperti
+Confermati da Davide gli stati non attivi: [[clients/bar-solatio/overview]] **perso per
+mancanza di budget** (`lost`), [[clients/dawok/overview]] **perso**, deal a performance mai
+partito (`lost`), [[clients/fabio-sirigu/overview]] **in pausa e non chiuso**, la
+collaborazione si e' interrotta perche' ghostato da noi (marcato `past` in mancanza di un
+valore `paused` nello schema, rapporto riattivabile).
+Creati due log di outreach con prossimo step dichiarato:
+[[prospects/bresciani-assicurazioni/outreach]] (preventivo inviato e letto, follow-up da
+concordare con Raffaella) e [[prospects/pancaldi-moto/outreach]] (proposta mai finalizzata,
+serve prima la ricerca format automotive e il dettaglio dei tier).
+**Proposta di modifica allo schema**: aggiungere `paused` ai valori di `status`.
+
+## [2026-09-01] ingest | teresa-srl | Script mese 1 e performance reel Instagram
+Ingeriti i due documenti di script del mese 1 (12 soggetti brevi piu' riscrittura sitcom con
+varianti, 13 script totali, non tutti realizzati) e i dati di view letti da tre screenshot
+della tab Reels. Fonti in `raw/clients/teresa-srl/`, .docx originali in `allegati/`.
+Create [[clients/teresa-srl/formati]], [[concepts/formati/doppio-senso-svelamento]] e
+[[concepts/formati/annuncio-evento-negozio]].
+
+## [2026-09-01] output | teresa-srl | Analisi performance mese 1
+Prodotta [[output/analisi-performance-teresa-mese-1]]. Risultati principali:
+1. Il giudizio "hanno performato male" e' impreciso: media identica ai contenuti della
+   proprieta' (14.224 contro 14.279), mediana e minimo migliori dei nostri. Il problema e' il
+   tetto, non il pavimento: i tre contenuti piu' visti della pagina sono girati dal cliente.
+2. **Cornice evento batte cornice prodotto 2 a 1** (20.275 contro 10.190 di media). E' il dato
+   piu' azionabile e ha generato il format [[concepts/formati/annuncio-evento-negozio]].
+3. Undici script su tredici hanno la stessa meccanica: il doppio senso e' diventato una sigla
+   prevedibile ed e' messo in apertura, dove non funziona come hook.
+4. **Allerta contrattuale**: la garanzia 1M views e' al 51% del ritmo necessario su Instagram
+   (servono 27.778 view per contenuto su 36 contenuti, media attuale 14.224). L'obiettivo
+   dipende interamente da TikTok, di cui non abbiamo dati. Richiesti a Davide.
+
+## [2026-09-01] ingest | teresa-srl | Dati reali Instagram e TikTok via API
+Estratti i dati reali di entrambe le piattaforme dai profili pubblici (30 post ciascuna) con il
+connettore di analisi social. Salvati in
+`raw/clients/teresa-srl/2026-09-01-performance-api.md`, che sostituisce la stima letta dagli
+screenshot. Aggiornate [[output/analisi-performance-teresa-mese-1]],
+[[clients/teresa-srl/formati]] e [[clients/teresa-srl/overview]].
+**Due correzioni all'analisi precedente**: (1) i tre reel della proprieta' sotto i 3.000 non
+sono un calo del profilo, erano stati pubblicati poche ore prima dell'estrazione;
+(2) TikTok non salva la garanzia 1M, rende il **9,1%** di Instagram sugli stessi identici
+video. Copertura reale dell'obiettivo: **56%** (563.000 view proiettate su 36 contenuti,
+servirebbero 64 contenuti o 1,8x di resa). Cumulato ad oggi sui primi 11 contenuti: 172.019.
+Confermato il moltiplicatore evento/prodotto sui dati reali: 1,86x.
+
+## [2026-09-01] ingest | teresa-srl | Brief reel mese 2 dalla proprieta'
+Ingeriti i messaggi WhatsApp di Chiara del 29/08 con quattro prodotti approvati (tris LPDO,
+maschera capelli Fino, portafogli AMEN uomo, contorno occhi VT) e la richiesta di coprire
+gioielli, abbigliamento e borse. Creata [[clients/teresa-srl/idee]] con l'allocazione proposta
+dei 12 slot (6 moda, 4 cosmetica, 2 evento) e l'angolo consigliato per ogni contenuto.
+**Aperto**: il vocale di 1'39" allegato al brief non e' stato trascritto, manca la capacita' di
+trascrizione audio in sessione. File archiviato in `allegati/`, contenuto da aggiungere.
+
+## [2026-09-01] output | teresa-srl | Diagnosi funnel: 172.019 view, 1 vendita
+Dato nuovo dalla proprieta': dopo un mese di produzione l'e-commerce ha registrato **1 sola
+vendita**. Ispezionato `teresachiuduno.it`: **61 prodotti a catalogo, zero abbigliamento e zero
+borse**, cioe' la categoria che vale piu' della meta' del fatturato non e' acquistabile online.
+Prodotta [[output/diagnosi-funnel-teresa]]. Cause identificate: catalogo che vende la
+minoranza del business, 92% delle view su Instagram che non ha checkout, spedizione gratuita
+sopra 79€ che penalizza il ticket da 29€ delle borse in tessuto, vetrina ancora estiva al 1
+settembre. Aggiunto il punto sugli ingressi in negozio, mai misurati.
+**Conseguenza contrattuale**: la clausola 1M view e' sbagliata in entrambi gli esiti (se manca
+lavoriamo gratis, se centra ma le vendite restano queste il cliente non rinnova). Da rivedere
+prima della firma.
+Ingerito anche il contenuto del vocale del 29/08 riferito da Davide (piu' gioielli e
+abbigliamento, meno skincare, tailleur, giacche di pelle, borse pelle e tessuto a 29€ per
+TikTok Shop) e rivista l'allocazione degli slot in [[clients/teresa-srl/idee]] a 7 moda,
+3 cosmetica, 2 evento, con il caricamento del catalogo moda come prerequisito bloccante.
+
+## [2026-09-01] output | teresa-srl | Ricerca format sui 5 riferimenti indicati dal cliente
+Analizzati via API i cinque profili che Chiara aveva indicato nel modulo di onboarding
+(`mircozebrato`, `benebenemarketcampi`, `granato_shop`, `autodocsimonedoca`,
+`vistachiara_eyewear`), 15 post ciascuno. Dati in
+`raw/agency/2026-09-01-ricerca-format-riferimenti-teresa.md`, sintesi in
+[[output/ricerca-format-riferimenti-teresa]].
+**Risultato principale**: la motivazione data dal cliente ("mi piace il modo ironico") e'
+sbagliata. I due profili con la reach commerciale piu' alta, `granato_shop` (364K su un
+prodotto da 12€) e `autodocsimonedoca` (172K), **non sono ironici**: sono direct response.
+Cio' che hanno in comune tutti e' altro: apertura su un problema o una domanda, caption o
+cortissima o completamente informativa, prezzo detto esplicitamente.
+Formalizzati due format nuovi: [[concepts/formati/problema-prodotto-prezzo]] e
+[[concepts/formati/in-base-al-tuo-budget]]. Confermato
+[[concepts/formati/annuncio-evento-negozio]] da una validazione incrociata: "ci hanno derubato"
+di vistachiara e' la stessa premessa di "ci hanno svaligiato" di Teresa, entrambi sopra media
+su attivita' indipendenti.
+Aggiunta a [[clients/teresa-srl/idee]] la mappa articolo per format del mese 2, con ogni
+contenuto agganciato a un format validato su numeri reali.
+
+## [2026-09-01] output | teresa-srl | Primo script del mese 2
+Scritto [[clients/teresa-srl/script/tris-lpdo-durata]], tris LPDO sul format
+[[concepts/formati/problema-prodotto-prezzo]]. Scelto per primo perche' e' l'unico contenuto
+prioritario eseguibile senza attendere il caricamento del catalogo moda. Hook costruito
+sull'obiezione reale raccolta in onboarding ("ma questi profumi durano?"), prezzo detto ad alta
+voce, doppio senso spostato in chiusura. Aperti quattro prerequisiti prima delle riprese, tra
+cui i prezzi dei tre pezzi e la verifica della soglia spedizione gratuita a 79€.
+
+## [2026-09-01] ingest | agency | Framework SPCL di Alex Hormozi
+Ingerita la sintesi del framework SPCL (Status, Power, Credibility, Likeness) e delle lezioni
+operative 2026. Fonte in `raw/agency/2026-09-01-framework-spcl-hormozi.md`, pagina d'uso in
+[[concepts/framework/spcl-hormozi]] con le riserve sul trasferimento dal B2B americano ad alto
+LTV al retail locale italiano.
+**Applicazioni concrete**: aggiunta a [[output/diagnosi-funnel-teresa]] la sezione "il contenuto
+e' il targeting", terza spiegazione della vendita singola complementare alle altre due (il mese
+1 ha raccolto pubblico di cosmetica e comicita', non compratori di moda in provincia di
+Bergamo). Aggiunta a [[clients/teresa-srl/formati]] l'ipotesi live shopping su TikTok, che
+incrocia checkout disponibile, resa superiore delle titolari quando non recitano e tesi di
+Hormozi sui format non filtrati.
+**Proposta di modifica allo schema**: nuova sottocartella `concepts/framework/` per i modelli di
+ragionamento esterni, distinti da `concepts/formati/` (format di contenuto) e
+`concepts/settori/`.
+
+## [2026-09-01] ingest | agency | Hormozi, versione completa (sostituisce la sintesi ridotta)
+Ricevuta la sintesi completa del video "If I Wanted To Grow An Audience In 2026". Riscritta la
+fonte `raw/agency/2026-09-01-framework-spcl-hormozi.md` e ampliata
+[[concepts/framework/spcl-hormozi]] con: definizione operativa di branding, i 6 cambiamenti di
+strategia, il **framework di hook PPP** (Proof, Promise, Plan) e i 4 modi di monetizzare
+un'audience.
+**Applicazioni**: aggiunto il Proof mancante all'hook di
+[[clients/teresa-srl/script/tris-lpdo-durata]]; creata in [[agenzia/posizionamento]] la sezione
+sull'audience personale di Davide come asset non monetizzato, con i quattro canali e la domanda
+aperta sul confine tra Veloce e la sua attivita' da creator; aggiunto a [[agenzia/pricing]]
+l'argomento del brand da usare in trattativa (il contenuto come moltiplicatore sul prezzo che
+il cliente puo' chiedere), richiamato da [[playbook/risposte-clienti]].
+**Convergenza notevole**: la lezione "da edutainment a educazione", tradotta per il retail,
+coincide con [[concepts/formati/problema-prodotto-prezzo]] che avevamo derivato in modo
+indipendente da `granato_shop`. Due fonti diverse, stessa conclusione.
+
+## [2026-09-01] ingest | agency | Modello di pricing del MEx Price Calculator
+Analizzato `preventivo.marketing-espresso.com` leggendo il bundle JavaScript: estratti i
+**coefficienti reali** (non stimati) di prezzi base, pavimenti per servizio, sei moltiplicatori
+e formula di calcolo. Archiviati in `raw/agency/2026-09-01-calcolatore-mex-preventivi.md`.
+Aggiunta a [[playbook/preventivi]] la procedura di benchmark obbligatoria prima di ogni invio, e
+due dimensioni di prezzo che il mercato applica e noi no: complessita' del cliente (+30%) e
+geografia (spread del 64% tra provincia e Milano).
+**Nota difensiva**: lo strumento e' pubblico e ha una modalita' "Ho ricevuto un preventivo", con
+cui un cliente puo' verificare noi.
+
+## [2026-09-01] output | teresa-srl | Benchmark di prezzo sul contratto Teresa
+Prodotta [[output/benchmark-pricing-teresa]] passando il perimetro Teresa nel modello estratto.
+Risultati: il mercato per un'agenzia mid in provincia darebbe **2.060-2.576€** per la sola parte
+social e video, noi la fatturiamo **1.300€** e in piu' regaliamo il setup e-commerce, che il
+calcolatore non prezza nemmeno.
+**Scoperta**: il contratto Teresa **viola il nostro pricing floor** (91,67€ a video contro i 120
+dichiarati, il 24% sotto). Non era mai emerso perche' nessuno aveva confrontato la scomposizione
+interna con la regola. Aggiunta a [[agenzia/pricing]] la regola che il controllo del floor si fa
+sulla scomposizione, non sul totale, e il controllo di coerenza sulla tariffa oraria.
+Da leggere insieme a [[output/diagnosi-funnel-teresa]]: sullo stesso contratto abbiamo un prezzo
+sotto mercato e una penale a tempo indeterminato.
+
+## [2026-09-01] ingest | teresa-srl | Idee format del team e riorganizzazione del mese 2
+Ingerite quattro idee di format elaborate dal team Veloce
+(`raw/clients/teresa-srl/2026-09-01-idee-format-team-veloce.md`). Due sono motori di format
+seriali e risolvono il difetto strutturale del mese 1 (tredici soggetti indipendenti, nessuna
+rubrica). Riorganizzata [[clients/teresa-srl/idee]] da lista di dodici video scollegati a
+**tre format portanti** dentro cui i prodotti approvati si distribuiscono.
+Creato [[concepts/formati/problema-anonimo-risolto]], il piu' forte del catalogo: accende Power
+e Credibility insieme, e' trasversale a tutte le categorie, si autoalimenta con la CTA finale e
+porta traffico in DM, unico percorso d'acquisto disponibile su Instagram.
+**Note critiche registrate**: i messaggi vanno usati veri e non finti (i problemi reali sono
+gia' nel modulo di onboarding e nei 48 commenti mai letti); il problema va posto sulla
+situazione e non sull'autodenigrazione, incompatibile con il tono dichiarato dal cliente;
+l'idea del personaggio famoso e' la piu' debole perche' attira il pubblico della celebrita' e
+non compratori, salvo la variante moda.
+
+## [2026-09-02] output | teresa-srl | Otto script per lo shooting del 3 settembre
+Scritti gli otto script del mese 2, distribuiti sui tre format portanti: quattro di Format A
+(gioielli "si annerisce", tailleur vestibilita', contorno occhi VT, maschera Fino), due di
+Format B (budget in contanti per il regalo, portafogli AMEN), uno di Format B sulle borse per
+fascia e uno di Format C (arrivo settimanale). Diciannove versioni alternative complessive.
+Prodotto [[output/piano-shooting-teresa-settembre]], che li ordina per **location e cast** in sei
+blocchi invece che per numero, per ridurre gli spostamenti di camera.
+**Due blocchi segnalati**: sette script su otto hanno un `[PREZZO]` non compilato, ed e'
+l'elemento centrale del format scelto; A2, B3 e C1 riguardano moda e borse, che non esistono
+ancora sullo Shopify, quindi si girano ma non si pubblicano finche' il catalogo non e' caricato.
+**Correzioni di registro applicate**: rimossa l'autodenigrazione dall'esempio del tailleur
+(incompatibile con il tono dichiarato dal cliente) e sostituita la disperazione recitata del
+format budget con il vincolo dichiarato piatto.
+
+## [2026-09-02] ingest | teresa-srl | Le due protagoniste: Chiara 25 e Anna 50
+Informazione arrivata da Davide e **mai presente nel wiki**: Chiara ha circa 25 anni, e' maliziosa
+e fa battute; Anna ne ha circa 50, e' sfacciata, diretta e leggermente volgare in modo divertente.
+Aggiunta a [[clients/teresa-srl/tono-di-voce]] la scheda personaggi con la regola di assegnazione
+delle battute: **Anna porta diagnosi e verita' scomoda, Chiara apre e chiude**. Motivo: la stessa
+frase detta da una cinquantenne suona come esperienza (leva Credibility), detta da una
+venticinquenne suona presuntuosa. Registrato anche che le due coprono i due estremi del target
+dichiarato (donne 20-60), asset mai sfruttato: nel mese 1 parlavano con la stessa voce.
+**Contraddizione segnalata**: il modulo di onboarding dice che il negozio e' gestito da 12 anni
+da "Chiara e Andrea" e che la referente principale e' Chiara. Se la Chiara che recita ha 25 anni
+non puo' essere la stessa. Da chiarire.
+Riassegnate le battute nei quattro script di Format A gia' scritti.
+
+## [2026-09-02] output | teresa-srl | Script client-facing per il set
+Prodotto [[output/script-shooting-3-settembre]], versione **da leggere sul set** degli otto
+script: niente motivazioni interne, niente varianti alternative in linea, spazi `______` da
+compilare lasciati al cliente. Durata portata a **35-45 secondi** con struttura fissa ottimizzata
+per il watchtime (`0-3 gancio · 3-9 rilancio · 9-17 spiegazione · 17-26 prova · 26-33 prodotto e
+prezzo · 33-38 invito a scrivere · 38-42 battuta`), con la battuta come ultimo fotogramma e il
+prezzo prima della CTA invece che alla fine.
+Le pagine in `clients/teresa-srl/script/` restano la versione interna con motivazioni, varianti e
+checklist.
+
+## [2026-09-02] output | teresa-srl | Revisione script dopo feedback, e nuove idee
+Feedback di Davide sugli otto script: **1 scartato**, 2 da rivedere nel centro, 8 da ricostruire,
+gli altri approvati. Interventi su [[output/script-shooting-3-settembre]]:
+- **Script 1 sostituito da due nuovi**, entrambi sui gioielli ma senza la parte esplicativa che
+  non convinceva: **1A "Questo o quello"** (voto binario nei commenti, motore di engagement) e
+  **1B "Cosa ti porti a casa con 40, 60 e 80 euro"** (format fasce di prezzo da autodoc).
+- **Script 2**, centro rifatto: la spiegazione di Anna diventa una prova, tre giacche provate in
+  sequenza con verdetto di una riga ciascuna e camera ferma.
+- **Script 8 ricostruito**: non dipende piu' da un arrivo di merce, si gira sui vuoti negli
+  scaffali. Stessa premessa gia' validata due volte (nostro "ci hanno svaligiato" 15.181 e
+  "ci hanno derubato" di vistachiara).
+- **Nuovo script 9**, passaggio di stagione e trend autunnali, con i trend lasciati in bianco
+  perche' li scelga il cliente in negozio.
+- **Nuovo script 10**, stampo da riempire per qualsiasi prodotto, con la regola di scelta del
+  prodotto e tre controlli preliminari.
+- **Banca idee** ricavata dai profili di riferimento indicati dal cliente, divisa tra contenuti
+  che vendono e contenuti che portano pubblico.
+- **Doppia chiusura su tutti i video**: versione Instagram (link in bio, sito) e versione TikTok
+  (carrellino arancione), da girare di fila cambiando solo l'ultima riga.
+
+## [2026-09-02] output | teresa-srl | Presentazione client-facing in PDF
+Creata [[output/presentazione-shooting-teresa]], deck Marp di 32 slide con tutti i dieci copioni,
+le indicazioni di ripresa utili al cliente e gli spazi prezzo da compilare. Esportata in
+`output/Teresa-Chiuduno-Copioni.pdf` tramite `npx @marp-team/marp-cli`, che funziona su questa
+macchina usando il Chrome installato.
+Palette conforme a [[agenzia/identita]]: copertina e divisori su fondo `#202020` con giallo
+`#FFEE32`, slide di contenuto su `#F5F5F5` con titoli `#202020` e accento `#D4C000`, cioe' il
+giallo scurito, perche' quello puro non va usato come testo su fondo chiaro.
+Contenuto filtrato per il cliente: nessun riferimento alle performance del mese 1, al funnel, alla
+clausola contrattuale o al benchmark di prezzo. Quelle restano in
+[[output/piano-shooting-teresa-settembre]], che e' la nota interna.
+
+## [2026-09-02] output | teresa-srl | Copioni in PDF A4 verticale
+Davide ha segnalato che le slide 16:9 sono il formato sbagliato per leggere copioni: costringono a
+cambiare pagina ogni due righe. Rifatto come **documento A4 verticale** che scorre.
+Sorgente in `output/copioni-teresa.html`, stampato in `output/Teresa-Chiuduno-Copioni.pdf` con
+Chrome headless (`--print-to-pdf`, che rispetta le regole `@page`).
+Impostazione tipografica: copertina piena su `#202020` con giallo `#FFEE32`, corpo su bianco per
+la stampa, corpo testo a 10,8pt con interlinea 1,55, battute rientrate con filetto giallo,
+timecode come badge neri, e gli spazi prezzo resi come caselle grigie sottolineate cosi' che si
+possano compilare a penna. Ogni copione sta su una pagina sola.
+La versione Marp resta in [[output/presentazione-shooting-teresa]] come alternativa per una
+presentazione a voce.

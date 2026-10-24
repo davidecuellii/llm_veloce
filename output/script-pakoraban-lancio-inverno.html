@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<title>Pakoraban — Script lancio inverno</title>
+<style>
+  @page { size: A4 portrait; margin: 16mm 15mm 14mm; }
+  @page :first { margin: 0; }
+  :root{
+    --ink:#202020; --body:#33322E; --muted:#6B6B6B; --line:#DAD8CF; --soft:#EFEDE6;
+    --giallo:#FFEE32; --oro:#8A7B00; --paper:#FFFFFF;
+    --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  body{margin:0; font-family:var(--sans); font-size:10.8pt; line-height:1.55; color:var(--body); background:var(--paper);}
+
+  .cover{background:#202020; color:#D6D6D6; height:297mm; width:100%; padding:70mm 22mm 22mm; page-break-after:always; position:relative;}
+  .cover .kicker{font-size:9.5pt; letter-spacing:.22em; text-transform:uppercase; color:#8C8C8C; margin:0 0 14mm;}
+  .cover h1{font-size:40pt; line-height:1.02; letter-spacing:-.02em; color:var(--giallo); margin:0 0 6mm; font-weight:800;}
+  .cover .sub{font-size:16pt; color:#D6D6D6; margin:0 0 3mm;}
+  .cover .meta{font-size:11pt; color:#8C8C8C; margin:0;}
+  .cover .foot{position:absolute; bottom:22mm; left:22mm; right:22mm; border-top:1px solid #3A3A3A; padding-top:5mm; font-size:9.5pt; color:#8C8C8C; display:flex; justify-content:space-between;}
+
+  h2{font-size:17pt; line-height:1.15; letter-spacing:-.01em; color:var(--ink); margin:0 0 2mm; font-weight:800; page-break-after:avoid;}
+  h3{font-size:9pt; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin:7mm 0 2mm; font-weight:700; page-break-after:avoid;}
+  p{margin:0 0 3mm; page-break-inside:avoid; orphans:3; widows:3;}
+  strong{color:var(--ink); font-weight:700;}
+  ul{margin:0 0 3mm; padding-left:5mm;} li{margin-bottom:1.5mm;}
+
+  .occhiello{font-size:9pt; letter-spacing:.2em; text-transform:uppercase; color:var(--oro); margin:0 0 2mm; font-weight:700;}
+  .titolone{font-size:26pt; font-weight:800; color:var(--ink); letter-spacing:-.02em; margin:0 0 2mm; line-height:1.05;}
+  .scheda{font-size:9.5pt; color:var(--muted); border-bottom:1px solid var(--line); padding-bottom:3mm; margin-bottom:5mm;}
+  .scheda b{color:var(--ink);}
+  .page{page-break-before:always;}
+
+  .righe{border-left:2.5px solid var(--giallo); padding-left:4mm; margin:0 0 5mm .5mm;}
+  .r{margin:0 0 3mm; page-break-inside:avoid;}
+  .az{color:var(--muted); font-style:italic; display:block; font-size:9.8pt; margin-bottom:.5mm;}
+  .q{color:var(--ink); font-size:11.2pt;}
+  .hook{display:inline-block; background:var(--ink); color:var(--giallo); font-size:8pt; font-weight:700; letter-spacing:.1em; padding:1mm 2.5mm; border-radius:1mm; margin-bottom:1.5mm; text-transform:uppercase;}
+
+  .nota{background:var(--soft); border-left:3px solid var(--ink); padding:3mm 4mm; font-size:9.8pt; margin:4mm 0; page-break-inside:avoid;}
+  .nota b{color:var(--ink);}
+
+  table{width:100%; border-collapse:collapse; font-size:10pt; margin:0 0 4mm;}
+  tr{page-break-inside:avoid;}
+  th{text-align:left; font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); border-bottom:1.5px solid var(--ink); padding:0 3mm 1.5mm 0;}
+  td{padding:2mm 3mm 2mm 0; border-bottom:1px solid var(--line); vertical-align:top;}
+  td:first-child{white-space:nowrap; font-weight:700; color:var(--ink);}
+</style></head><body>
+
+<div class="cover">
+  <p class="kicker">Veloce Digital &nbsp;·&nbsp; Piano contenuti</p>
+  <h1>Il Pakoraban<br>cambia forma</h1>
+  <p class="sub">Sei script per il lancio dell'inverno</p>
+  <p class="meta">Ottobre 2026 &nbsp;·&nbsp; Inaugurazione 24 ottobre &nbsp;·&nbsp; Lauroween 31 ottobre</p>
+  <div class="foot"><span>Pakoraban &nbsp;·&nbsp; Pavone Mella (BS)</span><span>Bozza di lavoro</span></div>
+</div>
+
+<p class="occhiello">Piano</p>
+<h2>Sei video, un solo volto</h2>
+<p>Tutti i video hanno <strong>una sola ragazza</strong> in camera. Il tono è quello che ha funzionato sul profilo:
+diretto, locale, caption brevi, un gancio in apertura. La data del 24 ottobre non è mai l'inizio,
+è il payoff. Si dice sempre <strong>"tributo a…"</strong>: gli artisti non sono presenti.</p>
+
+<table>
+  <thead><tr><th>#</th><th>Video</th><th>Uscita</th><th>Obiettivo</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Il Pakoraban cambia forma</td><td>~12 ott</td><td>Rientro dopo 4 mesi, nuovo format, curiosità</td></tr>
+    <tr><td>2</td><td>Vale 40 euro?</td><td>~15 ott</td><td>Trend + svelamento community gratuita</td></tr>
+    <tr><td>3</td><td>Facciamo chiarezza</td><td>~19 ott</td><td>Spiega la serata, prenotazioni</td></tr>
+    <tr><td>4</td><td>-24 ore</td><td>23 ott</td><td>Countdown all'inaugurazione</td></tr>
+    <tr><td>5</td><td>Lauroween</td><td>~27 ott</td><td>Halloween, outfit</td></tr>
+    <tr><td>6</td><td>Ultima occasione per i Pako</td><td>29–30 ott</td><td>Chiusura community</td></tr>
+  </tbody>
+</table>
+
+<h3>La serata in breve</h3>
+<ul>
+  <li><strong>21:30</strong> Gran Buffet Show, su prenotazione</li>
+  <li><strong>23:00</strong> concerto live (24 ott: Gli Ultimi, tributo a Ultimo · 31 ott: Ragazzi Madre, tributo ad Achille Lauro)</li>
+  <li><strong>00:30</strong> discoteca Urban Gold, DJ e vocalist</li>
+  <li><strong>Prezzi usati negli script:</strong> 28€ buffet + drink + concerto + discoteca; 40€ discoteca dopo le 00:30</li>
+  <li><strong>Community "I Pako":</strong> gratuita, selezione all'ingresso, si entra solo il 24 o il 31 ottobre</li>
+</ul>
+
+<div class="nota"><b>Iscrizione alla community.</b> Commento <b>COMMUNITY</b> sotto il reel, messaggio automatico in DM
+con il link al modulo, dati gestiti dal proprietario. Prenotazioni della serata su WhatsApp.</div>
+
+<!-- ============ 1 ============ -->
+<div class="page">
+<p class="occhiello">Video 1 · ~12 ottobre</p>
+<p class="titolone">Il Pakoraban cambia forma</p>
+<p class="scheda"><b>Formato:</b> tour in selfie &nbsp;·&nbsp; <b>Durata:</b> 25–30 s &nbsp;·&nbsp; <b>Volto:</b> una ragazza</p>
+<div class="righe">
+  <p class="r"><span class="az">Locale vuoto, luci basse, lei da sola.</span><span class="q">"Quattro mesi che non ci vedete. Non siamo spariti: stavamo cambiando il Pakoraban."</span></p>
+  <p class="r"><span class="q">"Da quest'anno non saremo più solo una discoteca. Nasce un format completamente nuovo, per accogliervi tutti nella nostra casa."</span></p>
+  <p class="r"><span class="az">Buffet.</span><span class="q">"Dalle 21:30 apriamo con un Gran Buffet Show."</span></p>
+  <p class="r"><span class="az">Palco.</span><span class="q">"Alle 23 sale la band: concerto live, tributo a uno degli artisti più amati del momento."</span></p>
+  <p class="r"><span class="az">Pista.</span><span class="q">"E dalle 00:30, serata classica, come abbiamo sempre fatto al Pako."</span></p>
+  <p class="r"><span class="az">Luce piena, a camera.</span><span class="q">"Ma tutto questo… quando? <strong>Sabato 24 ottobre.</strong> Il Pakoraban riapre. E non sarà più solo una discoteca."</span></p>
+  <p class="r"><span class="q">"Segui la pagina e aspetta il prossimo video: non tutti potranno entrare."</span></p>
+</div>
+<div class="nota"><b>A schermo:</b> 21:30 buffet · 23:00 live · 00:30 disco, e alla fine "24 OTTOBRE".<br>
+<b>Caption:</b> "Il Pakoraban cambia forma. Il prossimo video spiega chi potrà entrare."</div>
+</div>
+
+<!-- ============ 2 ============ -->
+<div class="page">
+<p class="occhiello">Video 2 · ~15 ottobre</p>
+<p class="titolone">Vale 40 euro?</p>
+<p class="scheda"><b>Formato:</b> selfie, ritmo da trend &nbsp;·&nbsp; <b>Durata:</b> 25–30 s &nbsp;·&nbsp; <b>Volto:</b> una ragazza</p>
+<div class="righe">
+  <p class="r"><span class="hook">Hook</span><br><span class="q">"Secondo voi vale 40 euro entrare al Pakoraban dopo le 00:30?"</span></p>
+  <p class="r"><span class="az">Scatti rapidi, uno per punto.</span><span class="q">"Selezione all'ingresso. Sicurezza. Un'attenzione al cliente che altrove non trovi. I nostri privé. La pista. L'impianto. La qualità della musica."</span></p>
+  <p class="r"><span class="az">Pausa, sguardo in camera.</span><span class="q">"Quindi, secondo voi, vale 40 euro?"</span></p>
+  <p class="r"><span class="az">Ribaltamento.</span><span class="q">"Ma quei 40 euro li paga solo chi non entra nella community."</span></p>
+  <p class="r"><span class="q">"Iscriversi è <strong>gratis</strong>. Serve a creare una famiglia: offerte esclusive e un ingresso super scontato. Almeno la metà."</span></p>
+  <p class="r"><span class="q">"Commenta COMMUNITY e ti mando i dettagli in DM."</span></p>
+</div>
+<div class="nota"><b>A schermo:</b> "40€?" sul punto di domanda, poi "COMMUNITY = GRATIS".<br>
+<b>Caption:</b> "Vale 40 euro? Dipende da chi sei. Commenta COMMUNITY."<br>
+<b>CTA:</b> commento COMMUNITY.</div>
+</div>
+
+<!-- ============ 3 ============ -->
+<div class="page">
+<p class="occhiello">Video 3 · ~19 ottobre</p>
+<p class="titolone">Facciamo chiarezza</p>
+<p class="scheda"><b>Formato:</b> a camera, divano &nbsp;·&nbsp; <b>Durata:</b> 25–30 s &nbsp;·&nbsp; <b>Scopo:</b> spiega la serata e basta</p>
+<div class="righe">
+  <p class="r"><span class="hook">Hook</span><br><span class="q">"Facciamo chiarezza. Ora vi spiego com'è fatta la serata di apertura del Pakoraban."</span></p>
+  <p class="r"><span class="q">"Sabato 24 si comincia alle 21:30 con il Gran Buffet Show. Solo su prenotazione: scrivete a questo numero, rispondete a questa storia o mandateci un DM."</span></p>
+  <p class="r"><span class="q">"Alle 23 concerto live: Gli Ultimi, tributo a Ultimo."</span></p>
+  <p class="r"><span class="q">"Dalle 00:30 discoteca, DJ e vocalist, Urban Gold."</span></p>
+  <p class="r"><span class="q">"Gran Buffet, drink, concerto e discoteca: 28 euro, su prenotazione."</span></p>
+  <p class="r"><span class="q">"Per tutto il resto, scriveteci. E se siete community, scrivetelo."</span></p>
+  <p class="r"><span class="q">"Sabato 24 ottobre. Vi aspettiamo."</span></p>
+</div>
+<div class="nota"><b>A schermo:</b> 21:30 · 23:00 · 00:30 e "28€ buffet + drink + concerto + disco".<br>
+<b>Caption:</b> "Sabato 24 ottobre. Prenota: [numero] o scrivici in DM."<br>
+<b>CTA:</b> WhatsApp [numero].</div>
+</div>
+
+<!-- ============ 4 ============ -->
+<div class="page">
+<p class="occhiello">Video 4 · 23 ottobre</p>
+<p class="titolone">-24 ore</p>
+<p class="scheda"><b>Formato:</b> nel locale, stile "heist" in montaggio &nbsp;·&nbsp; <b>Durata:</b> 25–30 s &nbsp;·&nbsp; <b>Oggetti di scena:</b> nessuno</p>
+<p>Locale a luci basse e musica di suspense. Le spunte della checklist sono grafiche aggiunte in montaggio.</p>
+<div class="righe">
+  <p class="r"><span class="az">Cammina seria nel locale: buffet, palco, pista, area community. A ogni zona compare la spunta con il nome: BUFFET · PALCO · PISTA · LISTA COMMUNITY.</span></p>
+  <p class="r"><span class="q">"Domani apre il Pako. I posti per il Gran Buffet sono chiusi."</span></p>
+  <p class="r"><span class="q">"Vi ricordo: alle 23 la band, live, tributo a Ultimo. E dalle 00:30 si apre la pista: selezione all'ingresso, vi aspettiamo."</span></p>
+  <p class="r"><span class="az">A camera, luce piena. In sovraimpressione: "DOMANI".</span><span class="q">"Non fatevi raccontare com'è. Venite."</span></p>
+</div>
+<div class="nota"><b>A schermo:</b> "-24 ore" e "dalle 00:30 discoteca".<br>
+<b>Caption:</b> "Domani. Concerto alle 23, discoteca dalle 00:30."<br>
+<b>Da verificare:</b> che i posti del buffet siano davvero chiusi.</div>
+</div>
+
+<!-- ============ 5 ============ -->
+<div class="page">
+<p class="occhiello">Video 5 · ~27 ottobre</p>
+<p class="titolone">Lauroween: tu da che parte stai?</p>
+<p class="scheda"><b>Formato:</b> tre look a ritmo &nbsp;·&nbsp; <b>Durata:</b> 25 s &nbsp;·&nbsp; <b>Volto:</b> una ragazza, tre cambi</p>
+<div class="righe">
+  <p class="r"><span class="az">In nero, a camera.</span><span class="q">"Sabato 31 il Pakoraban non fa la solita festa di Halloween."</span></p>
+  <p class="r"><span class="az">Stacco, total white, ali.</span><span class="q">"Angelo?"</span></p>
+  <p class="r"><span class="az">Stacco, pelle nera, glitter rosso.</span><span class="q">"Diavolo?"</span></p>
+  <p class="r"><span class="az">Stacco, outfit da Lauro.</span><span class="q">"Oppure Lauro: sei già nel tema."</span></p>
+  <p class="r"><span class="q">"Sul palco i Ragazzi Madre, tributo ad Achille Lauro."</span></p>
+  <p class="r"><span class="q">"Vi aspettiamo con i vostri outfit più iconici."</span></p>
+  <p class="r"><span class="q">"Tu da che parte stai? Prenota su WhatsApp: [numero]."</span></p>
+</div>
+<div class="nota"><b>A schermo:</b> "31 OTTOBRE · LAUROWEEN".<br>
+<b>Caption:</b> "Il Diavolo veste Angelo. Baciami come se fossi un peccato."<br>
+<b>Nota:</b> è l'ultima serata per entrare nella community, lo dice il video 6. Il Blocco 03 (solo trap dalle 02:30) va in storia.</div>
+</div>
+
+<!-- ============ 6 ============ -->
+<div class="page">
+<p class="occhiello">Video 6 · 29–30 ottobre</p>
+<p class="titolone">Ultima occasione per i Pako</p>
+<p class="scheda"><b>Formato:</b> telefono in mano &nbsp;·&nbsp; <b>Durata:</b> 25–30 s &nbsp;·&nbsp; <b>Volto:</b> una ragazza</p>
+<div class="righe">
+  <p class="r"><span class="az">Scorre la lista sul telefono.</span><span class="q">"Questa è la vostra ultima occasione per entrare nella community del Pako. Sabato 31, Halloween."</span></p>
+  <p class="r"><span class="q">"Più avanti, per occasioni speciali, riapriremo la community. Ma per ora, per garantire sicurezza e un trattamento speciale ai clienti storici e alla famiglia del Pako, la chiudiamo."</span></p>
+  <p class="r"><span class="q">"Vi ricordo: senza community l'ingresso costa 40 euro. Con la community, la metà o meno."</span></p>
+  <p class="r"><span class="q">"Commenta COMMUNITY."</span></p>
+</div>
+<div class="nota"><b>A schermo:</b> "Ultima occasione · 31 ottobre".<br>
+<b>Caption:</b> "Dopo il 31 la community del Pako si chiude. Commenta COMMUNITY."</div>
+
+<h3>Da confermare</h3>
+<ul>
+  <li>Numero WhatsApp per le prenotazioni; modulo e messaggi automatici attivi entro il 12 ottobre.</li>
+  <li>Dettagli del Gran Buffet Show e conferma che i posti siano chiusi il 23.</li>
+  <li>Prezzi community definitivi: non compaiono negli script, solo "la metà o meno".</li>
+  <li>Risposta automatica per chi chiede "come entro dopo il 31?".</li>
+</ul>
+</div>
+
+</body></html>

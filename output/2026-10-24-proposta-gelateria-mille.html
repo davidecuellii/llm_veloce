@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Proposta Veloce Digital per Gelateria Mille</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #3A3A3A; background: #F5F5F5; font-size: 10.4pt; line-height: 1.5; }
+  .page { width: 210mm; height: 297mm; padding: 15mm 17mm 13mm; position: relative; overflow: hidden; background: #F5F5F5; break-after: page; display: flex; flex-direction: column; }
+  .page:last-child { break-after: auto; }
+  .dark { background: #202020; color: #D6D6D6; }
+  .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8mm; }
+  .top .b { display: flex; align-items: center; gap: 9px; font-weight: 800; color: #202020; font-size: 10pt; }
+  .top img { height: 24px; }
+  .top .c { color: #8A8A8A; font-size: 8.5pt; letter-spacing: .08em; text-transform: uppercase; }
+  .bottom { margin-top: auto; padding-top: 4mm; border-top: 1px solid #DCDCDC; display: flex; justify-content: space-between; color: #8A8A8A; font-size: 8pt; }
+  .kick { display: inline-block; background: #FFEE32; color: #202020; font-weight: 800; font-size: 7.5pt; letter-spacing: .14em; text-transform: uppercase; padding: 4px 10px; border-radius: 12px; margin-bottom: 3mm; align-self: flex-start; }
+  h1 { color: #fff; font-size: 34pt; line-height: 1.08; margin: 0 0 6mm; font-weight: 800; letter-spacing: -.01em; }
+  h2 { color: #202020; font-size: 19pt; line-height: 1.15; margin: 0 0 4mm; font-weight: 800; letter-spacing: -.01em; }
+  h3 { color: #202020; font-size: 11.5pt; margin: 0 0 1.5mm; font-weight: 800; }
+  .y { background: linear-gradient(transparent 60%, #FFEE32 60%); }
+  .dark .y { background: none; color: #FFEE32; }
+  p { margin: 0 0 3mm; }
+  ul { margin: 0 0 3mm; padding-left: 5mm; } li { margin-bottom: 1.3mm; }
+  b { color: #202020; }
+  .dark b { color: #fff; }
+  section + section { margin-top: 7mm; }
+  .grid { display: grid; gap: 4mm; } .g2 { grid-template-columns: 1fr 1fr; } .g3 { grid-template-columns: 1fr 1fr 1fr; } .g4 { grid-template-columns: repeat(4,1fr); }
+  .card { background: #fff; border-radius: 10px; padding: 4.5mm 5mm; border: 1px solid #E6E6E6; }
+  .card p, .card li { font-size: 9.6pt; }
+  .card.hi { background: #FFEE32; border-color: #FFEE32; }
+  .card.hi b, .card.hi h3 { color: #202020; }
+  .dark .card { background: #2A2A2A; border-color: #2A2A2A; color: #C8C8C8; }
+  .callout { background: #202020; color: #E6E6E6; border-radius: 10px; padding: 5mm 6mm; font-size: 11pt; }
+  .callout b { color: #FFEE32; }
+  .num { font-size: 22pt; font-weight: 800; color: #202020; line-height: 1; margin-bottom: 1.5mm; }
+  .dark .num { color: #FFEE32; }
+  .note { color: #8A8A8A; font-size: 8.3pt; }
+  table { width: 100%; border-collapse: collapse; font-size: 9.6pt; }
+  th { text-align: left; font-size: 7.5pt; letter-spacing: .1em; text-transform: uppercase; color: #8A8A8A; padding: 2mm 2mm; border-bottom: 2px solid #FFEE32; }
+  td { padding: 1.8mm 2mm; border-bottom: 1px solid #E2E2E2; vertical-align: top; }
+  td:first-child { font-weight: 800; color: #202020; width: 26%; }
+  .month { display: grid; grid-template-columns: 30mm 1fr; gap: 4mm; padding: 3.2mm 0; border-bottom: 1px solid #E2E2E2; }
+  .month .m { font-weight: 800; color: #202020; font-size: 10.5pt; }
+  .month .m span { display: block; font-size: 8pt; color: #8A8A8A; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; margin-top: 1mm; }
+  .plan { background: #fff; border: 1px solid #E6E6E6; border-radius: 12px; padding: 5mm; display: flex; flex-direction: column; }
+  .plan .t { font-size: 8pt; letter-spacing: .12em; text-transform: uppercase; color: #8A8A8A; font-weight: 800; }
+  .plan .p { font-size: 25pt; font-weight: 800; color: #202020; line-height: 1.1; margin: 2mm 0 1mm; }
+  .plan .p small { font-size: 9pt; color: #8A8A8A; font-weight: 600; }
+  .plan .s { text-decoration: line-through; color: #8A8A8A; font-size: 10.5pt; font-weight: 700; }
+  .plan ul { font-size: 9.2pt; margin-top: 3mm; }
+  .plan.rec { background: #FFEE32; border: 2px solid #202020; }
+  .plan.rec .t, .plan.rec .p small, .plan.rec .s { color: #3A3A3A; }
+  .badge { align-self: flex-start; background: #202020; color: #FFEE32; font-size: 7pt; font-weight: 800; letter-spacing: .14em; padding: 3px 8px; border-radius: 10px; margin-bottom: 2mm; }
+</style>
+</head>
+<body>
+
+<!-- 1 COPERTINA + IN BREVE -->
+<div class="page dark">
+  <img src="../tools/pitch-deck/logo_mark.png" style="height:44px;width:auto;align-self:flex-start;margin-bottom:22mm">
+  <div style="color:#8A8A8A;font-weight:700;font-size:11pt;margin-bottom:4mm">Proposta per Gelateria Mille</div>
+  <h1>Il gelato più premiato di Brescia, finalmente raccontato <span class="y">come merita.</span></h1>
+  <p style="font-size:12pt;max-width:150mm;margin-bottom:16mm">Strategia, format, percorso di sei mesi e pacchetti. Pensata per essere letta e discussa con il vostro team marketing.</p>
+
+  <div class="kick">In breve</div>
+  <div class="grid g2" style="margin-top:2mm">
+    <div class="card"><h3 style="color:#fff">Il punto</h3><p>La qualità di Mille è già certificata da altri. Sui social non si vede ancora: avete più post di tutti i concorrenti e meno follower.</p></div>
+    <div class="card"><h3 style="color:#fff">Cosa facciamo</h3><p>Ogni mese 12 video girati e montati da noi, l'apertura di TikTok, pubblicità e pagine di vendita misurabili euro per euro.</p></div>
+    <div class="card"><h3 style="color:#fff">Il primo traguardo</h3><p>Il Natale: preordini del panettone premiato con pubblicità attiva dalla seconda metà di novembre.</p></div>
+    <div class="card"><h3 style="color:#fff">Il pacchetto consigliato</h3><p><b>Espansione</b>: l'unico che include pubblicità, pagine di vendita e TikTok Shop, cioè quello che serve per vendere a Natale.</p></div>
+  </div>
+  <div class="bottom" style="border-color:#3A3A3A"><span>Veloce Digital · velocedigital.it</span><span>Ottobre 2026</span></div>
+</div>
+
+<!-- 2 CHI E' MILLE OGGI -->
+<div class="page">
+  <div class="top"><div class="b"><img src="../tools/pitch-deck/logo_mark.png">Veloce Digital</div><div class="c">Gelateria Mille · Proposta</div></div>
+  <section>
+    <div class="kick">01 · Mille oggi</div>
+    <h2>Un'eccellenza riconosciuta. <span class="y">Sui social, ancora no.</span></h2>
+    <div class="grid g3" style="margin-bottom:4mm">
+      <div class="card"><div class="num">Tre Coni</div><p>Gambero Rosso dal 2025, confermati per il 2027. Unica gelateria della provincia di Brescia.</p></div>
+      <div class="card"><div class="num">1° premio</div><p>Giuria tecnica a Re Panettone 2025, e tra i 30 migliori panettoni d'Italia per Dissapore.</p></div>
+      <div class="card"><div class="num">5 + 1</div><p>Verolanuova, Borgo San Giacomo, Roccafranca, Castelcovati, Orzinuovi. E presto la Franciacorta.</p></div>
+    </div>
+    <p>A questo si aggiungono oltre vent'anni di storia, Canale 5, il Corriere della Sera e Italian Gourmet. E un'offerta ampia: gelato, panettoni, torte, cioccolato, colazione e linea proteica.</p>
+    <div class="callout">Avete <b>oltre 1.100 post su Instagram</b>, più di qualunque concorrente, ma meno follower. Il problema non è quanto pubblicate. <b>È come lo raccontate.</b></div>
+  </section>
+  <section>
+    <h3 style="font-size:13pt;margin-bottom:3mm">Cosa vi costa, oggi, questa distanza</h3>
+    <div class="grid g3">
+      <div class="card"><h3>Clienti che scelgono altrove</h3><p>Chi decide dove prendere il gelato o cosa regalare lo decide sul telefono. Se lì Mille non spicca, sceglie chi spicca, anche con un prodotto meno premiato.</p></div>
+      <div class="card"><h3>Un panettone premiato che pochi conoscono</h3><p>Un primo premio vale in vendite solo se le persone lo sanno. Oggi la notizia resta dentro la cerchia di chi vi conosce già.</p></div>
+      <div class="card"><h3>Un'apertura da preparare</h3><p>In Franciacorta c'è già una pasticceria Tre Torte. Arrivare con un pubblico che vi conosce e vi aspetta fa la differenza dal primo giorno.</p></div>
+    </div>
+  </section>
+  <div class="bottom"><span>Fonti: gelateriamille.it, Gambero Rosso, Re Panettone, Dissapore. Dati verificati a ottobre 2026.</span><span>2</span></div>
+</div>
+
+<!-- 3 MERCATO -->
+<div class="page">
+  <div class="top"><div class="b"><img src="../tools/pitch-deck/logo_mark.png">Veloce Digital</div><div class="c">Gelateria Mille · Proposta</div></div>
+  <section>
+    <div class="kick">02 · Mercato e concorrenti</div>
+    <h2>Chi c'è intorno a voi, <span class="y">e come comunica.</span></h2>
+    <table>
+      <tr><th>Concorrente</th><th>Sui social</th><th>Come si racconta</th></tr>
+      <tr><td>Italo Vezzoli</td><td>45.000 follower con 219 post. Unico già attivo su TikTok.</td><td>Tradizione: "Grandi lievitati dal 1920", famiglia, lievito madre.</td></tr>
+      <tr><td>Andreoletti</td><td>Circa 9.000 follower.</td><td>Centrata sui premi.</td></tr>
+      <tr><td>Pasticceria Roberto (Erbusco)</td><td>Tre Torte Gambero Rosso.</td><td>In Franciacorta, dove aprirà il vostro nuovo negozio.</td></tr>
+      <tr><td>Iginio Massari</td><td>Marchio nazionale, nato a Brescia.</td><td>Il panettone d'eccellenza bresciano ha un pubblico in tutta Italia: uno spazio dove Mille entra con il suo premio.</td></tr>
+      <tr><td>Gelaterie con Due Coni</td><td>Bedussi, Alimento, Ribera, Gelato Elementare, Mologni, Rock 1978.</td><td>Nessuna con i Tre Coni. Nessuna presente su TikTok in modo serio.</td></tr>
+    </table>
+  </section>
+  <section>
+    <h3 style="font-size:13pt;margin-bottom:3mm">Cosa ne ricaviamo</h3>
+    <div class="grid g3">
+      <div class="card"><div class="num">1</div><h3>Tutti si somigliano</h3><p>Belle foto e una lista di premi. Nessuno ha un volto riconoscibile, nessuno fa vero intrattenimento.</p></div>
+      <div class="card"><div class="num">2</div><h3>TikTok è libero</h3><p>Sul gelato nessuno lo presidia. Chi arriva per primo si prende lo spazio, ed è più facile tenerlo che conquistarlo dopo.</p></div>
+      <div class="card hi"><div class="num">3</div><h3>Sul panettone, un'altra partita</h3><p>Gli altri raccontano la tradizione o i premi. Mille ha un racconto più fresco e più vicino alle persone, spiegato qui sotto.</p></div>
+    </div>
+    <div class="card" style="margin-top:4mm">
+      <h3>Qual è l'altra partita del panettone</h3>
+      <ul>
+        <li><b>Il premio più recente.</b> Mille ha vinto il primo premio della giuria tecnica nel 2025: è la notizia più fresca del territorio, non un'eredità.</li>
+        <li><b>Le persone, non la storia.</b> Si vede chi lo fa, il pasticcere premiato e il suo staff in laboratorio, con le ore e i passaggi che ci sono dietro.</li>
+        <li><b>Vicino a casa.</b> Lo trovate in cinque paesi della Bassa, presto in Franciacorta, e online. Un regalo premiato che si compra sotto casa.</li>
+        <li><b>Regalo per aziende e famiglie.</b> Dove gli altri vendono prestigio, Mille vende un regalo eccellente e alla portata di tutti.</li>
+      </ul>
+    </div>
+  </section>
+  <div class="bottom"><span>Dati Instagram e TikTok dei concorrenti rilevati a ottobre 2026.</span><span>3</span></div>
+</div>
+
+<!-- 4 RIPOSIZIONAMENTO + TONO -->
+<div class="page">
+  <div class="top"><div class="b"><img src="../tools/pitch-deck/logo_mark.png">Veloce Digital</div><div class="c">Gelateria Mille · Proposta</div></div>
+  <section>
+    <div class="kick">03 · Il riposizionamento sui social</div>
+    <h2>Portare sui social <span class="y">quello che siete dal vivo.</span></h2>
+    <p>Il vostro posizionamento c'è già: chi entra in un punto vendita Mille lo capisce subito. Va trasferito sui social, dove oggi non si vede.</p>
+    <div class="callout" style="font-size:13pt;margin:4mm 0">La gelateria più premiata di Brescia, raccontata in modo <b>semplice, divertente e vicino alle persone.</b></div>
+    <div class="grid g2">
+      <div class="card"><h3>Le qualità che avete dal vivo</h3><ul><li>Un prodotto premiato, ma accessibile</li><li>Persone vere al banco e in laboratorio</li><li>Un legame con i paesi dove siete</li><li>Un'offerta per ogni momento della giornata</li></ul></div>
+      <div class="card"><h3>Cosa fanno gli altri</h3><ul><li>Vendono prestigio e distanza</li><li>Mostrano il prodotto, non chi lo fa</li><li>Parlano di premi, non di persone</li></ul></div>
+    </div>
+    <p style="margin-top:4mm;font-size:11.5pt"><b>Su questo terreno puntiamo a sbaragliare la concorrenza anche sui social.</b></p>
+  </section>
+  <section>
+    <div class="kick">04 · Il tono di voce</div>
+    <div class="grid g3">
+      <div class="card"><h3>Simpatico, smart, diretto</h3><p>Parla a tutti: ragazzi, famiglie, aziende, nonni.</p></div>
+      <div class="card"><h3>Curato, non ingessato</h3><p>Immagini belle e video di qualità, senza l'effetto vetrina di lusso che allontana.</p></div>
+      <div class="card"><h3>Vero</h3><p>Niente copioni da recitare. Diamo tema e linee guida, e le persone parlano con le loro parole.</p></div>
+    </div>
+    <div class="card hi" style="margin-top:4mm;padding:5mm 6mm">
+      <h3 style="font-size:12.5pt">Perché proprio questo tono</h3>
+      <p style="font-size:10.4pt;margin:0">Le persone comprano l'autenticità, non un personaggio costruito. <b>Più si è autentici, più cresce la fiducia, e la fiducia nel tempo diventa vendita.</b> Un pubblico fedele vi sceglie, torna e vi consiglia: è l'unico modo per creare una notorietà locale che porta clienti in negozio, e un passaparola molto più ampio di quello che avete oggi. Ogni format qui sotto nasce da questa idea.</p>
+    </div>
+  </section>
+  <div class="bottom"><span>Veloce Digital</span><span>4</span></div>
+</div>
+
+<!-- 5 FORMAT -->
+<div class="page">
+  <div class="top"><div class="b"><img src="../tools/pitch-deck/logo_mark.png">Veloce Digital</div><div class="c">Gelateria Mille · Proposta</div></div>
+  <div class="kick">05 · I format</div>
+  <h2>Quattro categorie, <span class="y">ognuna con un compito.</span></h2>
+  <div class="grid g2">
+    <div class="card"><h3>Intrattenimento, per farsi conoscere</h3><ul>
+      <li><b>Indovina il gusto:</b> per strada, nei paesi dei punti vendita. Chi indovina vince un gelato o 5 € di sconto.</li>
+      <li><b>Il panettone alla prova:</b> facciamo assaggiare per strada il panettone artigianale premiato e chiediamo agli sconosciuti cosa ne pensano. Il contenuto sono le reazioni e i pareri sinceri.</li>
+      <li><b>Seguici e assaggia:</b> chi ci segue sul momento riceve un assaggio gratis.</li>
+      <li><b>Il gelato è un ricordo:</b> le persone raccontano cosa significa per loro il gelato. Speriamo che anche il nostro diventi un vostro ricordo.</li></ul></div>
+    <div class="card"><h3>Dietro le quinte, per far capire il valore</h3><ul>
+      <li><b>Quanto ci vuole:</b> le ore e i passaggi dietro un panettone, raccontati in un minuto.</li>
+      <li><b>Come nasce un gusto:</b> dall'idea al banco, compreso il gusto premiato dal Gambero Rosso.</li>
+      <li><b>Packaging riutilizzabile</b> e attenzione agli sprechi.</li></ul>
+      <h3 style="margin-top:3mm">Persone, per creare fiducia</h3><ul>
+      <li>Gabriele Pè, lo staff premiato del laboratorio e le persone dei punti vendita.</li>
+      <li>I clienti affezionati che raccontano il loro gusto preferito.</li></ul></div>
+  </div>
+  <div class="card hi" style="margin-top:4mm">
+    <h3 style="font-size:12.5pt">Vendita, per portare incassi</h3>
+    <p style="margin-bottom:2.5mm">Ogni prodotto ha il suo video, il suo momento e la sua azione concreta.</p>
+    <table style="font-size:9.3pt">
+      <tr><th style="color:#3A3A3A;border-color:#202020">Prodotto</th><th style="color:#3A3A3A;border-color:#202020">Cosa raccontiamo</th><th style="color:#3A3A3A;border-color:#202020">Dove porta</th></tr>
+      <tr><td>Panettone premiato</td><td>Il premio, il laboratorio, il regalo di Natale</td><td>Preordine online, ritiro in negozio, TikTok Shop</td></tr>
+      <tr><td>Regali aziendali</td><td>Il regalo premiato per clienti e dipendenti</td><td>Pagina dedicata con richiesta di preventivo</td></tr>
+      <tr><td>Colazione</td><td>Brioche e caffè nei punti vendita</td><td>Codice sconto da usare in negozio</td></tr>
+      <tr><td>Linea proteica</td><td>Il gelato per chi fa sport</td><td>Codice sconto e collaborazioni con palestre</td></tr>
+      <tr><td>Aperture</td><td>Il negozio in Franciacorta, dal cantiere al primo giorno</td><td>Evento inaugurale e pubblicità sulla zona</td></tr>
+    </table>
+    <p style="margin:3mm 0 0">In circa un video su tre, in chiusura: <b>"Entra nella nostra community e ricevi 5 € di sconto. Il link è in bio."</b></p>
+  </div>
+  <div class="bottom"><span>Veloce Digital</span><span>5</span></div>
+</div>
+
+<!-- 6 PERCORSO -->
+<div class="page">
+  <div class="top"><div class="b"><img src="../tools/pitch-deck/logo_mark.png">Veloce Digital</div><div class="c">Gelateria Mille · Proposta</div></div>
+  <section>
+    <div class="kick">06 · Il percorso di sei mesi</div>
+    <h2>Da novembre ad aprile, <span class="y">un passo alla volta.</span></h2>
+    <div class="month"><div class="m">Novembre<span>Farsi conoscere e aprire i preordini</span></div><div>
+      <p><b>Prime due settimane.</b> Apertura di TikTok con un ritmo intenso: quattro video nella prima settimana, poi verso i 12 al mese. Chi siete, dove siete, come ci siete arrivati, con leggerezza.</p>
+      <p style="margin:0"><b>Dalla terza settimana.</b> Annuncio dei preordini del panettone premiato. Partono subito pagina di vendita e pubblicità, così si vende mentre le famiglie e le aziende scelgono i regali.</p></div></div>
+    <div class="month"><div class="m">Dicembre<span>Vendere</span></div><div><p style="margin:0">Panettone, regali aziendali, cene di lavoro e tutto l'Avvento. Campagne e pagine portano allo shop online, così ogni vendita è tracciata. In parallelo, i format di strada fanno crescere follower e visibilità.</p></div></div>
+    <div class="month"><div class="m">Gennaio – Aprile<span>Diventare il punto di riferimento</span></div><div><p style="margin:0">Laboratorio, colazione, linea proteica, packaging sostenibile, contenuti per le famiglie e "Il gelato è un ricordo". San Valentino e Pasqua come momenti di vendita. Poi l'apertura in Franciacorta, con conto alla rovescia, pubblicità mirata sulla zona ed evento inaugurale. Infine la ripartenza della stagione del gelato.</p></div></div>
+  </section>
+  <section>
+    <div class="kick">07 · Cosa aspettarsi, con onestà</div>
+    <div class="grid g3">
+      <div class="card"><h3>I primi due mesi</h3><p>Servono a costruire il pubblico e raccogliere i primi dati. Un profilo TikTok nuovo non fa grandi numeri subito, anche se un video ben fatto può esplodere in qualsiasi momento.</p></div>
+      <div class="card"><h3>Il Natale</h3><p>Partendo a poche settimane, darà risultati buoni, ma non quelli di un lavoro avviato da mesi. Per questo la pubblicità parte già a novembre.</p></div>
+      <div class="card"><h3>Nel tempo</h3><p>I risultati crescono mese dopo mese, e ogni mese li vedrete nei report.</p></div>
+    </div>
+  </section>
+  <div class="bottom"><span>Veloce Digital</span><span>6</span></div>
+</div>
+
+<!-- 7 MISURA + PUBBLICITA' -->
+<div class="page">
+  <div class="top"><div class="b"><img src="../tools/pitch-deck/logo_mark.png">Veloce Digital</div><div class="c">Gelateria Mille · Proposta</div></div>
+  <section>
+    <div class="kick">08 · Come misuriamo il lavoro</div>
+    <h2>Sapere da dove arriva <span class="y">ogni cliente.</span></h2>
+    <div class="grid g3">
+      <div class="card"><h3>La community</h3><p>Dal link in bio la persona lascia la sua email e riceve un codice o QR da 5 €. Link diversi per Instagram, TikTok e pubblicità: sappiamo da dove arriva ogni cliente, anche quando compra in negozio.</p></div>
+      <div class="card"><h3>Vendite online</h3><p>Tracciate tramite le pagine di vendita, il vostro e-commerce e TikTok Shop.</p></div>
+      <div class="card"><h3>Report mensile</h3><p>Visualizzazioni, interazioni, follower, iscrizioni, utilizzo dei codici e vendite.</p></div>
+    </div>
+  </section>
+  <section>
+    <div class="kick">09 · La pubblicità, un esempio pratico</div>
+    <p><b>Budget consigliato: 20-30 € al giorno per campagna, cioè 600-900 € al mese</b>, pagati direttamente da voi alle piattaforme e separati dal nostro compenso. Una pagina su un quotidiano locale costa molto di più per un solo giorno di uscita, e non vi dice chi l'ha letta.</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="card">
+        <h3>Esempio: il panettone premiato, 20 € al giorno per 30 giorni</h3>
+        <table style="font-size:9.4pt">
+          <tr><td>600 €</td><td>di budget in un mese</td></tr>
+          <tr><td>~80.000</td><td>persone che vedono la pubblicità, solo vicino ai vostri punti vendita e interessate a dolci, regali, prodotti artigianali</td></tr>
+          <tr><td>~800-900</td><td>persone che cliccano e arrivano sulla pagina del panettone</td></tr>
+          <tr><td>20-35</td><td>panettoni venduti online, se ordinano 2-4 persone su 100: circa 800-1.400 € di incassi</td></tr>
+        </table>
+      </div>
+      <div class="callout">
+        <p style="margin-bottom:3mm">Chi ha visto la pubblicità e poi è passato in negozio <b>non rientra in questo conto</b>: il risultato reale di solito è più alto.</p>
+        <p style="margin:0">Sapete quanto avete speso, quante persone vi hanno visto e quanto vi è tornato, <b>euro per euro</b>. Con un volantino o una pagina di giornale non succede.</p>
+      </div>
+    </div>
+    <p class="note" style="margin-top:3mm">Numeri indicativi, per far capire come funziona. Ipotesi: panettone a circa 40 €. I dati reali li vedrete nei report mensili.</p>
+  </section>
+  <div class="bottom"><span>Veloce Digital</span><span>7</span></div>
+</div>
+
+<!-- 8 RISULTATI + COME LAVORIAMO + CHI SIAMO -->
+<div class="page">
+  <div class="top"><div class="b"><img src="../tools/pitch-deck/logo_mark.png">Veloce Digital</div><div class="c">Gelateria Mille · Proposta</div></div>
+  <section>
+    <div class="kick">10 · Un nostro risultato</div>
+    <h2>Geely Italia: un marchio nuovo, <span class="y">presentato con un nostro video.</span></h2>
+    <p>Geely entrava in Italia da zero. Abbiamo scritto, girato e montato il video creator della campagna di lancio su TikTok, poi scelta da <b>TikTok for Business come case study ufficiale</b>.</p>
+    <div class="grid g3" style="margin-bottom:3mm">
+      <div class="card"><div class="num">12 mln</div><p>impression della campagna</p></div>
+      <div class="card"><div class="num">3,85 €</div><p>costo per mille visualizzazioni</p></div>
+      <div class="card"><div class="num">9,20 €</div><p>costo per contatto, nell'automotive</p></div>
+    </div>
+    <p class="note">Risultati della campagna di lancio Geely Italia su TikTok, impostata dal partner media di Geely tramite TikTok One. Fonte: TikTok for Business. Il principio vale anche per voi: il contenuto giusto abbassa il costo di tutta la pubblicità.</p>
+  </section>
+  <section>
+    <div class="kick">11 · Come lavoriamo</div>
+    <div class="grid g2">
+      <div class="card"><ul style="margin:0">
+        <li><b>Ogni mese, entro il mese precedente,</b> vi mandiamo il piano dei contenuti con tema, obiettivo e linee guida di ogni video.</li>
+        <li><b>Un'uscita al mese</b> per le riprese, due con il pacchetto Espansione.</li>
+        <li><b>I video</b> arrivano in una cartella condivisa, numerati da 1 a 12 nell'ordine di pubblicazione consigliato. La pubblicazione la fa la vostra social media manager, libera di riorganizzarli.</li></ul></div>
+      <div class="card"><ul style="margin:0">
+        <li><b>Una o due call al mese</b> con il vostro team marketing per allinearci su promozioni, priorità e modifiche.</li>
+        <li><b>Rispondiamo entro 8 ore lavorative,</b> tutti i giorni. Se un problema si può risolvere subito, lo risolviamo.</li>
+        <li><b>Qualità sempre alta:</b> anche con iPhone usiamo luci e microfoni professionali.</li></ul></div>
+    </div>
+  </section>
+  <section>
+    <div class="kick">12 · Chi siamo</div>
+    <p>Veloce Digital è uno studio creativo con tre soci: <b>Gabriel, Davide e Matteo</b>. Una realtà snella, e per voi è un vantaggio: parlate sempre con chi crea davvero i vostri contenuti, senza intermediari. Crediamo che i social debbano intrattenere, non solo vendere. È così che una pagina diventa un punto di riferimento.</p>
+  </section>
+  <div class="bottom"><span>Case study: ads.tiktok.com · velocedigital.it</span><span>8</span></div>
+</div>
+
+<!-- 9 PACCHETTI -->
+<div class="page">
+  <div class="top"><div class="b"><img src="../tools/pitch-deck/logo_mark.png">Veloce Digital</div><div class="c">Gelateria Mille · Proposta</div></div>
+  <section>
+    <div class="kick">13 · I pacchetti</div>
+    <h2>Tre pacchetti, <span class="y">uno pensato per il vostro Natale.</span></h2>
+    <div class="grid g3" style="align-items:stretch">
+      <div class="plan"><div class="t">Base</div><div class="p">1.500 € <small>/mese</small></div>
+        <ul><li>8 video al mese, girati e montati da noi</li><li>Piano dei contenuti mensile</li><li>Un'uscita al mese per le riprese</li></ul>
+        <p class="note" style="margin-top:auto">Il pacchetto essenziale. Non è quello che vi consigliamo: per una realtà come la vostra sarebbe uno spreco.</p></div>
+      <div class="plan"><div class="t">Crescita</div><div class="p">2.100 € <small>/mese</small></div>
+        <ul><li>12 video al mese, girati e montati da noi</li><li>Apertura di TikTok</li><li>Piano dei contenuti mensile</li><li>Un'uscita al mese per le riprese</li><li>Una o due call al mese</li></ul>
+        <p class="note" style="margin-top:auto">Extra: riprese con videocamera professionale, 300 € al mese.</p></div>
+      <div class="plan rec"><div class="badge">IL NOSTRO CONSIGLIO</div><div class="t">Espansione</div><div class="s">3.400 €</div><div class="p" style="margin-top:0">2.900 € <small>/mese</small></div>
+        <ul><li><b>Tutto il Crescita</b></li><li>Riprese con videocamera, obiettivi e luci professionali</li><li>Seconda uscita al mese per foto e video pubblicitari, come il panettone su set</li><li>Pagine di vendita e campagne pubblicitarie, pianificate il mese prima</li><li>Apertura e gestione di TikTok Shop, con formazione del vostro team</li><li>Stima del ritorno, verificata ogni mese nei report</li></ul></div>
+    </div>
+    <p class="note" style="margin-top:3mm">Prezzi mensili, IVA esclusa. Il budget pubblicitario è a parte e va direttamente alle piattaforme. Il prezzo barrato è il valore dei servizi dell'Espansione presi singolarmente.</p>
+  </section>
+  <section>
+    <div class="kick">14 · Durata e pagamento</div>
+    <ul>
+      <li>Collaborazione minima di <b>sei mesi</b>, con una verifica a metà percorso.</li>
+      <li>Alla scadenza, possibilità di un accordo annuale con condizioni dedicate.</li>
+      <li>Fatturazione divisa in tre parti uguali, una per ciascun socio. Se è un problema, troviamo una soluzione diversa.</li>
+    </ul>
+  </section>
+  <section>
+    <div class="callout">Questa linea strategica è una proposta iniziale, costruita sulla situazione di oggi. <b>La adatteremo insieme a voi, mese dopo mese,</b> in base ai risultati e alle vostre esigenze.</div>
+  </section>
+  <div class="bottom"><span>Veloce Digital · velocedigital.it</span><span>9</span></div>
+</div>
+
+</body>
+</html>

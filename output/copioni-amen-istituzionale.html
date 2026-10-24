@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<title>Amen — Tre mondi, una sola essenza</title>
+<style>
+  @page { size: A4 portrait; margin: 16mm 15mm 14mm; }
+  @page :first { margin: 0; }
+
+  :root{
+    --ink:#202020; --body:#33322E; --muted:#6B6B6B; --line:#DAD8CF; --soft:#EFEDE6;
+    --giallo:#FFEE32; --oro:#8A7B00; --paper:#FFFFFF;
+    --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  body{margin:0; font-family:var(--sans); font-size:10.8pt; line-height:1.55;
+       color:var(--body); background:var(--paper);}
+
+  /* ---------- copertina ---------- */
+  .cover{background:#202020; color:#D6D6D6; height:297mm; width:100%;
+         padding:70mm 22mm 22mm; page-break-after:always; position:relative;}
+  .cover .kicker{font-size:9.5pt; letter-spacing:.22em; text-transform:uppercase; color:#8C8C8C; margin:0 0 14mm;}
+  .cover h1{font-size:40pt; line-height:1.02; letter-spacing:-.02em; color:var(--giallo);
+            margin:0 0 6mm; font-weight:800;}
+  .cover .sub{font-size:16pt; color:#D6D6D6; margin:0 0 3mm; font-weight:400;}
+  .cover .meta{font-size:11pt; color:#8C8C8C; margin:0;}
+  .cover .foot{position:absolute; bottom:22mm; left:22mm; right:22mm;
+               border-top:1px solid #3A3A3A; padding-top:5mm; font-size:9.5pt; color:#8C8C8C;
+               display:flex; justify-content:space-between;}
+
+  /* ---------- tipografia ---------- */
+  h2{font-size:17pt; line-height:1.15; letter-spacing:-.01em; color:var(--ink);
+     margin:0 0 2mm; font-weight:800;}
+  h2 .num{color:var(--oro);}
+  h3{font-size:9pt; letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+     margin:7mm 0 2mm; font-weight:700;}
+  p{margin:0 0 3mm;} strong{color:var(--ink); font-weight:700;}
+  em{color:var(--muted);}
+  ul{margin:0 0 3mm; padding-left:5mm;} li{margin-bottom:1.5mm;}
+
+  .scheda{font-size:9.5pt; color:var(--muted); border-bottom:1px solid var(--line);
+          padding-bottom:3mm; margin-bottom:4mm;}
+  .scheda b{color:var(--ink);}
+
+  .intro{font-size:11pt; color:var(--body); margin-bottom:4mm;}
+
+  /* ---------- battute ---------- */
+  .beat{margin:0 0 4mm; page-break-inside:avoid;}
+  .tc{display:inline-block; background:var(--ink); color:var(--giallo);
+      font-size:8pt; font-weight:700; letter-spacing:.1em; padding:1mm 2.5mm;
+      border-radius:1mm; margin-bottom:2mm; text-transform:uppercase;}
+  .tc span{color:#D6D6D6; font-weight:400;}
+  .righe{border-left:2.5px solid var(--giallo); padding-left:4mm; margin-left:.5mm;}
+  .r{margin:0 0 2.2mm;}
+  .chi{font-weight:800; color:var(--ink); letter-spacing:.02em;}
+  .az{color:var(--muted); font-style:italic;}
+  .vuoto{display:inline-block; min-width:20mm; border-bottom:1.5px solid var(--ink);
+         background:var(--soft); height:1.15em; vertical-align:-.2em; margin:0 1px;}
+
+  .nota{background:var(--soft); border-left:3px solid var(--ink); padding:3mm 4mm;
+        font-size:9.8pt; margin:4mm 0; page-break-inside:avoid;}
+  .nota b{color:var(--ink);}
+
+  table{width:100%; border-collapse:collapse; font-size:10pt; margin:0 0 4mm;}
+  thead{display:table-header-group;}
+  tr{page-break-inside:avoid;}
+  h3{page-break-after:avoid;}
+  h2{page-break-after:avoid;}
+  .scheda, .intro{page-break-after:avoid;}
+  ul{page-break-inside:avoid;}
+  th{text-align:left; font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase;
+     color:var(--muted); border-bottom:1.5px solid var(--ink); padding:0 3mm 1.5mm 0;}
+  td{padding:2mm 3mm 2mm 0; border-bottom:1px solid var(--line); vertical-align:top;}
+  td:first-child{white-space:nowrap;}
+
+  .page{page-break-before:always;}
+  .titolone{font-size:26pt; font-weight:800; color:var(--ink); letter-spacing:-.02em;
+            margin:0 0 2mm;}
+  .occhiello{font-size:9pt; letter-spacing:.2em; text-transform:uppercase; color:var(--oro);
+             margin:0 0 2mm; font-weight:700;}
+
+code{font-family:var(--sans);font-weight:700;color:var(--ink);}*{overflow-wrap:break-word;}ol{margin:0 0 3mm;padding-left:6.5mm;}li{margin-bottom:1.5mm;}ul{page-break-inside:auto;}ol.keep,ul.keep{page-break-inside:avoid;}ul.chk{list-style:none;padding-left:0;}ul.chk li{padding-left:6.5mm;text-indent:-6.5mm;}table{table-layout:fixed;}td:first-child{white-space:normal;}h2{hyphens:none;line-height:1.18;}</style></head><body>
+<div class="cover">
+  <p class="kicker">Teresa Chiuduno &times; Amen &middot; Script</p>
+  <h1>Amen<br>Tre mondi,<br>una sola<br>essenza</h1>
+  <p class="sub">Video istituzionale</p>
+  <p class="meta">Essential &middot; Signature &middot; Heritage</p>
+  <div class="foot"><span>21 ottobre 2026</span><span>Davide &middot; 331 204 3165</span></div>
+</div>
+<p>Video istituzionale sulle tre collezioni Amen: <strong>Essential, Signature, Heritage</strong>. Spiega in modo semplice una scelta di Amen: <strong>offrire lo stesso gioiello in tre materiali e tre prezzi</strong>, per parlare a clienti diversi senza perdere il disegno.</p>
+<p class="scheda"><strong>Dove</strong>: showroom Amen · <strong>Chi</strong>: Chiara, Anna e la guida · <strong>Durata</strong>: circa 100 secondi · <strong>Tono</strong>: pulito, calmo, senza battute</p>
+<h2 style="margin-top:8mm;font-size:15pt">Cosa deve capire chi guarda</h2>
+<ol class="keep"><li>Amen lavora su <strong>tre fasce di prezzo</strong>, non su una sola</li><li>Ogni fascia ha il suo <strong>materiale</strong>: acciaio, lega, argento</li><li>Il disegno è lo stesso: <strong>tre mondi, una sola essenza</strong></li><li>Ognuno può trovare il suo, che cerchi un regalo o che cerchi qualità</li></ol>
+<h2 style="margin-top:8mm;font-size:15pt">I tre mondi, in una tabella</h2>
+<table><thead><tr><th>Collezione</th><th>Materiale</th><th>Il rosario, per esempio</th></tr></thead><tbody><tr><td><strong>Essential</strong></td><td>Acciaio</td><td>19 €</td></tr><tr><td><strong>Signature</strong></td><td>Lega</td><td>29 €</td></tr><tr><td><strong>Heritage</strong></td><td>Argento</td><td>49 €</td></tr></tbody></table>
+<p>Il rosario è l&#x27;esempio da usare in camera: <strong>è lo stesso gioiello nei tre materiali</strong>, quindi si vede la differenza di prezzo e di materiale senza spiegarla.</p>
+<h2 style="margin-top:8mm;font-size:15pt">Da confermare con la guida prima di girare</h2>
+<ul class="chk keep"><li>☐ <strong>Quale collezione è quale materiale</strong>: Essential = acciaio, Signature = lega, Heritage = argento</li><li>☐ <strong>I prezzi del rosario</strong> (19, 29, 49) sono quelli di listino di oggi?</li><li>☐ <strong>Come dire il limite dell&#x27;acciaio</strong>: "non è malleabile" va bene, o c&#x27;è una parola migliore?</li><li>☐ <strong>Lo scontrino medio con l&#x27;argento</strong>, intorno ai 50 €: si può dire in camera?</li><li>☐ <strong>Quali delle tre collezioni vende Teresa Chiuduno</strong>, per la chiusura</li></ul>
+<p class="scheda"><strong>Serve</strong>: i tre rosari allineati sul tavolo, in ordine di prezzo (acciaio, lega, argento), e un gioiello per ciascuna collezione da tenere in mano.</p>
+<div class="page"></div><p class="occhiello">Copione 1</p>
+<h2><span class="num">TRE MONDI, UNA SOLA ESSENZA</span> — il video istituzionale</h2>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-8 <span>· gancio</span></span>
+<p class="intro" style="font-size:9.8pt">Chiara, ai tre rosari allineati sul tavolo</p>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Lo stesso gioiello, tre prezzi: 19, 29 e 49 euro."</p><p class="r"><span class="chi">ANNA:</span> "Sai cosa cambia?"</p></div>
+<p><em>(Regia: primo piano sui tre rosari, uno dopo l&#x27;altro, con il prezzo a schermo.)</em></p>
+</div><div class="beat"><span class="tc">8-28 <span>· il problema</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> <em>(alla guida)</em> "Qui da Amen lo scontrino medio, con l&#x27;argento, è intorno ai 50 euro."</p><p class="r"><span class="chi">GUIDA:</span> "Il nostro problema era come tornare su una fascia di prezzo più bassa, senza perdere la qualità del gioiello."</p><p class="r"><span class="chi">ANNA:</span> "E come si fa?"</p></div>
+</div><div class="beat"><span class="tc">28-52 <span>· la soluzione</span></span>
+
+<div class="righe"><p class="r"><span class="chi">GUIDA:</span> "Abbiamo cambiato materiale. L&#x27;alternativa era l&#x27;acciaio, ma l&#x27;acciaio non è malleabile: non permette di fare il gioiello com&#x27;è disegnato. Allora abbiamo scelto una lega."</p><p class="r"><span class="chi">CHIARA:</span> "E la lega?"</p><p class="r"><span class="chi">GUIDA:</span> "Ha un prezzo accessibile, e il disegno resta lo stesso."</p></div>
+<p><em>(Regia: durante la risposta, mani sul rosario in lega, primo piano sul materiale.)</em></p>
+</div><div class="beat"><span class="tc">52-82 <span>· i tre mondi</span></span>
+<p class="intro" style="font-size:9.8pt">Chiara indica un gioiello alla volta, il nome compare a schermo</p>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Allora: <strong>Essential</strong>, in acciaio. Il rosario costa 19 euro."</p><p class="r"><span class="chi">CHIARA:</span> "<strong>Signature</strong>, in lega. Il rosario costa 29 euro."</p><p class="r"><span class="chi">CHIARA:</span> "<strong>Heritage</strong>, in argento. Il rosario costa 49 euro."</p><p class="r"><span class="chi">ANNA:</span> "E chi li compra?"</p><p class="r"><span class="chi">GUIDA:</span> "Chi cerca un regalino, chi cerca la qualità. Dipende da cosa cerchi: così ognuno trova la sua fascia."</p></div>
+</div><div class="beat"><span class="tc">82-95 <span>· l&#x27;essenza</span></span>
+
+<div class="righe"><p class="r"><span class="chi">GUIDA:</span> "Tre materiali, tre prezzi, una sola essenza."</p><p class="r"><span class="chi">CHIARA:</span> "Tre mondi, una sola essenza."</p></div>
+</div><div class="beat"><span class="tc">95-105 <span>· chiusura</span></span>
+<p class="intro" style="font-size:9.8pt">Anna in camera, i tre rosari alle spalle</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "E tu dove ti riconosci? Scrivilo nei commenti."</p><p class="r"><span class="chi">CHIARA:</span> "Li trovi da Teresa Chiuduno, <span class="vuoto"></span>."</p></div>
+</div><h3>CAPTION</h3>
+<div class="nota"><p class="r" style="margin:0 0 1mm">Tre mondi, una sola essenza.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm"><strong>Essential</strong>, in acciaio. <strong>Signature</strong>, in lega. <strong>Heritage</strong>, in argento. Lo stesso gioiello in tre materiali e tre prezzi: il rosario costa 19, 29 o 49 euro.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">E tu dove ti riconosci? Scrivilo nei commenti.</p></div>
+<h2 style="margin-top:8mm;font-size:15pt">Tre ganci alternativi</h2>
+<p>Se il primo non convince, si registrano <strong>tutti e tre</strong> e si sceglie al montaggio.</p>
+<ol class="keep"><li>(C) "Lo stesso rosario, tre materiali, tre prezzi. Ti faccio vedere la differenza."</li><li>(A) "Quanto costa un gioiello Amen? Dipende da quale dei tre mondi scegli."</li><li>(C+A) "Acciaio, lega o argento? Oggi vediamo cosa cambia."</li></ol>
+<h2 style="margin-top:8mm;font-size:15pt">Una versione più corta, per i reel</h2>
+<p>Per un reel da circa 30 secondi si tengono <strong>gancio, tre mondi e chiusura</strong> (0-8, 52-82, 95-105). Il problema e la soluzione si possono raccontare in un video a parte, per chi vuole capire il perché.</p>
+</body></html>

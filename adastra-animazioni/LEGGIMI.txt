@@ -1,0 +1,13 @@
+ANIMAZIONI ADASTRA - ADV EICMA (video 1)
+Tutte in ProRes 4444 con alpha premoltiplicato, 1080x1920, 30 fps (come quelle di Teresa). Trascinale sopra il video in Resolve.
+Palette: nero #0A0A0A, bianco, grigio #5C5C5C solo per testi secondari. Font: Creato Display.
+
+V1 - overlay unico (trascina e basta): adastra-v1-overlay.mov (25,27 s) = tutte le animazioni ai tempi del parlato.
+V1 - animazioni al tempo del parlato: 6 file separati, con il secondo di inizio nel video:
+  01-hook-stand 0,2 s | 02-costo-stand 3,5 s | 03-8-9-novembre 7,0 s | 04-la-fiera-si-gioca-dopo 13,1 s | 05-lower-third-chiara 17,8 s | 06-cta-caffe 21,0 s
+Libreria drag and drop: rete-networking (loop), biglietti da visita, 100 biglietti/0 richiamati, calendario, pin Fiera Milano Rho, DM CAFFE, tazza (loop), badge EICMA, ROI, stand vs contatti, decine di migliaia di euro.
+assets-eicma: logo EICMA scaricato da eicma.it (colori e bianco) + 3 foto ufficiali EICMA 2025 (ingressi/folla, con watermark EICMA).
+Diritti: loghi e foto sono di E.I.C.M.A. S.p.A.; il sito non indica licenze: chiedere l'ok all'ufficio stampa EICMA prima di usarli in un ADV a pagamento.
+Da verificare: "3-8 novembre" e "Fiera Milano Rho" (fonti stampa); le animazioni non contengono dati inventati oltre a quelli del parlato.
+
+Sound effect (WAV 48 kHz stereo, 24 bit, generati da sintesi): sfx-1-swoosh, sfx-2-swoosh-impatto, sfx-3-pop; v1-sfx-sincronizzati.wav (25,3 s) = traccia con tutti gli effetti ai tempi delle animazioni del V1 (27 eventi): trascinala a inizio timeline su una traccia audio.

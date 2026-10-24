@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<title>Teresa Chiuduno — Dove si ferma la vendita online</title>
+<style>
+  @page { size: A4 portrait; margin: 16mm 15mm 14mm; }
+  @page :first { margin: 0; }
+
+  :root{
+    --ink:#202020; --body:#33322E; --muted:#6B6B6B; --line:#DAD8CF; --soft:#EFEDE6;
+    --giallo:#FFEE32; --oro:#8A7B00; --paper:#FFFFFF;
+    --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  body{margin:0; font-family:var(--sans); font-size:10.8pt; line-height:1.55;
+       color:var(--body); background:var(--paper);}
+
+  /* ---------- copertina ---------- */
+  .cover{background:#202020; color:#D6D6D6; height:297mm; width:100%;
+         padding:70mm 22mm 22mm; page-break-after:always; position:relative;}
+  .cover .kicker{font-size:9.5pt; letter-spacing:.22em; text-transform:uppercase; color:#8C8C8C; margin:0 0 14mm;}
+  .cover h1{font-size:40pt; line-height:1.02; letter-spacing:-.02em; color:var(--giallo);
+            margin:0 0 6mm; font-weight:800;}
+  .cover .sub{font-size:16pt; color:#D6D6D6; margin:0 0 3mm; font-weight:400;}
+  .cover .meta{font-size:11pt; color:#8C8C8C; margin:0;}
+  .cover .foot{position:absolute; bottom:22mm; left:22mm; right:22mm;
+               border-top:1px solid #3A3A3A; padding-top:5mm; font-size:9.5pt; color:#8C8C8C;
+               display:flex; justify-content:space-between;}
+
+  /* ---------- tipografia ---------- */
+  h2{font-size:17pt; line-height:1.15; letter-spacing:-.01em; color:var(--ink);
+     margin:0 0 2mm; font-weight:800;}
+  h2 .num{color:var(--oro);}
+  h3{font-size:9pt; letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+     margin:7mm 0 2mm; font-weight:700;}
+  p{margin:0 0 3mm;} strong{color:var(--ink); font-weight:700;}
+  em{color:var(--muted);}
+  ul{margin:0 0 3mm; padding-left:5mm;} li{margin-bottom:1.5mm;}
+
+  .scheda{font-size:9.5pt; color:var(--muted); border-bottom:1px solid var(--line);
+          padding-bottom:3mm; margin-bottom:4mm;}
+  .scheda b{color:var(--ink);}
+
+  .intro{font-size:11pt; color:var(--body); margin-bottom:4mm;}
+
+  /* ---------- battute ---------- */
+  .beat{margin:0 0 4mm; page-break-inside:avoid;}
+  .tc{display:inline-block; background:var(--ink); color:var(--giallo);
+      font-size:8pt; font-weight:700; letter-spacing:.1em; padding:1mm 2.5mm;
+      border-radius:1mm; margin-bottom:2mm; text-transform:uppercase;}
+  .tc span{color:#D6D6D6; font-weight:400;}
+  .righe{border-left:2.5px solid var(--giallo); padding-left:4mm; margin-left:.5mm;}
+  .r{margin:0 0 2.2mm;}
+  .chi{font-weight:800; color:var(--ink); letter-spacing:.02em;}
+  .az{color:var(--muted); font-style:italic;}
+  .vuoto{display:inline-block; min-width:20mm; border-bottom:1.5px solid var(--ink);
+         background:var(--soft); height:1.15em; vertical-align:-.2em; margin:0 1px;}
+
+  .nota{background:var(--soft); border-left:3px solid var(--ink); padding:3mm 4mm;
+        font-size:9.8pt; margin:4mm 0; page-break-inside:avoid;}
+  .nota b{color:var(--ink);}
+
+  table{width:100%; border-collapse:collapse; font-size:10pt; margin:0 0 4mm;}
+  thead{display:table-header-group;}
+  tr{page-break-inside:avoid;}
+  h3{page-break-after:avoid;}
+  h2{page-break-after:avoid;}
+  .scheda, .intro{page-break-after:avoid;}
+  ul{page-break-inside:avoid;}
+  th{text-align:left; font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase;
+     color:var(--muted); border-bottom:1.5px solid var(--ink); padding:0 3mm 1.5mm 0;}
+  td{padding:2mm 3mm 2mm 0; border-bottom:1px solid var(--line); vertical-align:top;}
+  td:first-child{white-space:nowrap;}
+
+  .page{page-break-before:always;}
+  .titolone{font-size:26pt; font-weight:800; color:var(--ink); letter-spacing:-.02em;
+            margin:0 0 2mm;}
+  .occhiello{font-size:9pt; letter-spacing:.2em; text-transform:uppercase; color:var(--oro);
+             margin:0 0 2mm; font-weight:700;}
+
+a{color:var(--oro);text-decoration:none;}*{overflow-wrap:break-word;}body{font-size:10.5pt;}h2{font-size:19pt;line-height:1.18;margin:0 0 4mm;hyphens:none;}h3{font-size:8.6pt;letter-spacing:.10em;line-height:1.45;margin:5mm 0 2mm;white-space:normal;max-width:100%;}p{margin:0 0 3mm;}table{font-size:9.8pt;table-layout:fixed;width:100%;margin:0 0 4.5mm;}th,td{overflow-wrap:break-word;hyphens:none;}td:first-child{white-space:normal;}th:first-child{width:40%;}th{line-height:1.3;padding-bottom:2mm;}td{padding:2mm 3mm 2mm 0;}.kv td:first-child{width:30%;color:var(--ink);font-weight:700;}.kv td{padding:1.8mm 3mm 1.8mm 0;}.cover h1{font-size:33pt;}ol{margin:0 0 3mm;padding-left:6mm;}li{margin-bottom:1.5mm;}
+</style></head><body>
+<div class="cover">
+  <p class="kicker">Veloce Digital &middot; Analisi</p>
+  <h1>Dove si ferma<br>la vendita<br>online</h1>
+  <p class="sub">Teresa Chiuduno &middot; Settembre 2026</p>
+  <p class="meta">E cosa facciamo adesso</p>
+  <div class="foot"><span>Teresa Chiuduno &times; Veloce Digital</span><span>Davide &middot; 331 204 3165</span></div>
+</div>
+<p><strong>Teresa Chiuduno × Veloce Digital</strong> · Incontro del ________ · Dati al 23 settembre 2026</p>
+<p>Questo documento risponde a una domanda sola: i contenuti stanno girando bene, il pubblico c&#x27;è e risponde. <strong>Perché gli ordini online non stanno arrivando?</strong></p>
+<p>Abbiamo messo insieme tre fonti: i dati del vostro shop, i numeri dei profili Instagram e TikTok e il catalogo online, tutti letti il 22 e 23 settembre. Nessun numero qui dentro è stimato: dove un dato ancora non ce l&#x27;abbiamo, è scritto.</p>
+<h2 style="margin-top:9mm">In due minuti</h2>
+<p><strong>L&#x27;attenzione c&#x27;è, ed è tanta</strong>: 231.770 visualizzazioni su Instagram nelle ultime tre settimane, con una media di 7.726 a contenuto.</p>
+<p><strong>Il pubblico dice chiaramente cosa vuole comprare</strong>: il 71% di quelle visualizzazioni è su abbigliamento e accessori, cioè esattamente la categoria che in negozio vale più della metà del fatturato.</p>
+<p><strong>Il percorso tra il video e la cassa non è ancora completo.</strong> Tre cose lo interrompono, sono tutte identificate, e due delle tre si chiudono in due settimane.</p>
+<p>Il lavoro dei prossimi trenta giorni non è fare più contenuti: è <strong>mettere in vendita quello che i contenuti stanno già facendo desiderare</strong>.</p>
+<div class="page"></div>
+<p class="occhiello">Punto 1</p><h2>Quello che funziona</h2>
+<table class="kv"><tbody><tr><td>Visualizzazioni Instagram, ultimi 30 contenuti (5-22 settembre)</td><td><strong>231.770</strong></td></tr><tr><td>Media per contenuto</td><td>7.726</td></tr><tr><td>Contenuto più visto</td><td>15.951</td></tr><tr><td>Visite al sito, dal 1 luglio</td><td>2.125</td></tr><tr><td>Da quali città</td><td>Milano 202 · Brescia 176 · Bergamo 100</td></tr></tbody></table>
+<p>Due cose che vale la pena notare, perché non erano scontate.</p>
+<p><strong>Il pubblico non è solo di Chiuduno.</strong> Milano è la prima città per visite al sito. Significa che i contenuti stanno arrivando a persone che in negozio non ci verranno mai, e per le quali l&#x27;unico modo di comprare da voi è online.</p>
+<p><strong>Il pubblico ha già votato.</strong> I due contenuti più visti del mese sono il tailleur da 49,90 e "le taglie uniche non sono mai uguali". La risposta è arrivata forte: vogliono i capi.</p>
+<div class="page"></div>
+<p class="occhiello">Punto 2</p><h2>Dove si ferma il percorso</h2>
+<p>Questi sono i numeri del sito dal 1 luglio al 23 settembre.</p>
+<table><thead><tr><th>Passaggio</th><th>Persone</th></tr></thead><tbody><tr><td>Sono arrivate sul sito</td><td><strong>2.125</strong></td></tr><tr><td>Hanno messo qualcosa nel carrello</td><td>41</td></tr><tr><td>Sono arrivate al pagamento</td><td>13</td></tr><tr><td><strong>Hanno completato l&#x27;ordine</strong></td><td><strong>0</strong></td></tr></tbody></table>
+<p>Nello stesso periodo sono arrivati <strong>4 ordini, tutti da TikTok</strong>, per 77,10€. E di quei quattro, <strong>uno o due sono prodotti che abbiamo mandato gratis a dei creator</strong> per farli provare: è un investimento in visibilità, non una vendita.</p>
+<p>Il numero su cui ci siamo fermati è il penultimo: <strong>tredici persone sono arrivate fino al pagamento e nessuna ha concluso.</strong> Sono poche per trarne una legge, ma è il punto più avanti nel percorso, ed è quello dove si perde la gente che aveva già deciso di comprare.</p>
+<h3>La prima cosa che verifichiamo, insieme</h3>
+<p><strong>Che il pagamento funzioni in ogni condizione.</strong> Facciamo un ordine di prova reale, con una carta vera, fino alla conferma, e controlliamo insieme a voi che Shopify Payments e PayPal siano attivi e collegati al conto giusto — quella parte è legata alla banca, quindi va guardata con voi.</p>
+<p>È una verifica da mezz&#x27;ora ed è la prima in ordine di tempo, perché se lì qualcosa si inceppa, tutto il resto del piano viene dopo.</p>
+<div class="page"></div>
+<p class="occhiello">Punto 3</p><h2>Le tre cause, in ordine di peso</h2>
+<h3>Causa 1 — Quello che fa più visualizzazioni non è ancora acquistabile</h3>
+<p>È la più importante e la più semplice da risolvere.</p>
+<table><thead><tr><th>Categoria mostrata nel video</th><th>Contenuti a settembre</th><th>Visualizzazioni</th><th>Acquistabile online</th></tr></thead><tbody><tr><td><strong>Abbigliamento</strong></td><td>18</td><td><strong>145.352</strong></td><td><strong>non ancora</strong></td></tr><tr><td>Skincare</td><td>2</td><td>23.872</td><td>sì</td></tr><tr><td>Vita in negozio</td><td>2</td><td>22.830</td><td>—</td></tr><tr><td>Gioielli</td><td>3</td><td>14.400</td><td>sì, dal 17 settembre</td></tr><tr><td>Portafogli</td><td>1</td><td>14.117</td><td>sì</td></tr><tr><td>Borse</td><td>1</td><td>5.963</td><td>sì</td></tr><tr><td>Profumi</td><td>1</td><td>1.309</td><td>sì</td></tr></tbody></table>
+<p>Centoquarantacinquemila visualizzazioni su capi con il prezzo scritto in didascalia e l&#x27;invito a comprare. Chi clicca arriva sul sito con un&#x27;intenzione precisa — vuole <strong>quell&#x27;abito</strong> — e trova un negozio che ancora non lo vende.</p>
+<p>Non compra un profumo al posto dell&#x27;abito: esce.</p>
+<p><strong>È qui che si gioca il prossimo mese.</strong> Il catalogo online è passato da 61 a 95 prodotti tra agosto e settembre, con profumi, skincare, capelli, gioielli, borse e portafogli. L&#x27;abbigliamento è l&#x27;ultimo pezzo, ed è quello che il pubblico sta chiedendo più forte.</p>
+<h3>Causa 2 — Il percorso dal video al prodotto è troppo lungo</h3>
+<p>Oggi, per comprare un capo visto in un reel, una persona deve fare sei passaggi: uscire dal video, aprire il profilo, toccare il link, passare dalla pagina dei link, arrivare sulla home del sito e cercare il prodotto.</p>
+<p>Si vede nei numeri: <strong>l&#x27;81% di chi arriva sul sito atterra sulla home</strong>, e solo 33 persone su 2.125 sono arrivate direttamente sulla pagina di un prodotto.</p>
+<p>Ogni passaggio perde persone. <strong>Il primo intervento è portare il link direttamente al prodotto del video</strong>, invece che al negozio intero.</p>
+<p>Da lì in avanti è un lavoro di prove: proveremo percorsi diversi tra il contenuto e la scheda prodotto e terremo quello che porta più gente fino in fondo. È il tipo di cosa che non si decide a tavolino, si misura.</p>
+<div class="page"></div>
+<h3>Causa 3 — Chi non vi conosce non si fida ancora</h3>
+<p>A Chiuduno il negozio è una garanzia. Online, per chi vi scopre da un reel, siete un nome nuovo che chiede la carta di credito.</p>
+<p>Il 90% delle visite arriva da telefono, spesso di sera, da chi vi ha scoperto due minuti prima. In quel momento servono tre risposte: che le spedizioni partono davvero, che si può rendere, e che chi ha comprato si è trovato bene.</p>
+<p>Si risolve in parte sul sito e in parte <strong>nei contenuti</strong>: far vedere il magazzino, i pacchi che partono, le clienti che ricevono. Da ottobre diventa una rubrica fissa.</p>
+<div class="page"></div>
+<p class="occhiello">Punto 4</p><h2>Quello che è già cambiato</h2>
+<table class="kv"><tbody><tr><td><strong>Spedizione</strong></td><td>Scesa da 7,99€ a <strong>4,99€</strong> dall&#x27;inizio di settembre</td></tr><tr><td><strong>Catalogo</strong></td><td>Da 61 a 95 prodotti: gioielli, borse in vera pelle, portafogli, capelli</td></tr><tr><td><strong>Gioielli</strong></td><td>Caricati il 17 settembre, con foto</td></tr><tr><td><strong>TikTok Shop</strong></td><td>Pratica di verifica aperta con l&#x27;assistenza, seguita da un referente TikTok</td></tr></tbody></table>
+<p><strong>E da ottobre aumentiamo le uscite.</strong> Abbiamo già alzato la produzione di video — due giornate di riprese al mese invece di una — e di conseguenza aumentiamo anche il numero di contenuti pubblicati. <strong>Il costo per voi non cambia di un euro.</strong> Lo facciamo perché il sistema deve funzionare, e più contenuti significa più prove, più prodotti mostrati e più occasioni di capire cosa vende davvero.</p>
+<p>Sul <strong>TikTok Shop</strong>: la verifica riguarda l&#x27;originalità dei prodotti, cioè l&#x27;autorizzazione dei brand sui profumi. È l&#x27;unico canale che finora ha prodotto ordini, quindi vale la pena chiuderla in fretta — e serve una mano vostra, al punto 6.</p>
+<div class="page"></div>
+<p class="occhiello">Punto 5</p><h2>Il piano delle prossime quattro settimane</h2>
+<p><strong>Settimana 1</strong></p>
+<table><thead><tr><th>Cosa</th><th>Chi</th></tr></thead><tbody><tr><td>Verifica del pagamento con ordine di prova</td><td>Veloce + voi per la parte banca</td></tr><tr><td><strong>Primi capi di abbigliamento online</strong>, partendo da quelli già mostrati nei video</td><td>Veloce</td></tr><tr><td>Vetrina di stagione al posto di "Estate"</td><td>Veloce</td></tr><tr><td>Link diretto al prodotto del video, al posto del link generico</td><td>Veloce</td></tr><tr><td>Pagine spedizioni, resi e domande frequenti</td><td>Veloce</td></tr></tbody></table>
+<p><strong>Settimane 2 e 3</strong></p>
+<table><thead><tr><th>Cosa</th><th>Chi</th></tr></thead><tbody><tr><td><strong>Caricamento in giornata</strong>: il capo che gira nel video è online lo stesso giorno</td><td>Veloce, con le vostre foto</td></tr><tr><td>Prove sul percorso tra contenuto e prodotto, per accorciare i passaggi</td><td>Veloce</td></tr><tr><td>Recensioni sui prodotti, chieste a chi ha già comprato</td><td>Veloce</td></tr><tr><td>Chiusura della pratica TikTok Shop</td><td>Veloce + voi</td></tr><tr><td>Confronto dei nostri prezzi con gli altri siti sui prodotti più visti</td><td>Veloce</td></tr></tbody></table>
+<p><strong>Settimana 4</strong></p>
+<table><thead><tr><th>Cosa</th><th>Chi</th></tr></thead><tbody><tr><td>Rubrica fissa sull&#x27;e-commerce nei contenuti: magazzino, spedizioni, pacchi</td><td>Veloce</td></tr><tr><td>Decisione insieme sulla soglia di spedizione gratuita</td><td>Insieme</td></tr><tr><td>Preparazione del Natale, che per il vostro assortimento è il momento dell&#x27;anno</td><td>Insieme</td></tr></tbody></table>
+<div class="page"></div>
+<p class="occhiello">Punto 6</p><h2>Cosa ci serve da voi</h2>
+<p>Sono tre cose, tutte veloci, e sono quelle che fanno la differenza sui tempi.</p>
+<p><strong>1. Le foto dei capi, il giorno stesso.</strong> Quando Chiara gira un capo nuovo, mandateci due o tre foto e il prezzo. Al resto pensiamo noi: descrizione, scheda, caricamento. Così il video esce quando il capo è già comprabile, ed è l&#x27;unico modo per sapere davvero se si vende online.</p>
+<p><strong>2. Quali capi avete in più pezzi.</strong> Se un capo è in un pezzo solo, online si esaurisce con il primo ordine e tutti gli altri trovano "non disponibile". Sapendolo prima, spingiamo nei contenuti quelli che avete in profondità.</p>
+<p><strong>3. I documenti per TikTok Shop.</strong> Le fatture d&#x27;acquisto dei profumi e, se c&#x27;è, la lettera di autorizzazione del distributore. Sono l&#x27;unica cosa che manca per chiudere la verifica.</p>
+<div class="page"></div>
+<p class="occhiello">Punto 7</p><h2>Cosa guardiamo insieme, da ottobre</h2>
+<p>Le visualizzazioni da sole non bastano più: abbiamo appena visto che possono crescere mentre le vendite stanno ferme. Da ottobre guardiamo questi numeri ogni settimana, e questo è il punto di partenza.</p>
+<table><thead><tr><th></th><th>Oggi</th></tr></thead><tbody><tr><td>Capi di abbigliamento acquistabili online</td><td>0</td></tr><tr><td>Prodotti totali a catalogo</td><td>95</td></tr><tr><td>Visite al sito a settimana</td><td>~175</td></tr><tr><td>Persone che arrivano direttamente su una scheda prodotto</td><td>33 su 2.125</td></tr><tr><td>Ordini online a settimana</td><td>0</td></tr></tbody></table>
+<p>L&#x27;obiettivo dei prossimi trenta giorni non è un numero di vendite: è <strong>avere finalmente il percorso completo</strong>, dal video al prodotto al pagamento, e misurare cosa succede quando funziona tutto. Oggi non lo abbiamo mai visto funzionare per intero, ed è questa la cosa che va cambiata per prima.</p>
+<p><em>Dati: Shopify, profili Instagram e TikTok, catalogo online. Estrazione del 22-23 settembre 2026. Veloce Digital · Davide 331 204 3165</em></p>
+</body></html>

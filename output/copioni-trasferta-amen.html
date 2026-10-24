@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<title>Teresa Chiuduno × Amen — La giornata in fabbrica</title>
+<style>
+  @page { size: A4 portrait; margin: 16mm 15mm 14mm; }
+  @page :first { margin: 0; }
+
+  :root{
+    --ink:#202020; --body:#33322E; --muted:#6B6B6B; --line:#DAD8CF; --soft:#EFEDE6;
+    --giallo:#FFEE32; --oro:#8A7B00; --paper:#FFFFFF;
+    --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  body{margin:0; font-family:var(--sans); font-size:10.8pt; line-height:1.55;
+       color:var(--body); background:var(--paper);}
+
+  /* ---------- copertina ---------- */
+  .cover{background:#202020; color:#D6D6D6; height:297mm; width:100%;
+         padding:70mm 22mm 22mm; page-break-after:always; position:relative;}
+  .cover .kicker{font-size:9.5pt; letter-spacing:.22em; text-transform:uppercase; color:#8C8C8C; margin:0 0 14mm;}
+  .cover h1{font-size:40pt; line-height:1.02; letter-spacing:-.02em; color:var(--giallo);
+            margin:0 0 6mm; font-weight:800;}
+  .cover .sub{font-size:16pt; color:#D6D6D6; margin:0 0 3mm; font-weight:400;}
+  .cover .meta{font-size:11pt; color:#8C8C8C; margin:0;}
+  .cover .foot{position:absolute; bottom:22mm; left:22mm; right:22mm;
+               border-top:1px solid #3A3A3A; padding-top:5mm; font-size:9.5pt; color:#8C8C8C;
+               display:flex; justify-content:space-between;}
+
+  /* ---------- tipografia ---------- */
+  h2{font-size:17pt; line-height:1.15; letter-spacing:-.01em; color:var(--ink);
+     margin:0 0 2mm; font-weight:800;}
+  h2 .num{color:var(--oro);}
+  h3{font-size:9pt; letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+     margin:7mm 0 2mm; font-weight:700;}
+  p{margin:0 0 3mm;} strong{color:var(--ink); font-weight:700;}
+  em{color:var(--muted);}
+  ul{margin:0 0 3mm; padding-left:5mm;} li{margin-bottom:1.5mm;}
+
+  .scheda{font-size:9.5pt; color:var(--muted); border-bottom:1px solid var(--line);
+          padding-bottom:3mm; margin-bottom:4mm;}
+  .scheda b{color:var(--ink);}
+
+  .intro{font-size:11pt; color:var(--body); margin-bottom:4mm;}
+
+  /* ---------- battute ---------- */
+  .beat{margin:0 0 4mm; page-break-inside:avoid;}
+  .tc{display:inline-block; background:var(--ink); color:var(--giallo);
+      font-size:8pt; font-weight:700; letter-spacing:.1em; padding:1mm 2.5mm;
+      border-radius:1mm; margin-bottom:2mm; text-transform:uppercase;}
+  .tc span{color:#D6D6D6; font-weight:400;}
+  .righe{border-left:2.5px solid var(--giallo); padding-left:4mm; margin-left:.5mm;}
+  .r{margin:0 0 2.2mm;}
+  .chi{font-weight:800; color:var(--ink); letter-spacing:.02em;}
+  .az{color:var(--muted); font-style:italic;}
+  .vuoto{display:inline-block; min-width:20mm; border-bottom:1.5px solid var(--ink);
+         background:var(--soft); height:1.15em; vertical-align:-.2em; margin:0 1px;}
+
+  .nota{background:var(--soft); border-left:3px solid var(--ink); padding:3mm 4mm;
+        font-size:9.8pt; margin:4mm 0; page-break-inside:avoid;}
+  .nota b{color:var(--ink);}
+
+  table{width:100%; border-collapse:collapse; font-size:10pt; margin:0 0 4mm;}
+  thead{display:table-header-group;}
+  tr{page-break-inside:avoid;}
+  h3{page-break-after:avoid;}
+  h2{page-break-after:avoid;}
+  .scheda, .intro{page-break-after:avoid;}
+  ul{page-break-inside:avoid;}
+  th{text-align:left; font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase;
+     color:var(--muted); border-bottom:1.5px solid var(--ink); padding:0 3mm 1.5mm 0;}
+  td{padding:2mm 3mm 2mm 0; border-bottom:1px solid var(--line); vertical-align:top;}
+  td:first-child{white-space:nowrap;}
+
+  .page{page-break-before:always;}
+  .titolone{font-size:26pt; font-weight:800; color:var(--ink); letter-spacing:-.02em;
+            margin:0 0 2mm;}
+  .occhiello{font-size:9pt; letter-spacing:.2em; text-transform:uppercase; color:var(--oro);
+             margin:0 0 2mm; font-weight:700;}
+
+code{font-family:var(--sans);font-weight:700;color:var(--ink);}*{overflow-wrap:break-word;}ol{margin:0 0 3mm;padding-left:6.5mm;}li{margin-bottom:1.5mm;}ul{page-break-inside:auto;}ol.keep,ul.keep{page-break-inside:avoid;}ul.chk{list-style:none;padding-left:0;}ul.chk li{padding-left:6.5mm;text-indent:-6.5mm;}table{table-layout:fixed;}td:first-child{white-space:normal;}h2{hyphens:none;line-height:1.18;}</style></head><body>
+<div class="cover">
+  <p class="kicker">Veloce Digital &middot; Piano contenuti</p>
+  <h1>Teresa<br>Chiuduno<br>&times; Amen</h1>
+  <p class="sub">La giornata in fabbrica</p>
+  <p class="meta">Quattro video &middot; Ganci &middot; Domande alla guida &middot; Riprese</p>
+  <div class="foot"><span>21 ottobre 2026</span><span>Davide &middot; 331 204 3165</span></div>
+</div>
+<p>Oggi giriamo ad Arezzo, nella fabbrica di Amen. Questo documento è la guida per la giornata: <strong>cosa vogliamo raccontare, quali video facciamo, cosa chiedere alla guida e cosa riprendere.</strong></p>
+<p><strong>Data</strong>: 21 ottobre 2026 · <strong>In scena</strong>: Chiara e Anna · <strong>Dietro la camera</strong>: Davide e Gabriel · <strong>Guida</strong>: il referente di Amen</p>
+<h2 style="margin-top:8mm;font-size:15pt">L&#x27;idea in una frase</h2>
+<p><strong>Dietro ogni gioiello di Teresa Chiuduno ci sono persone, rapporti e una scelta.</strong> Non siamo un negozio che ordina un catalogo e rivende. Amen è l&#x27;esempio più chiaro, perché è uno dei gioielli che vendiamo di più e ci hanno aperto tutta la fabbrica.</p>
+<p>Non lo diciamo a parole: <strong>lo facciamo vedere</strong>. Chi guarda deve uscire dal video sapendo come nasce un gioiello e perché lo scegliamo.</p>
+<h2 style="margin-top:8mm;font-size:15pt">I quattro video</h2>
+<table><thead><tr><th>#</th><th>Video</th><th>Durata</th><th>Cosa deve capire chi guarda</th></tr></thead><tbody><tr><td>1</td><td><strong>Il tour dentro Amen</strong>, in collaborazione</td><td>3-4 min</td><td>Come nasce un gioiello, dal disegno alla confezione</td></tr><tr><td>2</td><td><strong>Cosa c&#x27;è dietro ogni gioiello</strong> di Teresa Chiuduno</td><td>circa 60 sec</td><td>Che i nostri gioielli sono selezionati, non scelti a caso</td></tr><tr><td>3</td><td><strong>Dentro la collezione Amen</strong></td><td>circa 65 sec</td><td>Che la collezione che vendiamo di più è fatta bene, e perché</td></tr><tr><td>4</td><td><strong>Vlog: un giorno da Amen</strong></td><td>circa 3 min</td><td>La giornata raccontata da Chiara e Anna</td></tr></tbody></table>
+<p>Il video 1 è il più importante: è quello pulito, per la collaborazione. Gli altri tre usano le stesse riprese con un taglio diverso. Dal materiale si montano poi altri video, un reel per reparto: per questo si riprende <strong>più del necessario</strong>.</p>
+<h2 style="margin-top:8mm;font-size:15pt">Come si lavora in fabbrica</h2>
+<ul class="keep"><li><strong>Tutto in verticale (9:16)</strong>, sia iPhone sia videocamera</li><li><strong>Ogni ripresa dura almeno 10 secondi</strong>: si taglia dopo, non si allunga</li><li><strong>Domanda e risposta della guida si girano due volte</strong>: una nel flusso, una pulita e breve</li><li>Se il referente non vuole rispondere in camera, le domande si fanno lo stesso e risponde Chiara</li><li><strong>Le battute su quello che pensiamo</strong> ("non me l&#x27;aspettavo") si dicono solo se sono vere</li></ul>
+<h2 style="margin-top:8mm;font-size:15pt">Cosa non diciamo</h2>
+<ul class="keep"><li><strong>Nessun nome di altri marchi</strong>, nemmeno per confronto</li><li>"Italiano" o "fatto a mano" solo se la guida lo conferma in camera, per quel pezzo</li><li>Niente promesse su materiali che non abbiamo visto</li><li>Il discorso sulla selezione vale per <strong>i gioielli</strong>. Per il resto del negozio: "tanti articoli selezionati"</li><li>Il prezzo non apre mai un video: arriva dopo aver visto come si lavora</li></ul>
+<h2 style="margin-top:8mm;font-size:15pt">Da chiedere alla guida prima di iniziare</h2>
+<ul class="chk keep"><li>☐ Possiamo riprendere in faccia chi lavora, o solo mani e banchi?</li><li>☐ Ci sono collezioni non ancora uscite o reparti da non riprendere?</li><li>☐ Come vi piace che Amen sia citato (nome, tag)?</li><li>☐ Chi pubblica il contenuto in collaborazione, e volete vederlo prima?</li></ul>
+<div class="page"></div><p class="occhiello">Teresa Chiuduno &times; Amen</p><h2>GLI HOOK</h2>
+<p>Il gancio è la <strong>prima frase del video</strong>, nei primi 3 secondi. Se non convince, il resto non lo guarda nessuno. Qui ce ne sono <strong>30</strong>, i migliori, divisi per video.</p>
+<p><strong>Come si registrano</strong>: tutti di fila, dritti in camera, 3-5 secondi ciascuno, <strong>due volte</strong> con un tono diverso (una normale, una più forte). Si fanno in tre momenti: <strong>all&#x27;ingresso</strong> (i ganci "stiamo per entrare"), <strong>dentro ogni reparto</strong> (quelli del reparto) e <strong>a fine giornata</strong> (quelli "a caldo", con la faccia di chi ha visto tutto).</p>
+<p><strong>(C)</strong> Chiara · <strong>(A)</strong> Anna · <strong>(C+A)</strong> insieme.</p>
+<h2 style="margin-top:8mm;font-size:15pt">Video 1 — Il tour</h2>
+<ol class="keep"><li>(C) "Oggi vi portiamo dove nasce un gioiello Amen."</li><li>(A) "Siamo entrate in una fabbrica di gioielli. Ci hanno fatto vedere tutto."</li><li>(C) "Quante mani servono per fare una collana? Lo scopriamo adesso."</li><li>(C+A) "Dal disegno al gioiello finito: una giornata dentro Amen."</li><li>(A) "Non sapevo come si fa un gioiello. Adesso lo vediamo."</li></ol>
+<h2 style="margin-top:8mm;font-size:15pt">Video 2 — Cosa c&#x27;è dietro ogni gioiello</h2>
+<ol class="keep"><li>(C+A) "Cosa c&#x27;è dietro ogni gioiello di Teresa Chiuduno? Oggi siamo qui da Amen!"</li><li>(C) "Dietro ogni gioiello che vendiamo ci sono persone. Oggi ve le facciamo conoscere."</li><li>(A) "Come scegliamo i gioielli che trovate in negozio? Ve lo mostriamo."</li><li>(C) "Un gioiello da noi non arriva da un catalogo. Vi portiamo a vedere da dove."</li><li>(A) "Prima di venderlo, andiamo a vederlo nascere."</li></ol>
+<h2 style="margin-top:8mm;font-size:15pt">Video 3 — La collezione Amen</h2>
+<ol class="keep"><li>(A) "Amen è uno dei gioielli che vendiamo di più. Oggi vediamo come nasce."</li><li>(C) "Croce, medaglia, Sacro Cuore: come si fa un gioiello così piccolo?"</li><li>(A) "Si annerisce? Lo chiediamo a chi le produce."</li><li>(C) "Vi abbiamo sempre detto che sono di qualità. Oggi ve lo facciamo vedere."</li><li>(C+A) "Ogni Amen che vendiamo, l&#x27;abbiamo visto fare con i nostri occhi."</li></ol>
+<h2 style="margin-top:8mm;font-size:15pt">Video 4 — Il vlog</h2>
+<ol class="keep"><li>(C+A) "Perché i gioielli costano così tanto? Oggi lo scopriamo insieme."</li><li>(A) "Non siamo in negozio oggi. Siamo qui."</li><li>(C) "Da Chiuduno ad Arezzo per un gioiello. Ne vale la pena?"</li><li>(C+A) "Siamo in trasferta! Indovinate dove."</li></ol>
+<h2 style="margin-top:8mm;font-size:15pt">Da registrare dentro ogni reparto</h2>
+<p>Servono per i reel reparto per reparto. Si dicono <strong>in ognuno</strong>, cambiando il nome del reparto.</p>
+<ol class="keep"><li>(C) "Questo è il reparto <span class="vuoto"></span>. Vi faccio vedere cosa succede qui."</li><li>(A) "Guardate le mani. Quello che si vede qui, in negozio non si vede."</li><li>(C) "Come si fa questo passaggio? Lo chiediamo a chi lo fa."</li><li>(A) "La domanda che ci fate tutti in negozio: si annerisce? Ecco da dove dipende." <em>(nel reparto di rodiatura)</em></li><li>(C+A) "Segnatevi questa cosa."</li></ol>
+<h2 style="margin-top:8mm;font-size:15pt">A fine giornata, con la faccia di chi ha visto tutto</h2>
+<ol class="keep"><li>(C) "Tre cose che non sapevo su Amen."</li><li>(A) "Se compri un gioiello, devi sapere questo."</li><li>(C+A) "Abbiamo fatto il giro completo. Ecco com&#x27;è andata."</li></ol>
+<h2 style="margin-top:8mm;font-size:15pt">Con un numero, da completare dopo aver sentito la guida</h2>
+<ol class="keep"><li>"Per fare un gioiello servono <span class="vuoto"></span> passaggi."</li><li>"Un gioiello passa per <span class="vuoto"></span> mani prima di arrivare da noi."</li><li>"Ci vogliono <span class="vuoto"></span> per fare una collana."</li></ol>
+<div class="page"></div><p class="occhiello">Teresa Chiuduno &times; Amen</p><h2>LE DOMANDE ALLA GUIDA</h2>
+<p>Sono <strong>20</strong>, le essenziali. Per ognuna è scritto <strong>a cosa serve</strong>: la risposta diventa una riga di un video. Le fanno Chiara e Anna in camera, una per volta, e la guida risponde in una o due frasi. <strong>Quelle con la stella ★ non si saltano.</strong></p>
+<h2 style="margin-top:8mm;font-size:15pt">La storia e il rapporto con noi</h2>
+<table><thead><tr><th>Domanda</th><th>Serve per</th></tr></thead><tbody><tr><td>★ Come nasce Amen, e quando?</td><td>Video 1, apertura</td></tr><tr><td>★ Da quanto tempo lavorate con Teresa Chiuduno?</td><td>Video 2</td></tr><tr><td>★ Qual è il gioiello che si vende di più da noi?</td><td>Video 3</td></tr><tr><td>Cosa distingue un gioiello Amen da uno qualunque?</td><td>Video 1 e 3</td></tr></tbody></table>
+<h2 style="margin-top:8mm;font-size:15pt">Come nasce un gioiello</h2>
+<table><thead><tr><th>Domanda</th><th>Serve per</th></tr></thead><tbody><tr><td>★ Chi disegna i gioielli, e da dove prende l&#x27;idea?</td><td>Video 1, il disegno</td></tr><tr><td>★ Cosa vuol dire argento 925? E cosa vuol dire rodiato?</td><td>Video 1 e 3</td></tr><tr><td>★ Quanti passaggi servono per fare un gioiello?</td><td>Video 1, e gancio con numero</td></tr><tr><td>Quante persone lo toccano prima che sia finito?</td><td>Video 2 e gancio con numero</td></tr><tr><td>Quanto tempo ci mette un gioiello, dall&#x27;inizio alla fine?</td><td>Video 1 e vlog</td></tr><tr><td>Qual è il passaggio più difficile?</td><td>Reel del reparto</td></tr><tr><td>Come si mette uno zircone così piccolo?</td><td>Reel dell&#x27;incastonatura</td></tr></tbody></table>
+<h2 style="margin-top:8mm;font-size:15pt">Qualità e cura</h2>
+<p>Sono le domande che i clienti ci fanno <strong>ogni giorno</strong> in negozio.</p>
+<table><thead><tr><th>Domanda</th><th>Serve per</th></tr></thead><tbody><tr><td>★ Un gioiello Amen si annerisce? Da cosa dipende?</td><td>Video 1 e 3</td></tr><tr><td>★ Si può portare sempre, anche sotto la doccia o al mare?</td><td>Video 3</td></tr><tr><td>Come si cura e come si pulisce?</td><td>Video 3</td></tr><tr><td>Come si controlla un gioiello prima che esca?</td><td>Video 1, il controllo</td></tr></tbody></table>
+<h2 style="margin-top:8mm;font-size:15pt">Dietro il prezzo</h2>
+<table><thead><tr><th>Domanda</th><th>Serve per</th></tr></thead><tbody><tr><td>★ Cosa pesa di più nel prezzo di un gioiello?</td><td>Vlog e video 3</td></tr><tr><td>Cosa ci si paga che non si vede?</td><td>Vlog</td></tr></tbody></table>
+<h2 style="margin-top:8mm;font-size:15pt">Per chiudere</h2>
+<table><thead><tr><th>Domanda</th><th>Serve per</th></tr></thead><tbody><tr><td>★ Cosa direste a chi compra un gioiello Amen da noi?</td><td>Chiusura video 1</td></tr><tr><td>Un messaggio per chi ci sta guardando?</td><td>Chiusura vlog</td></tr></tbody></table>
+<h2 style="margin-top:8mm;font-size:15pt">Tra Chiara e Anna, senza la guida</h2>
+<p>Alla fine, davanti alla camera: <strong>"Qual è la cosa che ti ha colpita di più?"</strong> e <strong>"Cosa risponderai adesso a una cliente che ti chiede: ma costa così tanto?"</strong> Servono per il vlog.</p>
+<div class="page"></div><p class="occhiello">Teresa Chiuduno &times; Amen</p><h2>LA LISTA DELLE RIPRESE</h2>
+<p>Due scopi: avere il materiale per i quattro video e <strong>registrare abbastanza per montarne altri</strong>. Regola unica: <strong>se non siete sicuri di averla, giratela di nuovo.</strong></p>
+<h2 style="margin-top:8mm;font-size:15pt">L&#x27;ordine della giornata</h2>
+<table><thead><tr><th>Momento</th><th>Cosa si fa</th><th>Durata</th></tr></thead><tbody><tr><td>Arrivo</td><td>Ganci "a freddo" all&#x27;ingresso, primo pezzo di vlog</td><td>15 min</td></tr><tr><td>Accoglienza</td><td>Presentazione della guida, prime domande</td><td>10 min</td></tr><tr><td>Il tour</td><td>Reparto per reparto, con ganci e domande</td><td>90 min</td></tr><tr><td>Seduti</td><td>Domande lampo e intervista pulita alla guida</td><td>15 min</td></tr><tr><td>Showroom</td><td>I gioielli finiti, la collezione</td><td>10 min</td></tr><tr><td>Fuori</td><td>Ganci "a caldo", Chiara e Anna tra loro</td><td>15 min</td></tr></tbody></table>
+<h2 style="margin-top:8mm;font-size:15pt">Per ogni reparto</h2>
+<p>Sempre le stesse sei riprese, in ordine. <strong>Sono quelle che servono per fare un reel.</strong></p>
+<ul class="chk keep"><li>☐ <strong>Campo largo</strong> del reparto, camera ferma, 10 secondi</li><li>☐ <strong>Le mani</strong> di chi lavora, in primo piano</li><li>☐ <strong>Un dettaglio</strong> da vicino (un utensile, una pietra, il punzone)</li><li>☐ <strong>Il pezzo prima e dopo</strong>, se si può</li><li>☐ <strong>La guida che spiega</strong>, a mezzo busto</li><li>☐ <strong>Chiara e Anna in reazione</strong>, e una frase a testa dritta in camera</li></ul>
+<p><strong>Il reparto cambia, la lista no.</strong> Quelli da cercare: il disegno, la lavorazione del metallo, la rifinitura, l&#x27;incastonatura delle pietre, la rodiatura, il controllo qualità, la confezione.</p>
+<h2 style="margin-top:8mm;font-size:15pt">Riprese che servono ovunque</h2>
+<ul class="chk keep"><li>☐ <strong>Un gioiello "protagonista"</strong>: scegliete un Amen del negozio e seguitelo fino alla fine</li><li>☐ L&#x27;<strong>ingresso</strong> della fabbrica, con l&#x27;insegna</li><li>☐ <strong>La strada e l&#x27;arrivo</strong>, per il vlog</li><li>☐ <strong>Chiara e Anna che camminano</strong> nei reparti, riprese da dietro</li><li>☐ <strong>Audio pulito</strong> di ogni reparto, 15 secondi senza parlare</li></ul>
+<h2 style="margin-top:8mm;font-size:15pt">Cosa portare</h2>
+<ul class="chk keep"><li>☐ Videocamera, iPhone, microfoni per Chiara, Anna e la guida, batterie e schede di ricambio</li><li>☐ <strong>Tre o quattro Amen del negozio</strong>, i più venduti, da ritrovare nei reparti</li><li>☐ Un blocco per scrivere i numeri e le risposte della guida</li></ul>
+<p><strong>A fine giornata</strong>: salvare tutto su due supporti prima di ripartire, ringraziare Amen davanti alla camera (15 secondi) e chiedere le foto e i materiali ufficiali che possiamo usare.</p>
+<div class="page"></div><p class="occhiello">Copione 1</p>
+<h2><span class="num">DENTRO AMEN</span> — il tour in collaborazione</h2>
+<p class="scheda"><strong>Dove</strong>: la fabbrica, dall&#x27;ingresso alla confezione · <strong>Chi</strong>: Chiara + Anna + la guida · <strong>Durata</strong>: 3-4 minuti</p>
+<p><strong>Cosa spiega</strong>: come nasce un gioiello Amen, in sei tappe. <strong>Il tono è pulito</strong>, senza battute pesanti: a ogni reparto chi guarda deve imparare una cosa. Chiara fa le domande, Anna dice quello che pensa chi guarda. Si gira di seguito, e poi si taglia in versioni da 30, 60 e 90 secondi.</p>
+<p>Le risposte della guida sono la parte vera del video: <strong>non si scrivono, si ascoltano e si riprendono.</strong> I reparti e l&#x27;ordine si adattano a quello che ci mostrano.</p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-10 <span>· gancio</span></span>
+<p class="intro" style="font-size:9.8pt">Chiara davanti all&#x27;ingresso, dritta in camera</p>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Oggi vi portiamo dove nasce un gioiello Amen."</p><p class="r"><span class="chi">ANNA:</span> "Dall&#x27;inizio alla fine. Ci hanno aperto tutto."</p></div>
+</div><div class="beat"><span class="tc">10-35 <span>· chi siamo e perché siamo qui</span></span>
+<p class="intro" style="font-size:9.8pt">con la guida</p>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Siamo Teresa Chiuduno, un negozio di Chiuduno, in provincia di Bergamo. Gli Amen sono tra i gioielli che vendiamo di più, e oggi vediamo come nascono."</p><p class="r"><span class="chi">CHIARA:</span> <em>(alla guida)</em> "Partiamo dall&#x27;inizio: come nasce Amen?"</p><p class="r"><span class="chi">GUIDA:</span> <em>(la storia in due o tre frasi: anno, chi, perché)</em></p></div>
+</div><div class="beat"><span class="tc">35-65 <span>· 1. il disegno</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Quindi prima di un gioiello c&#x27;è un disegno."</p><p class="r"><span class="chi">CHIARA:</span> "Chi lo disegna? E da dove arriva l&#x27;idea?"</p><p class="r"><span class="chi">GUIDA:</span> <em>(risposta vera)</em></p></div>
+<p><em>(Regia: primo piano sul disegno, poi sul gioiello finito che Chiara tiene in mano, preso dal negozio. È l&#x27;immagine che apre il video.)</em></p>
+</div><div class="beat"><span class="tc">65-105 <span>· 2. la lavorazione del metallo</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Cosa vuol dire argento 925? E quanti passaggi servono per fare un gioiello?"</p><p class="r"><span class="chi">GUIDA:</span> <em>(<span class="vuoto"></span> passaggi, spiegati in una frase ciascuno)</em></p><p class="r"><span class="chi">ANNA:</span> "Quindi questa roba qui è quello che mettiamo al collo."</p></div>
+</div><div class="beat"><span class="tc">105-140 <span>· 3. la rifinitura e le pietre</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Guardate le mani. Questa cosa io non la saprei fare."</p><p class="r"><span class="chi">CHIARA:</span> "Come si mette uno zircone così piccolo?"</p><p class="r"><span class="chi">GUIDA:</span> <em>(risposta vera)</em></p></div>
+</div><div class="beat"><span class="tc">140-170 <span>· 4. la domanda che ci fanno tutti</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Adesso la domanda che ci fate in negozio ogni giorno: si annerisce?"</p><p class="r"><span class="chi">GUIDA:</span> <em>(risposta vera: da cosa dipende, come si cura)</em></p><p class="r"><span class="chi">CHIARA:</span> "Segnatevela, che è utile."</p></div>
+</div><div class="beat"><span class="tc">170-195 <span>· 5. il controllo qualità</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Prima di uscire, ogni gioiello passa da qui. Cosa controllate?"</p><p class="r"><span class="chi">GUIDA:</span> <em>(risposta vera)</em></p><p class="r"><span class="chi">ANNA:</span> "Quindi se arriva da noi, qualcuno l&#x27;ha guardato con la lente."</p></div>
+</div><div class="beat"><span class="tc">195-225 <span>· il gioiello che conosci e la chiusura</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> <em>(tiene in mano un Amen del negozio)</em> "Questo è uno dei nostri più venduti. Adesso sappiamo come nasce."</p><p class="r"><span class="chi">ANNA:</span> "Grazie ad Amen per averci portate dentro."</p><p class="r"><span class="chi">CHIARA (Instagram):</span> "Li trovate da noi, a Chiuduno e sul sito. Link in bio."</p><p class="r"><span class="chi">CHIARA (TikTok):</span> "Li trovate da noi, a Chiuduno e sul sito. Link nel profilo."</p></div>
+</div><h3>CAPTION</h3>
+<div class="nota"><p class="r" style="margin:0 0 1mm">Siamo entrate nella fabbrica di Amen, ad Arezzo, e ci hanno fatto vedere tutto: dal disegno al gioiello finito.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Qual è la cosa che vi ha colpito di più? Scrivetecelo nei commenti.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Gli Amen li trovate da noi, a Chiuduno e sul sito teresachiuduno.it.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">In collaborazione con <span class="vuoto"></span></p></div>
+<div class="page"></div><p class="occhiello">Copione 2</p>
+<h2><span class="num">COSA C&#x27;È DIETRO</span> — ogni gioiello di Teresa Chiuduno</h2>
+<p class="scheda"><strong>Dove</strong>: dentro la fabbrica, davanti a un reparto · <strong>Chi</strong>: Chiara + Anna · <strong>Durata</strong>: circa 60 secondi</p>
+<p><strong>Cosa spiega</strong>: che i gioielli di Teresa Chiuduno <strong>sono selezionati</strong>. Non è una pubblicità di Amen: Amen è l&#x27;esempio di un modo di lavorare. Parla di <strong>persone, rapporti e scelta</strong>.</p>
+<p class="scheda"><strong>Da compilare</strong>: da quanti anni lavoriamo con Amen <span class="vuoto"></span></p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-5 <span>· gancio</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Cosa c&#x27;è dietro ogni gioiello di Teresa Chiuduno? Oggi siamo qui da Amen!"</p></div>
+</div><div class="beat"><span class="tc">5-20 <span>· l&#x27;idea</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Quando vedi un gioiello sul banco, pensi che arrivi da un catalogo e basta."</p><p class="r"><span class="chi">CHIARA:</span> "In realtà dietro c&#x27;è sempre una scelta. Oggi ve la mostriamo."</p></div>
+</div><div class="beat"><span class="tc">20-40 <span>· le persone e il rapporto</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> <em>(indica il reparto alle sue spalle)</em> "Qui un gioiello lo fanno persone vere. Con Amen lavoriamo da <span class="vuoto"></span>."</p><p class="r"><span class="chi">ANNA:</span> "E si sente: quando vieni accolta così, non è una questione di ordini."</p></div>
+</div><div class="beat"><span class="tc">40-55 <span>· la selezione</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Da Teresa Chiuduno ci sono tantissimi articoli selezionati. I gioielli sono uno di questi."</p><p class="r"><span class="chi">ANNA:</span> "Selezionati vuol dire che li abbiamo visti, toccati e scelti."</p></div>
+</div><div class="beat"><span class="tc">55-65 <span>· chiusura</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA (Instagram):</span> "I nostri gioielli li trovi in negozio e sul sito. Link in bio."</p><p class="r"><span class="chi">CHIARA (TikTok):</span> "I nostri gioielli li trovi in negozio e sul sito. Link nel profilo."</p><p class="r"><span class="chi">ANNA:</span> "E adesso sai chi li fa."</p></div>
+</div><h3>CAPTION</h3>
+<div class="nota"><p class="r" style="margin:0 0 1mm">Dietro ogni gioiello di Teresa Chiuduno c&#x27;è una scelta.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Siamo andate da Amen, ad Arezzo, a vedere dove nasce uno dei gioielli che vendiamo di più, e abbiamo incontrato le persone che lo fanno.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Li trovi in negozio a Chiuduno e sul sito. Link in bio.</p></div>
+<div class="page"></div><p class="occhiello">Copione 3</p>
+<h2><span class="num">DENTRO LA COLLEZIONE AMEN</span></h2>
+<p class="scheda"><strong>Dove</strong>: showroom e un reparto · <strong>Chi</strong>: Chiara + Anna + la guida · <strong>Durata</strong>: circa 65 secondi</p>
+<p><strong>Cosa spiega</strong>: che la collezione che vendiamo di più è fatta bene, <strong>in tre passaggi</strong> e con una risposta alla domanda che ci fanno tutti. Il prezzo arriva alla fine, come conclusione.</p>
+<p class="scheda"><strong>Serve</strong>: tre o quattro Amen del negozio (croce, medaglia, Sacro Cuore) da tenere in mano.</p>
+<p class="scheda"><strong>Da compilare</strong>: i tre passaggi di un gioiello <span class="vuoto"></span> · prezzo <span class="vuoto"></span></p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-5 <span>· gancio</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Amen è uno dei gioielli che vendiamo di più. Oggi vediamo come nasce."</p></div>
+</div><div class="beat"><span class="tc">5-20 <span>· la collezione</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> <em>(mostra i gioielli uno alla volta)</em> "La croce, la medaglia, il Sacro Cuore. Sono quelli che trovate da noi."</p></div>
+</div><div class="beat"><span class="tc">20-45 <span>· un gioiello, tre passaggi</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Seguiamo un gioiello dall&#x27;inizio. Primo passaggio: <span class="vuoto"></span>. Secondo: <span class="vuoto"></span>. Terzo: <span class="vuoto"></span>."</p><p class="r az">(Regia: tre stacchi netti, uno per passaggio, con le mani in primo piano. Se la guida dice altro, si segue la guida.)</p></div>
+</div><div class="beat"><span class="tc">45-58 <span>· la domanda di tutti</span></span>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Si annerisce?"</p><p class="r"><span class="chi">GUIDA:</span> <em>(risposta vera, una frase)</em></p></div>
+</div><div class="beat"><span class="tc">58-68 <span>· il prezzo e la chiusura</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Questo gioiello costa <span class="vuoto"></span> euro. Dopo quello che abbiamo visto, per me i conti tornano."</p><p class="r"><span class="chi">CHIARA (Instagram):</span> "Lo trovate da noi e sul sito. Link in bio."</p><p class="r"><span class="chi">CHIARA (TikTok):</span> "Lo trovate da noi e sul sito. Link nel profilo."</p></div>
+<p><em>(La frase "per me i conti tornano" si dice solo se è vera. Altrimenti: "Adesso sapete cosa c&#x27;è dietro.")</em></p>
+</div><h3>CAPTION</h3>
+<div class="nota"><p class="r" style="margin:0 0 1mm">La collezione Amen vista da dentro: dal disegno al gioiello che trovate da noi.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Abbiamo chiesto a chi la fa la domanda che ci fate ogni giorno: si annerisce?</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">La trovate a Chiuduno e sul sito. Cosa vi ha colpito di più?</p></div>
+<div class="page"></div><p class="occhiello">Copione 4</p>
+<h2><span class="num">VLOG</span> — un giorno da Amen</h2>
+<p class="scheda"><strong>Dove</strong>: dal viaggio alla fabbrica · <strong>Chi</strong>: Chiara + Anna · <strong>Durata</strong>: circa 3 minuti</p>
+<p><strong>Cosa spiega</strong>: la giornata raccontata da chi la vive. <strong>Meno spiegato, più umano</strong>: si vedono Chiara e Anna, le reazioni, la sorpresa. Il filo è una domanda, <strong>"perché un gioiello costa così tanto?"</strong>, che apre il video e trova la risposta alla fine, dopo aver visto tutto.</p>
+<p>Si gira <strong>in selfie</strong> e a tratti con la camera, camminando. Le frasi vanno dette come vengono.</p>
+<p class="scheda"><strong>Da compilare</strong>: orario di partenza <span class="vuoto"></span></p>
+<h3>SCRIPT</h3>
+<div class="beat"><span class="tc">0-10 <span>· gancio</span></span>
+<p class="intro" style="font-size:9.8pt">selfie, in macchina</p>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Perché i gioielli costano così tanto? Oggi lo scopriamo insieme."</p><p class="r"><span class="chi">ANNA:</span> "E per scoprirlo siamo partite alle <span class="vuoto"></span>."</p></div>
+</div><div class="beat"><span class="tc">10-30 <span>· il viaggio e l&#x27;arrivo</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Andiamo ad Arezzo, nella fabbrica di Amen. Uno dei gioielli che vendiamo di più."</p><p class="r"><span class="chi">ANNA:</span> "Ci hanno detto che possiamo riprendere tutto. Ora vediamo."</p></div>
+</div><div class="beat"><span class="tc">30-60 <span>· il primo impatto</span></span>
+<p class="intro" style="font-size:9.8pt">appena dentro</p>
+
+<div class="righe"><p class="r"><span class="chi">ANNA:</span> "Non è come me lo immaginavo."</p><p class="r"><span class="chi">CHIARA:</span> "Che ti aspettavi?"</p><p class="r"><span class="chi">ANNA:</span> <em>(risposta vera)</em></p></div>
+</div><div class="beat"><span class="tc">60-110 <span>· il giro</span></span>
+
+<p><em>(Montaggio rapido di tre o quattro reparti, con le battute dette camminando. Non servono frasi preparate: si prende quello che è venuto meglio.)</em></p>
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> <em>(in un reparto)</em> "Guarda questa roba."</p><p class="r"><span class="chi">ANNA:</span> <em>(in un altro)</em> "Io non ci credo."</p><p class="r"><span class="chi">CHIARA:</span> <em>(alla guida)</em> "Ma quanto ci mette una persona a fare questo?"</p></div>
+</div><div class="beat"><span class="tc">110-140 <span>· la cosa che ci ha colpito</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "La cosa che mi ha colpito di più è <span class="vuoto"></span>."</p><p class="r"><span class="chi">ANNA:</span> "A me <span class="vuoto"></span>."</p></div>
+</div><div class="beat"><span class="tc">140-170 <span>· la risposta</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "E allora: perché un gioiello costa così tanto?"</p><p class="r"><span class="chi">ANNA:</span> "Perché dietro c&#x27;è <span class="vuoto"></span>, e <span class="vuoto"></span>, e <span class="vuoto"></span>."</p></div>
+<p><em>(Si dice solo quello che Chiara e Anna pensano davvero dopo la giornata.)</em></p>
+</div><div class="beat"><span class="tc">170-185 <span>· chiusura</span></span>
+
+<div class="righe"><p class="r"><span class="chi">CHIARA:</span> "Grazie ad Amen per averci aperto tutto. Gli Amen li trovate da noi e sul sito."</p><p class="r"><span class="chi">CHIARA (Instagram):</span> "Link in bio."</p><p class="r"><span class="chi">CHIARA (TikTok):</span> "Link nel profilo."</p><p class="r"><span class="chi">ANNA:</span> <em>(ultima riga, in camera)</em> "Adesso lo sapete anche voi."</p></div>
+</div><h3>CAPTION</h3>
+<div class="nota"><p class="r" style="margin:0 0 1mm">Un giorno da Amen, ad Arezzo.</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Siamo partite con una domanda: perché un gioiello costa così tanto? Siamo tornate con una risposta. Voi cosa vi aspettavate di trovare?</p><div style="height:2mm"></div><p class="r" style="margin:0 0 1mm">Gli Amen li trovate da noi e sul sito. Link in bio.</p></div>
+</body></html>

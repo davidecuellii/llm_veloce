@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<title>BarBar — Oktoberfest</title>
+<style>
+  @page { size: A4 portrait; margin: 16mm 15mm 14mm; }
+  @page :first { margin: 0; }
+
+  :root{
+    --ink:#202020; --body:#33322E; --muted:#6B6B6B; --line:#DAD8CF; --soft:#EFEDE6;
+    --giallo:#FFEE32; --oro:#8A7B00; --paper:#FFFFFF;
+    --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  body{margin:0; font-family:var(--sans); font-size:10.8pt; line-height:1.55;
+       color:var(--body); background:var(--paper);}
+
+  /* ---------- copertina ---------- */
+  .cover{background:#202020; color:#D6D6D6; height:297mm; width:100%;
+         padding:70mm 22mm 22mm; page-break-after:always; position:relative;}
+  .cover .kicker{font-size:9.5pt; letter-spacing:.22em; text-transform:uppercase; color:#8C8C8C; margin:0 0 14mm;}
+  .cover h1{font-size:40pt; line-height:1.02; letter-spacing:-.02em; color:var(--giallo);
+            margin:0 0 6mm; font-weight:800;}
+  .cover .sub{font-size:16pt; color:#D6D6D6; margin:0 0 3mm; font-weight:400;}
+  .cover .meta{font-size:11pt; color:#8C8C8C; margin:0;}
+  .cover .foot{position:absolute; bottom:22mm; left:22mm; right:22mm;
+               border-top:1px solid #3A3A3A; padding-top:5mm; font-size:9.5pt; color:#8C8C8C;
+               display:flex; justify-content:space-between;}
+
+  /* ---------- tipografia ---------- */
+  h2{font-size:17pt; line-height:1.15; letter-spacing:-.01em; color:var(--ink);
+     margin:0 0 2mm; font-weight:800;}
+  h2 .num{color:var(--oro);}
+  h3{font-size:9pt; letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+     margin:7mm 0 2mm; font-weight:700;}
+  p{margin:0 0 3mm;} strong{color:var(--ink); font-weight:700;}
+  em{color:var(--muted);}
+  ul{margin:0 0 3mm; padding-left:5mm;} li{margin-bottom:1.5mm;}
+
+  .scheda{font-size:9.5pt; color:var(--muted); border-bottom:1px solid var(--line);
+          padding-bottom:3mm; margin-bottom:4mm;}
+  .scheda b{color:var(--ink);}
+
+  .intro{font-size:11pt; color:var(--body); margin-bottom:4mm;}
+
+  /* ---------- battute ---------- */
+  .beat{margin:0 0 4mm; page-break-inside:avoid;}
+  .tc{display:inline-block; background:var(--ink); color:var(--giallo);
+      font-size:8pt; font-weight:700; letter-spacing:.1em; padding:1mm 2.5mm;
+      border-radius:1mm; margin-bottom:2mm; text-transform:uppercase;}
+  .tc span{color:#D6D6D6; font-weight:400;}
+  .righe{border-left:2.5px solid var(--giallo); padding-left:4mm; margin-left:.5mm;}
+  .r{margin:0 0 2.2mm;}
+  .chi{font-weight:800; color:var(--ink); letter-spacing:.02em;}
+  .az{color:var(--muted); font-style:italic;}
+  .vuoto{display:inline-block; min-width:20mm; border-bottom:1.5px solid var(--ink);
+         background:var(--soft); height:1.15em; vertical-align:-.2em; margin:0 1px;}
+
+  .nota{background:var(--soft); border-left:3px solid var(--ink); padding:3mm 4mm;
+        font-size:9.8pt; margin:4mm 0; page-break-inside:avoid;}
+  .nota b{color:var(--ink);}
+
+  table{width:100%; border-collapse:collapse; font-size:10pt; margin:0 0 4mm;}
+  thead{display:table-header-group;}
+  tr{page-break-inside:avoid;}
+  h3{page-break-after:avoid;}
+  h2{page-break-after:avoid;}
+  .scheda, .intro{page-break-after:avoid;}
+  ul{page-break-inside:avoid;}
+  th{text-align:left; font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase;
+     color:var(--muted); border-bottom:1.5px solid var(--ink); padding:0 3mm 1.5mm 0;}
+  td{padding:2mm 3mm 2mm 0; border-bottom:1px solid var(--line); vertical-align:top;}
+  td:first-child{white-space:nowrap;}
+
+  .page{page-break-before:always;}
+  .titolone{font-size:26pt; font-weight:800; color:var(--ink); letter-spacing:-.02em;
+            margin:0 0 2mm;}
+  .occhiello{font-size:9pt; letter-spacing:.2em; text-transform:uppercase; color:var(--oro);
+             margin:0 0 2mm; font-weight:700;}
+  p{page-break-inside:avoid; orphans:3; widows:3;}
+  .nota, table{page-break-inside:avoid;}
+</style></head><body>
+
+<div class="cover">
+  <p class="kicker">Veloce Digital &nbsp;·&nbsp; Piano contenuti</p>
+  <h1>Oktoberfest</h1>
+  <p class="sub">BarBar &nbsp;·&nbsp; Cinque copioni e il piano di lancio</p>
+  <p class="meta">Venerdì 2 ottobre 2026, dalle 19 &nbsp;·&nbsp; Piazza Duomo</p>
+  <div class="foot"><span>In collaborazione con Augustiner</span><span>Davide · 331 204 3165</span></div>
+</div>
+
+<p class="occhiello">Strategia</p>
+<h2>Come si promuove davvero una serata in centro</h2>
+
+<h3>Il problema che nessuno guarda: view ≠ presenze</h3>
+<p>Il reel della macchinetta Jäger ha fatto <strong>22.251 view con 1.298 follower</strong>.
+Vuol dire che la stragrande maggioranza di chi l'ha visto <strong>non segue la pagina</strong>
+— e Instagram non distribuisce i reel per provincia.</p>
+<div class="nota">
+  Per un contenuto di brand va benissimo. <b>Per un evento no</b>, perché serve gente che il
+  venerdì alle 19 possa fisicamente essere in Piazza Duomo. Un reel da 4.000 view concentrate
+  su Brescia porta più persone di uno da 20.000 sparse sull'Italia.
+</div>
+<p>Quindi per l'Oktoberfest <strong>non ottimizziamo sulle view.</strong> Ottimizziamo su
+raggio locale e impegno preso.</p>
+
+<h3>Il venerdì sera si decide fra il mercoledì e il giovedì</h3>
+<p>Pubblicare otto giorni prima serve a <em>far sapere che esiste</em>. Pubblicare due giorni
+prima serve a <em>farlo scegliere</em>. Sono due lavori diversi e vogliono due contenuti
+diversi: le informazioni pratiche vanno vicino alla decisione, il desiderio si costruisce
+prima.</p>
+
+<h3>L'ordine di uscita</h3>
+<p>Non è cronologico, è per funzione.</p>
+<table>
+<thead><tr><th>Quando</th><th>Cosa esce</th><th>Perché lì</th></tr></thead>
+<tbody>
+<tr><td><strong>Gio 25 / Ven 26</strong></td><td>Si gira tutto</td><td>Una sessione sola</td></tr>
+<tr><td><strong>Ven 26</strong></td><td><strong>5 · L'istituzionale</strong></td><td>Esce per primo e si <strong>fissa in alto al profilo</strong>: deve essere già lì quando gli altri tre iniziano a portare visite</td></tr>
+<tr><td><strong>Sab 27</strong></td><td><strong>3 · La birra</strong></td><td>Zero pressione, sembra contenuto e non pubblicità. Scalda il pubblico</td></tr>
+<tr><td><strong>Lun 29</strong></td><td><strong>2 · I 370 euro</strong></td><td>È il più condivisibile, e le condivisioni sono l'unica reach gratis che conta</td></tr>
+<tr><td><strong>Mer 30 / Gio 1</strong></td><td><strong>1 · L'annuncio</strong></td><td>Porta le info pratiche, e arriva quando la gente decide il venerdì</td></tr>
+<tr><td><strong>Ven 2</strong></td><td>Storie, non post</td><td>Gli indecisi si muovono la sera stessa</td></tr>
+<tr><td><strong>Sab 3</strong></td><td><strong>4 · Il giorno dopo</strong></td><td>Non è cortesia: è il contenuto che riempie l'evento successivo</td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>I tre video del feed portano gente sul profilo. L'istituzionale è quello che la
+  trattiene.</b> Se chi arriva non trova subito una spiegazione completa, deve ricostruirla dai
+  post — e non lo fa. Per questo va pubblicato per primo e fissato in alto.
+</div>
+
+<h3>Le leve che non sono video</h3>
+<p>Qui si vince o si perde, e non costano niente.</p>
+<ul>
+  <li><strong>Collab post con Augustiner.</strong> Instagram permette di pubblicare <em>in
+      collaborazione</em>: il post compare su entrambi i profili e pesca dal loro pubblico. Con
+      un birrificio è <strong>la singola leva più grande disponibile</strong>, ed è gratis. Va
+      chiesta al referente <em>insieme</em> all'approvazione dei claim: una richiesta sola.</li>
+  <li><strong>Sticker countdown nelle storie.</strong> Chi lo tocca riceve una notifica
+      automatica allo scadere. È il meccanismo a più alta intenzione che Instagram regali: non
+      è una view, è una persona che ha alzato la mano.</li>
+  <li><strong>Geotag Piazza Duomo su tutto.</strong></li>
+  <li><strong>Rispondere ai commenti nella prima ora.</strong> Sposta la distribuzione, ed è
+      lavoro di dieci minuti.</li>
+  <li><strong>Far ripostare lo staff.</strong> Dieci persone che mettono la storia valgono più
+      di cinquemila view passive: il loro pubblico è locale per definizione.</li>
+  <li><strong>Fuori da Instagram.</strong> Un locale in centro ha un vantaggio che i social non
+      danno: il passaggio. Cartello in piazza nella settimana prima, e passaparola ai clienti
+      abituali — sono già lì, sono già locali, e vengono accompagnati.</li>
+</ul>
+
+<h3>Se si spendono soldi</h3>
+<p>Un budget piccolo <strong>solo sul contenuto che ha già funzionato organicamente</strong>.
+Raggio stretto, 15–20 km da Brescia. Trenta o cinquanta euro bastano: servono a comprare il
+raggio geografico che l'organico non dà, non a comprare view.</p>
+<div class="nota">
+  <b>Mai sponsorizzare prima di vedere il dato organico.</b> Si aspetta di sapere quale dei
+  contenuti gira, e poi si spinge quello.
+</div>
+
+<h3>Cosa misurare</h3>
+<table>
+<thead><tr><th>Guardare</th><th>Perché</th></tr></thead>
+<tbody>
+<tr><td><strong>Salvataggi e condivisioni</strong></td><td>Sono intenzione. Le view sono passaggio</td></tr>
+<tr><td><strong>Tap sul countdown</strong></td><td>La cosa più vicina a una prenotazione che Instagram dia</td></tr>
+<tr><td><strong>DM e commenti che chiedono info</strong></td><td>Domande pratiche = gente che sta decidendo</td></tr>
+<tr><td><strong>Presenze contate alla porta</strong></td><td>L'unica che dice se ha funzionato</td></tr>
+</tbody></table>
+<div class="nota">
+  <b>Senza il conteggio alla porta tutto il resto è aria.</b> Serve una stima onesta a fine
+  serata — va concordata prima dell'evento, non chiesta dopo.
+</div>
+
+<h3>Gli errori da non fare</h3>
+<ul>
+  <li><strong>Post che dicono tutti la stessa cosa.</strong> Se ognuno ripete data, ora e
+      luogo, dal terzo in poi non li guarda nessuno. Ogni video fa un lavoro diverso.</li>
+  <li><strong>Due call to action nello stesso video.</strong> Una sola azione richiesta.</li>
+  <li><strong>Il grazie generico il giorno dopo.</strong> "Grazie a tutti" parla a chi c'era,
+      cioè alla minoranza.</li>
+  <li><strong>Inventare il tutto esaurito.</strong> Chi c'era lo sa.</li>
+</ul>
+
+<!-- ============ REGOLA BRAND ============ -->
+<div class="page"></div>
+<p class="occhiello">Prima di produrre</p>
+<h2>Augustiner: cosa va chiesto</h2>
+<p class="intro">Augustiner è un partner, quindi vale la regola che abbiamo già applicato su
+Jägermeister: <strong>naming ufficiale esatto e claim approvati prima di girare.</strong></p>
+<table>
+<tbody>
+<tr><td><strong>Il nome esatto della birra</strong></td><td>Come va scritta e pronunciata in video e in caption</td></tr>
+<tr><td><strong>Si può dire "solo per l'Oktoberfest"?</strong></td><td>È il gancio del video 3. Se non è approvabile, il video 3 cambia</td></tr>
+<tr><td><strong>Collab post</strong></td><td>Da chiedere nella stessa mail dei claim, non in una seconda</td></tr>
+<tr><td><strong>Materiali</strong></td><td>Bicchieri brandizzati, boccali, bandiere: cambiano l'estetica di tutti e cinque i video</td></tr>
+</tbody></table>
+<div class="nota">
+  <b>Si scrive "Oktoberfest", con la K.</b> Banale, ma finisce in sovrimpressione e in caption,
+  e con un partner tedesco è il dettaglio che si nota.
+</div>
+
+<!-- ============ IL CONTO ============ -->
+<div class="page"></div>
+<p class="occhiello">Il materiale del video 2</p>
+<h2>Quanto costa una serata a Monaco</h2>
+<p class="intro">Una persona, una sera, un pernottamento, andata e ritorno da Brescia.
+<strong>Solo spese obbligate:</strong> niente souvenir, niente giostre, niente extra.</p>
+
+<h3>Viaggio, andata e ritorno a persona</h3>
+<table>
+<thead><tr><th>Mezzo</th><th>Costo</th></tr></thead>
+<tbody>
+<tr><td>Autobus</td><td>80 €</td></tr>
+<tr><td>Treno</td><td>160 €</td></tr>
+<tr><td>Aereo, da Bergamo o Milano, più transfer</td><td>135 €</td></tr>
+<tr><td>Auto, in due</td><td>90 €</td></tr>
+<tr><td><strong>Media dei quattro</strong></td><td><strong>120 €</strong></td></tr>
+</tbody></table>
+<p>L'auto sembra la furba e non lo è: ~800 km A/R fanno circa <strong>90 € di carburante</strong>
+più <strong>80 € tra pedaggi e vignetta austriaca</strong>.</p>
+
+<h3>Le tre voci fisse</h3>
+<table>
+<thead><tr><th>Voce</th><th>Costo</th><th>Come è calcolata</th></tr></thead>
+<tbody>
+<tr><td>Viaggio A/R</td><td><strong>120 €</strong></td><td>media dei quattro mezzi</td></tr>
+<tr><td>Una notte</td><td><strong>180 €</strong></td><td>doppia divisa in due. Durante la Wiesn gli hotel stanno al triplo: Motel One e Moxy oltre 300 €, il Ruby Rosi in stazione 623 € la doppia contro 194 € di listino</td></tr>
+<tr><td>Tendone</td><td><strong>67 €</strong></td><td>tre Maß Augustiner a 14,90 (44,70) + mezzo Hendl (17,20) + Brezn (5)</td></tr>
+<tr><td><strong>TOTALE</strong></td><td><strong>367 €</strong></td><td><strong>a testa, per una sera</strong></td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>In video si dice "almeno 370 euro".</b> Non è una stima, è un <b>pavimento</b>: una stima
+  si contesta, un minimo no. Chi commenta "io ho speso di più" ci sta dando ragione.
+</div>
+
+<h3>Il perno non è la birra</h3>
+<p>La birra al BarBar costa più o meno quanto costa a Monaco, quindi <strong>il confronto sul
+prezzo del boccale non regge</strong>: chiunque abbia bevuto alla Wiesn ci smonterebbe nei
+commenti. Il confronto vero è che <strong>viaggio e hotel sono 300 dei 367 totali</strong> —
+sono loro la notizia, non il bicchiere.</p>
+<p>Vantaggio collaterale: <strong>non serve dichiarare il prezzo del boccale al BarBar.</strong></p>
+
+<h3>Onestà sui numeri</h3>
+<p>Maß 14,90 €, mezzo Hendl 17,20 € e Brezn 4–6 € sono <strong>listino ufficiale Wiesn
+2026</strong>. Gli hotel al triplo e il caso Ruby Rosi sono <strong>stampa tedesca</strong>. Le
+quattro voci di viaggio sono <strong>medie nostre su tariffe reali</strong> — non preventivi:
+chi prenota a gennaio spende meno, chi prenota adesso di più.</p>
+
+<!-- ============ 1 ============ -->
+<div class="page"></div>
+<p class="occhiello">Video 1 &nbsp;·&nbsp; esce mer 30 / gio 1</p>
+<h2><span class="num">1 ·</span> Il menu segreto</h2>
+<p class="scheda"><b>30 secondi</b> &nbsp;·&nbsp; Esme &nbsp;·&nbsp; interno, verso la cucina</p>
+
+<table>
+<thead><tr><th>Sec</th><th>Esme dice</th><th>Si vede</th></tr></thead>
+<tbody>
+<tr><td>0—5</td><td>"Ho visto il menu di venerdì sera. E non posso dirti niente."</td><td>Faccia, primo piano. Esme tiene <strong>un foglio girato verso di sé</strong></td></tr>
+<tr><td>5—10</td><td>"Guarda, mi hanno detto di stare zitta. Quindi sto zitta."</td><td>Fa segno di chiudersi la bocca</td></tr>
+<tr><td>10—19</td><td>"Ti dico solo due cose: c'è la birra speciale che <strong>Augustiner</strong> fa solo per l'Oktoberfest, e che in cucina stanno preparando roba che qui dentro non abbiamo mai fatto."</td><td>Stacco sulla birra. Poi la porta della cucina, chiusa</td></tr>
+<tr><td>19—25</td><td>"Il resto lo scopri venerdì. Non ti rovino la sorpresa."</td><td>Esme, mezzo sorriso</td></tr>
+<tr><td>25—30</td><td>"Venerdì 2 ottobre, dalle sette. Piazza Duomo. Ti aspettiamo al BarBar."</td><td>Ultimo fotogramma</td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>Il gancio non è l'annuncio, è il segreto.</b> "Ho visto il menu e non posso dirti niente"
+  mette Esme dalla parte di chi sa e chi guarda dalla parte di chi vuole sapere. "Venerdì
+  facciamo l'Oktoberfest" è un'informazione e si scrolla: <b>un segreto no.</b>
+</div>
+
+<p><strong>Il foglio girato</strong> al secondo 2 è l'oggetto del video: si vede che esiste, non
+si vede cosa c'è scritto. Vale più di qualsiasi immagine di cibo generico.</p>
+
+<p><strong>Funziona una volta.</strong> Se il prossimo evento rifà il misterioso diventa una
+scusa. E <strong>se il menu arriva prima di girare</strong>, si sostituiscono i secondi 10—19
+con due o tre piatti detti ad alta voce: l'annuncio coi piatti veri batte quello misterioso.</p>
+
+<!-- ============ 2 ============ -->
+<div class="page"></div>
+<p class="occhiello">Video 2 &nbsp;·&nbsp; esce lun 29</p>
+<h2><span class="num">2 ·</span> Trecentosettanta euro</h2>
+<p class="scheda"><b>30 secondi</b> &nbsp;·&nbsp; Esme &nbsp;·&nbsp; bancone e piazza</p>
+
+<table>
+<thead><tr><th>Sec</th><th>Esme dice</th><th>Si vede</th></tr></thead>
+<tbody>
+<tr><td>0—5</td><td>"<strong>Trecentosettanta euro!</strong> Questo è quanto ti costa <strong>almeno</strong> l'Oktoberfest."</td><td>Faccia, primo piano, tono alto. <strong>370 €</strong> enorme a schermo</td></tr>
+<tr><td>5—10</td><td>"Viaggio, andata e ritorno: <strong>centoventi.</strong> E in macchina non risparmi, con la benzina a quanto sta."</td><td>Lo schermo si azzera. <strong>120 €</strong> compare e <strong>resta</strong></td></tr>
+<tr><td>10—15</td><td>"Dormire una notte: <strong>centottanta.</strong> Perché lì durante l'Oktoberfest costa il triplo."</td><td><strong>180 €</strong> si aggiunge sotto</td></tr>
+<tr><td>15—19</td><td>"Tre boccali e mezzo pollo: <strong>sessantasette.</strong>"</td><td><strong>67 €</strong> si aggiunge sotto</td></tr>
+<tr><td>19—23</td><td>"<strong>Trecentosettanta euro.</strong> A testa. Per una sera."</td><td>Riga di totale che chiude la colonna</td></tr>
+<tr><td>23—28</td><td>"Per questo devi venire in Piazza Duomo. E spendere molto, <strong>moolto</strong>, <strong>MOOOLTO</strong> meno."</td><td>Taglio secco. <strong>Il testo cresce di corpo a ogni "molto"</strong></td></tr>
+<tr><td>28—30</td><td>"Venerdì 2 ottobre. Ti aspettiamo al BarBar."</td><td>Ultimo fotogramma</td></tr>
+</tbody></table>
+
+<h3>Perché "almeno" è la parola che regge tutto</h3>
+<p>Non dice "costa 370", dice che 370 è il <strong>pavimento</strong>. Una stima si contesta, un
+minimo no: chi nei commenti scrive "io ho speso di più" ci sta dando ragione, e chi ha speso
+meno è l'eccezione che conferma la regola.</p>
+<p>Il numero arriva <strong>al secondo uno</strong>, prima ancora che si capisca di cosa si
+parla. È la stessa mossa di <em>"Uè, se anche tu bevi Jägermeister"</em>: ferma chi è in ascolto
+e apre un debito che il video deve saldare. <strong>Il totale torna al secondo 19</strong> e
+chiude il cerchio — è il punto di massima credibilità, ed è lì che arriva il ribaltone.</p>
+
+<h3>"Molto, moolto, MOOOLTO meno"</h3>
+<div class="nota">
+  È una <b>gag di montaggio prima che di recitazione.</b> Esme sale di tono a ogni ripetizione;
+  in sovrimpressione <b>il testo cresce di corpo ogni volta</b>, fino a riempire lo schermo
+  sull'ultimo.
+</div>
+<p>Funziona per due motivi: non dichiara una cifra — quindi non ci espone e non serve sapere il
+prezzo del boccale — e <strong>sposta il registro</strong> dal contabile al comico proprio
+quando il video rischiava di diventare una tabella.</p>
+
+<h3>Note di regia</h3>
+<ul>
+  <li><strong>I numeri si impilano e restano a schermo.</strong> Tre cifre che si accumulano, il
+      totale che chiude la colonna, poi il taglio secco al secondo 23. Se compaiono e spariscono
+      uno alla volta l'effetto accumulo si perde, ed è l'unica cosa che questo video ha.</li>
+  <li><strong>La benzina va buttata via</strong>, non recitata. Se il copione corre lungo è la
+      prima riga da tagliare: è l'unica senza informazione.</li>
+  <li><strong>Una chiusa sola.</strong> Se si vuole la battuta sul parcheggio in Vittoria
+      (1 €/ora dopo le 20) va usata <em>al posto</em> del "moolto meno", non dopo: sono due
+      finali e si annullano.</li>
+</ul>
+
+<!-- ============ 3 ============ -->
+<div class="page"></div>
+<p class="occhiello">Video 3 &nbsp;·&nbsp; esce sab 27</p>
+<h2><span class="num">3 ·</span> Tra un mese non esiste più</h2>
+<p class="scheda"><b>30 secondi</b> &nbsp;·&nbsp; Esme &nbsp;·&nbsp; alla spina</p>
+
+<table>
+<thead><tr><th>Sec</th><th>Esme dice</th><th>Si vede</th></tr></thead>
+<tbody>
+<tr><td>0—5</td><td>"Questa birra <strong>tra un mese non esiste più.</strong> Da nessuna parte."</td><td>Esme si sporge verso la camera con la bottiglia</td></tr>
+<tr><td>5—12</td><td>"È quella che <strong>Augustiner</strong> fa solo per l'Oktoberfest. Finito ottobre sparisce, e torna l'anno prossimo."</td><td>Stacco sull'etichetta</td></tr>
+<tr><td>12—20</td><td><span class="az">(non parla)</span></td><td><strong>Macro sulla spillatura.</strong> Schiuma che sale, boccale che si riempie. Suono vero</td></tr>
+<tr><td>20—26</td><td>"Aspetta." <span class="az">(beve, reazione, non parla)</span></td><td>Primo piano faccia. <strong>Sei secondi quasi muti</strong></td></tr>
+<tr><td>26—30</td><td>"Venerdì 2 ottobre, dalle sette. Piazza Duomo. Ti aspettiamo."</td><td>Ultimo fotogramma</td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>"Tra un mese non esiste più" è una scadenza, non una promozione.</b> È più forte di "se tu
+  bevi birra" perché non chiede a nessuno di identificarsi in una categoria: mette un orologio
+  sul tavolo al secondo uno. E soprattutto <b>è vera.</b>
+</div>
+
+<p>"Da nessuna parte" allarga la scarsità oltre il locale: non è "finisce da noi", è "finisce
+ovunque". Toglie l'obiezione <em>"la trovo altrove"</em>.</p>
+
+<h3>L'erede del reel da 22.000 view</h3>
+<ul>
+  <li><strong>Scarsità vera.</strong> L'Oktoberfestbier è stagionale per davvero: è la
+      differenza tra una promo e una notizia. E le notizie, su questa pagina, fanno il doppio
+      delle view.</li>
+  <li><strong>La pausa-assaggio.</strong> Dal secondo 12 al 26 Esme parla pochissimo. Sono i
+      quattordici secondi che tengono il watch time.</li>
+  <li><strong>L'oggetto fisico</strong> che sostituisce la macchinetta è il boccale che si
+      riempie: macro e audio vero. Se la spillatura è muta o sbrigativa, il video non ha
+      centro.</li>
+</ul>
+
+<!-- ============ 4 ============ -->
+<div class="page"></div>
+<p class="occhiello">Video 4 &nbsp;·&nbsp; esce sab 3 ottobre</p>
+<h2><span class="num">4 ·</span> Il giorno dopo</h2>
+<p class="scheda"><b>30 secondi</b> &nbsp;·&nbsp; Esme + b-roll della serata &nbsp;·&nbsp; si gira
+il 2, si monta il 3</p>
+
+<p class="intro">Non è un video di cortesia. Fa tre lavori: <strong>mostra a chi non è venuto
+cosa si è perso</strong> (ed è questo che riempie l'evento successivo), chiude il ciclo con chi
+c'era, e ringrazia Augustiner in pubblico — cosa che vale per la prossima trattativa.</p>
+
+<table>
+<thead><tr><th>Sec</th><th>Esme dice</th><th>Si vede</th></tr></thead>
+<tbody>
+<tr><td>0—5</td><td>"Ieri sera abbiamo finito <span class="vuoto"></span>."</td><td><strong>B-roll della serata piena</strong>, non la faccia. La cosa esaurita, se c'è</td></tr>
+<tr><td>5—12</td><td>"Non pensavamo venisse tutta questa gente. Piazza Duomo era così."</td><td>Il piano più largo che avete: piazza, tavoli pieni, coda</td></tr>
+<tr><td>12—20</td><td>"Quindi grazie. A tutti quelli che sono venuti, e ad <strong>Augustiner</strong> per la birra."</td><td>Stacchi veloci: facce, boccali, brindisi, staff</td></tr>
+<tr><td>20—26</td><td>"Se non c'eri, hai sbagliato serata. Ma ce n'è un'altra."</td><td>Esme a camera, <strong>prima volta nel video</strong></td></tr>
+<tr><td>26—30</td><td>"<span class="vuoto"></span>. Ti aspettiamo al BarBar."</td><td>Ultimo fotogramma</td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>"Grazie a tutti" non è un video.</b> È rivolto a chi c'era, cioè alla minoranza, e non dà
+  a nessun altro una ragione per guardare. Il gancio dev'essere <b>una notizia sulla serata</b>,
+  e il grazie arriva al secondo 12.
+</div>
+
+<h3>Il gancio si decide la sera stessa</h3>
+<table>
+<thead><tr><th>Se succede</th><th>Gancio</th></tr></thead>
+<tbody>
+<tr><td>Finisce qualcosa</td><td>"Ieri sera abbiamo finito la birra." — <strong>il più forte di tutti</strong></td></tr>
+<tr><td>Tanta gente</td><td>"Non pensavamo venisse tutta questa gente."</td></tr>
+<tr><td>Coda fuori</td><td>"Ieri sera c'era la coda fuori dal BarBar."</td></tr>
+<tr><td>Serata normale</td><td>"Guarda che roba era Piazza Duomo ieri sera."</td></tr>
+</tbody></table>
+<p><strong>Non inventare l'esaurito se non è successo.</strong> Chi c'era lo sa, e bruciare la
+credibilità su un video di ringraziamento è il modo più stupido di perderla.</p>
+<p>L'ultimo spazio vuoto è <strong>il prossimo appuntamento</strong>: il karaoke del giovedì, il
+drink di novembre, la prossima serata. Se non c'è ancora niente di fissato si chiude con "Ti
+aspettiamo al BarBar" e basta — meglio che promettere il vago.</p>
+
+<h3>Da riprendere la sera del 2, perché dopo non si recupera</h3>
+<ul>
+  <li>Piano largo della piazza piena, <strong>presto</strong>, appena si riempie</li>
+  <li>Boccali che si riempiono al bancone, <strong>con l'audio</strong></li>
+  <li>Tre o quattro facce di gente che ride o brinda — <strong>chiedendo il permesso</strong></li>
+  <li>Il piatto che va di più, appena esce dalla cucina</li>
+  <li>Lo staff che lavora</li>
+  <li>Se qualcosa finisce: <strong>riprendere il vuoto.</strong> La spina staccata, il vassoio vuoto</li>
+</ul>
+
+<!-- ============ 5 ============ -->
+<div class="page"></div>
+<p class="occhiello">Video 5 &nbsp;·&nbsp; esce ven 26, da fissare in alto</p>
+<h2><span class="num">5 ·</span> Cos'è l'Oktoberfest del BarBar</h2>
+<p class="scheda"><b>40 secondi</b> &nbsp;·&nbsp; Esme in apertura e chiusura, voce fuori campo in mezzo</p>
+
+<p class="intro">Gli altri quattro <strong>spingono</strong>: vivono nel feed, devono fermare lo
+scroll, ognuno dice una cosa sola. Questo <strong>non spinge, riceve.</strong></p>
+
+<ul>
+  <li>Si <strong>fissa in alto al profilo</strong>, così chi arriva dagli altri video trova
+      subito la risposta completa</li>
+  <li>Si manda <strong>in DM</strong> a chi scrive "ma cos'è?"</li>
+  <li>È l'unico <strong>mandabile ad Augustiner</strong> perché lo riposti: è pulito, li nomina
+      bene, non fa battute</li>
+  <li>È l'unico su cui ha senso <strong>mettere budget</strong>, se si mette</li>
+</ul>
+
+<div class="nota">
+  <b>Non gli serve un gancio da scroll.</b> Chi lo guarda ha già deciso di essere interessato.
+  Gli serve <b>chiarezza</b>, che è una cosa diversa — e per questo è anche l'unico che può
+  durare 40 secondi invece di 30.
+</div>
+
+<table>
+<thead><tr><th>Sec</th><th>Esme dice</th><th>Si vede</th></tr></thead>
+<tbody>
+<tr><td>0—5</td><td>"Venerdì 2 ottobre il BarBar diventa l'Oktoberfest. Ti spiego bene cosa vuol dire."</td><td><strong>Esme a camera</strong>, calma. Piano medio, locale dietro</td></tr>
+<tr><td>5—13</td><td>"C'è la birra che <strong>Augustiner</strong> produce solo per l'Oktoberfest. Quella vera, la stessa che versano nelle tende a Monaco."</td><td><strong>Da qui voce fuori campo.</strong> Macro: la spina, l'etichetta, il boccale che si riempie</td></tr>
+<tr><td>13—21</td><td>"E c'è la cucina: piatti tipici bavaresi, fatti qui, per tutta la sera."</td><td>Cucina al lavoro, piatti che escono, il pass</td></tr>
+<tr><td>21—28</td><td>"Si comincia alle sette. <span class="vuoto"></span>. Si sta dentro e fuori, in piazza."</td><td>Piazza al tramonto, tavoli che si apparecchiano</td></tr>
+<tr><td>28—35</td><td>"Vieni dopo il lavoro, vieni a cena, vieni tardi. È aperto fino a chiusura."</td><td>Tre stacchi: aperitivo, tavolo pieno, sera tardi</td></tr>
+<tr><td>35—40</td><td>"Venerdì 2 ottobre, Piazza Duomo, Brescia. <strong>Ti aspettiamo al BarBar.</strong>"</td><td><strong>Torna Esme a camera.</strong> Ultimo fotogramma</td></tr>
+</tbody></table>
+
+<h3>Apre e chiude in faccia, il resto è voce</h3>
+<p>Esme sta in campo solo nei primi cinque secondi e negli ultimi cinque. In mezzo è
+<strong>voce fuori campo su b-roll</strong>. È l'unico dei cinque girato così, ed è voluto: il
+parlato a camera è <em>energia</em>, il voice-over su immagini è <em>autorevolezza</em>.</p>
+<p>Un istituzionale tutto in faccia sembra un altro contenuto del feed; uno tutto in voice-over
+sembra la pubblicità di qualcun altro. La cornice con lei davanti tiene insieme le due cose.</p>
+<div class="nota">
+  <b>Il registro cambia, il personaggio no.</b> Esme resta lei ma va più lenta: qui non deve
+  tenere nessuno, deve farsi capire. È l'unico copione dove le pause servono a respirare e non
+  a creare tensione.
+</div>
+
+<h3>Da riempire</h3>
+<p>Lo spazio al secondo 21 è <strong>come si accede</strong>: prenotazione consigliata, ingresso
+libero, tavoli su prenotazione e bancone libero. È l'informazione pratica che manca, e in un
+istituzionale non può mancare. Se davvero non c'è una regola si dice <em>"si entra e
+basta"</em>, che è comunque una risposta.</p>
+
+<h3>Attenzione al claim</h3>
+<p><strong>"La stessa che versano nelle tende a Monaco"</strong> è la frase più forte del video
+ed è anche la più esposta: va confermata con Augustiner. Se non è approvabile si ripiega su
+<em>"la birra che Augustiner produce solo per l'Oktoberfest"</em>, che resta vero e resta
+buono.</p>
+<div class="nota">
+  Questo è anche <b>il video da mandare ad Augustiner</b> insieme alla richiesta di collab post:
+  far vedere come li si racconta aiuta a ottenere il sì.
+</div>
+
+<h3>Se serve un taglio da 30"</h3>
+<p>Per una sponsorizzata si tolgono i secondi 28—35, la parte sul "quando venire": è l'unica
+non essenziale.</p>
+
+<!-- ============ OPERATIVO ============ -->
+<div class="page"></div>
+<p class="occhiello">Operativo</p>
+<h2>Prima di girare</h2>
+
+<table>
+<tbody>
+<tr><td><strong>Claim Augustiner</strong></td><td>Nome esatto della birra e via libera su "solo per l'Oktoberfest". Nella stessa richiesta, il collab post</td></tr>
+<tr><td><strong>Boccali da un litro</strong></td><td>Sono metà dell'impatto visivo del video 3</td></tr>
+<tr><td><strong>Il foglio del menu</strong></td><td>Serve un foglio vero da tenere in mano nel video 1, anche se non si legge</td></tr>
+<tr><td><strong>Menu</strong></td><td>Se arriva in tempo, il video 1 cambia in meglio</td></tr>
+<tr><td><strong>Come si accede</strong></td><td>Prenotazione o ingresso libero: serve per il video 5, secondo 21</td></tr>
+<tr><td><strong>Conteggio presenze</strong></td><td>Da concordare adesso: senza, non sapremo se ha funzionato</td></tr>
+</tbody></table>
+
+<h3>Ordine di ripresa</h3>
+<table>
+<thead><tr><th>Blocco</th><th>Postazione</th><th>Video</th></tr></thead>
+<tbody>
+<tr><td><strong>1</strong></td><td>Bancone e spina</td><td>3 · La birra &nbsp;·&nbsp; più il versaggio del video 2</td></tr>
+<tr><td><strong>2</strong></td><td>Interno, verso la cucina</td><td>1 · Il menu segreto</td></tr>
+<tr><td><strong>3</strong></td><td>Fuori, in piazza</td><td>2 · apertura e chiusura</td></tr>
+<tr><td><strong>4</strong></td><td>Giro largo: cucina, piazza, sala</td><td>5 · Tutto il b-roll dell'istituzionale</td></tr>
+<tr><td><strong>5</strong></td><td>La sera del 2</td><td>Tutto il b-roll per il video 4</td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>Otto giorni all'evento.</b> La sessione va fissata entro il fine settimana: serve margine
+  per montare e per distribuire le tre uscite, invece di ammassarle il 1° ottobre.
+</div>
+
+</body></html>

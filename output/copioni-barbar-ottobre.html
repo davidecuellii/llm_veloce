@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<title>BarBar — Copioni di ottobre</title>
+<style>
+  @page { size: A4 portrait; margin: 16mm 15mm 14mm; }
+  @page :first { margin: 0; }
+
+  :root{
+    --ink:#202020; --body:#33322E; --muted:#6B6B6B; --line:#DAD8CF; --soft:#EFEDE6;
+    --giallo:#FFEE32; --oro:#8A7B00; --paper:#FFFFFF;
+    --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  body{margin:0; font-family:var(--sans); font-size:10.8pt; line-height:1.55;
+       color:var(--body); background:var(--paper);}
+
+  /* ---------- copertina ---------- */
+  .cover{background:#202020; color:#D6D6D6; height:297mm; width:100%;
+         padding:70mm 22mm 22mm; page-break-after:always; position:relative;}
+  .cover .kicker{font-size:9.5pt; letter-spacing:.22em; text-transform:uppercase; color:#8C8C8C; margin:0 0 14mm;}
+  .cover h1{font-size:40pt; line-height:1.02; letter-spacing:-.02em; color:var(--giallo);
+            margin:0 0 6mm; font-weight:800;}
+  .cover .sub{font-size:16pt; color:#D6D6D6; margin:0 0 3mm; font-weight:400;}
+  .cover .meta{font-size:11pt; color:#8C8C8C; margin:0;}
+  .cover .foot{position:absolute; bottom:22mm; left:22mm; right:22mm;
+               border-top:1px solid #3A3A3A; padding-top:5mm; font-size:9.5pt; color:#8C8C8C;
+               display:flex; justify-content:space-between;}
+
+  /* ---------- tipografia ---------- */
+  h2{font-size:17pt; line-height:1.15; letter-spacing:-.01em; color:var(--ink);
+     margin:0 0 2mm; font-weight:800;}
+  h2 .num{color:var(--oro);}
+  h3{font-size:9pt; letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+     margin:7mm 0 2mm; font-weight:700;}
+  p{margin:0 0 3mm;} strong{color:var(--ink); font-weight:700;}
+  em{color:var(--muted);}
+  ul{margin:0 0 3mm; padding-left:5mm;} li{margin-bottom:1.5mm;}
+
+  .scheda{font-size:9.5pt; color:var(--muted); border-bottom:1px solid var(--line);
+          padding-bottom:3mm; margin-bottom:4mm;}
+  .scheda b{color:var(--ink);}
+
+  .intro{font-size:11pt; color:var(--body); margin-bottom:4mm;}
+
+  /* ---------- battute ---------- */
+  .beat{margin:0 0 4mm; page-break-inside:avoid;}
+  .tc{display:inline-block; background:var(--ink); color:var(--giallo);
+      font-size:8pt; font-weight:700; letter-spacing:.1em; padding:1mm 2.5mm;
+      border-radius:1mm; margin-bottom:2mm; text-transform:uppercase;}
+  .tc span{color:#D6D6D6; font-weight:400;}
+  .righe{border-left:2.5px solid var(--giallo); padding-left:4mm; margin-left:.5mm;}
+  .r{margin:0 0 2.2mm;}
+  .chi{font-weight:800; color:var(--ink); letter-spacing:.02em;}
+  .az{color:var(--muted); font-style:italic;}
+  .vuoto{display:inline-block; min-width:20mm; border-bottom:1.5px solid var(--ink);
+         background:var(--soft); height:1.15em; vertical-align:-.2em; margin:0 1px;}
+
+  .nota{background:var(--soft); border-left:3px solid var(--ink); padding:3mm 4mm;
+        font-size:9.8pt; margin:4mm 0; page-break-inside:avoid;}
+  .nota b{color:var(--ink);}
+
+  table{width:100%; border-collapse:collapse; font-size:10pt; margin:0 0 4mm;}
+  thead{display:table-header-group;}
+  tr{page-break-inside:avoid;}
+  h3{page-break-after:avoid;}
+  h2{page-break-after:avoid;}
+  .scheda, .intro{page-break-after:avoid;}
+  ul{page-break-inside:avoid;}
+  th{text-align:left; font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase;
+     color:var(--muted); border-bottom:1.5px solid var(--ink); padding:0 3mm 1.5mm 0;}
+  td{padding:2mm 3mm 2mm 0; border-bottom:1px solid var(--line); vertical-align:top;}
+  td:first-child{white-space:nowrap;}
+
+  .page{page-break-before:always;}
+  .titolone{font-size:26pt; font-weight:800; color:var(--ink); letter-spacing:-.02em;
+            margin:0 0 2mm;}
+  .occhiello{font-size:9pt; letter-spacing:.2em; text-transform:uppercase; color:var(--oro);
+             margin:0 0 2mm; font-weight:700;}
+  p{page-break-inside:avoid; orphans:3; widows:3;}
+  .nota, table{page-break-inside:avoid;}
+  a{color:var(--oro); font-weight:700; text-decoration:none;}
+</style></head><body>
+<div class="cover">
+  <p class="kicker">Veloce Digital &nbsp;·&nbsp; Piano contenuti</p>
+  <h1>BarBar</h1>
+  <p class="sub">I copioni da girare</p>
+  <p class="meta">Sei video &nbsp;·&nbsp; Ottobre 2026</p>
+  <div class="foot"><span>Piazza Duomo, Brescia</span><span>Davide · 331 204 3165</span></div>
+</div>
+
+<p class="occhiello">Prima di iniziare</p>
+<h2>I sei video</h2>
+<p class="intro">Protagonista <strong>Esme</strong>, sempre. Tono BarBar: <strong>caldo, carico,
+entusiasta</strong>. Gli spazi vuoti <span class="vuoto"></span> vanno riempiti sul posto.</p>
+
+<table>
+<thead><tr><th>#</th><th>Video</th><th>Dove si gira</th></tr></thead>
+<tbody>
+<tr><td><strong>1</strong></td><td>Feste di laurea — il giro degli spazi</td><td>Piazza, sala, sala sotterranea, cucina, bar</td></tr>
+<tr><td><strong>2</strong></td><td>La colazione</td><td>Dentro (macro) e fuori, di mattina</td></tr>
+<tr><td><strong>3</strong></td><td>Dimmi cosa ordini e ti dico chi sei</td><td>Bancone</td></tr>
+<tr><td><strong>4</strong></td><td>Trend · in ritardo e fingo di essere incazzata</td><td>Piazza → bancone</td></tr>
+<tr><td><strong>5</strong></td><td>Trend · quando il cliente ci chiede il caffè</td><td>Bancone</td></tr>
+<tr><td><strong>6</strong></td><td>Trend · hai 20 euro, costruisci la tua serata perfetta</td><td>Bancone</td></tr>
+</tbody></table>
+
+<h3>Ordine per girare</h3>
+<table>
+<thead><tr><th>Blocco</th><th>Postazione</th><th>Video</th></tr></thead>
+<tbody>
+<tr><td><strong>1</strong></td><td>Bancone</td><td>5 · caffè → 3 · drink → 6 · venti euro → 4 · trend ritardo (serve un collega)</td></tr>
+<tr><td><strong>2</strong></td><td>Giro del locale</td><td>1 · laurea, dalla piazza giù fino alla sala sotterranea</td></tr>
+<tr><td><strong>3</strong></td><td>Dentro, dettagli</td><td>2 · macro di cappuccino e cornetto</td></tr>
+<tr><td><strong>—</strong></td><td>Domani mattina</td><td>2 · le riprese in piazza con la luce del mattino</td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>Il bancone per primo:</b> quattro video su sei si girano lì senza spostare niente.
+</div>
+
+<!-- ============ 1 ============ -->
+<div class="page"></div>
+<p class="occhiello">Video 1</p>
+<h2><span class="num">1 ·</span> Feste di laurea — il giro degli spazi</h2>
+<p class="scheda"><b>30 secondi</b> &nbsp;·&nbsp; Esme &nbsp;·&nbsp; camera a mano che la segue,
+uno stacco per ogni spazio</p>
+
+<table>
+<thead><tr><th>Sec</th><th>Esme dice</th><th>Si vede</th></tr></thead>
+<tbody>
+<tr><td>0—4</td><td>"Uè! Ti laurei? Allora devi <strong>assolutamente</strong> vedere dove puoi fare la festa!"</td><td>Esme in piazza, si gira ed entra nel locale</td></tr>
+<tr><td>4—9</td><td>"Puoi farla qui dentro, nella sala."</td><td>Sala interna, Esme a braccia aperte</td></tr>
+<tr><td>9—13</td><td>"Puoi farla fuori, in piazza, con il Duomo dietro in tutte le foto!"</td><td>Esterno, Duomo sullo sfondo</td></tr>
+<tr><td>13—18</td><td>"Oppure scendi giù... nella <strong>sala sotterranea</strong>. Solo per voi."</td><td>Esme scende le scale, la sala si rivela</td></tr>
+<tr><td>18—22</td><td>"La cucina prepara tutto per voi..."</td><td>Cucina al lavoro, piatti che escono</td></tr>
+<tr><td>22—26</td><td>"...e puoi avere anche <strong>il tuo bar</strong>, tutto dedicato!"</td><td>Bancone riservato, bicchieri pronti</td></tr>
+<tr><td>26—30</td><td>"Tu pensa solo a laurearti! Chiamaci, il numero è in bio. Il bar più bar di tutta Brescia ti aspetta!"</td><td>Esme a camera. Ultimo fotogramma</td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>La sala sotterranea è il colpo di scena.</b> Sulle scale Esme rallenta e abbassa la voce —
+  "oppure scendi giù..." — e la sala si rivela. È il momento che fa restare fino alla fine.
+</div>
+<p><strong>Sempre in movimento:</strong> il ritmo lo dà la camera che segue Esme da uno spazio
+all'altro, niente inquadrature ferme. <strong>Il bar dedicato va per ultimo</strong> perché è
+la cosa che sorprende di più.</p>
+
+<!-- ============ 2 ============ -->
+<div class="page"></div>
+<p class="occhiello">Video 2</p>
+<h2><span class="num">2 ·</span> La colazione</h2>
+<p class="scheda"><b>25 secondi</b> &nbsp;·&nbsp; Esme &nbsp;·&nbsp; tavolino fuori e macro dentro</p>
+
+<table>
+<thead><tr><th>Sec</th><th>Esme dice</th><th>Si vede</th></tr></thead>
+<tbody>
+<tr><td>0—4</td><td>"Lo sapevi che al BarBar si fa anche la colazione???"</td><td>Esme a camera, sorpresa, tazza in mano</td></tr>
+<tr><td>4—10</td><td>"Cappuccino... cornetto caldo..."</td><td><strong>Macro:</strong> il latte versato, la schiuma, il cornetto spezzato</td></tr>
+<tr><td>10—15</td><td>"...e davanti il Duomo. Dimmi tu un modo migliore di iniziare la giornata!"</td><td>Esme al tavolino fuori, Duomo dietro</td></tr>
+<tr><td>15—20</td><td><span class="az">(beve, sorride, non parla)</span></td><td>Primo piano, luce del mattino</td></tr>
+<tr><td>20—25</td><td>"Dalle <span class="vuoto"></span> di mattina, qui in Piazza Duomo. Ti aspettiamo!"</td><td>Ultimo fotogramma</td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>Serve la luce del mattino</b> per le riprese in piazza. Se si gira di pomeriggio, oggi solo
+  i macro dentro e la piazza domani mattina presto.
+</div>
+<p>Lo spazio vuoto è <strong>l'orario di apertura</strong>. La pausa ai secondi 15—20, con Esme
+che beve senza parlare, è la stessa che tiene gli altri video che funzionano.</p>
+
+<!-- ============ 3 ============ -->
+<div class="page"></div>
+<p class="occhiello">Video 3</p>
+<h2><span class="num">3 ·</span> Dimmi cosa ordini e ti dico chi sei</h2>
+<p class="scheda"><b>30 secondi</b> &nbsp;·&nbsp; Esme &nbsp;·&nbsp; al bancone</p>
+
+<table>
+<thead><tr><th>Sec</th><th>Esme dice</th><th>Si vede</th></tr></thead>
+<tbody>
+<tr><td>0—3</td><td>"Dimmi cosa ordini e ti dico chi sei!"</td><td>Esme appoggiata al bancone, sorriso di sfida</td></tr>
+<tr><td>3—8</td><td>"<strong>Spritz?</strong> Sei l'anima della festa, non si discute!"</td><td>Spritz servito</td></tr>
+<tr><td>8—13</td><td>"<strong>Hugo?</strong> Romanticona, eh!"</td><td>Hugo, menta in macro</td></tr>
+<tr><td>13—18</td><td>"<strong>Negroni?</strong> Tu sì che sai cosa vuoi."</td><td>Negroni, scorza d'arancia</td></tr>
+<tr><td>18—23</td><td>"<strong>Gin tonic?</strong> Elegante. Sempre."</td><td>Gin tonic, ghiaccio che cade</td></tr>
+<tr><td>23—27</td><td>"<strong>Analcolico?</strong> Sei l'amico che riporta tutti a casa. Un applauso!"</td><td>Esme applaude</td></tr>
+<tr><td>27—30</td><td>"Tagga l'amico che si è riconosciuto! Ti aspettiamo al BarBar!"</td><td>Ultimo fotogramma</td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>Ogni drink è un complimento</b>, così chi guarda tagga l'amico volentieri. Una battuta per
+  drink, uno stacco per drink.
+</div>
+<p>Mettete <strong>i drink che vendete di più</strong>: le battute si adattano.</p>
+
+<!-- ============ 4 ============ -->
+<div class="page"></div>
+<p class="occhiello">Video 4 &nbsp;·&nbsp; Trend</p>
+<h2><span class="num">4 ·</span> In ritardo e fingo di essere incazzata</h2>
+<p class="scheda"><b>15 secondi</b> &nbsp;·&nbsp; Esme + un collega &nbsp;·&nbsp; camera a mano
+&nbsp;·&nbsp; <a href="https://www.instagram.com/reels/DdbfmivIh-r/">Guarda il riferimento →</a></p>
+
+<div class="nota">
+  <b>Scritta fissa a schermo per tutto il video:</b><br>
+  "Quando arrivi in ritardo al lavoro e fai finta di essere incazzata per non farti sgridare"
+</div>
+
+<table>
+<thead><tr><th>Sec</th><th>Cosa succede</th></tr></thead>
+<tbody>
+<tr><td>0—3</td><td>Esme entra dalla piazza nel locale, passo deciso, faccia scura. La camera la segue</td></tr>
+<tr><td>3—5</td><td>Butta la borsa dietro il bancone. Rumore forte</td></tr>
+<tr><td>5—7</td><td>Collega: <em>"Esme, ma sono le..."</em></td></tr>
+<tr><td>7—11</td><td>Esme: "No. Lasciami stare. <strong>Lasciami stare.</strong> Non puoi capire."</td></tr>
+<tr><td>11—14</td><td>"Tutte a me. <strong>Tutte a me!</strong>" — afferra lo straccio e lucida i bicchieri a tutta forza</td></tr>
+<tr><td>14—16</td><td>Il collega si allontana in silenzio. Esme guarda in camera e sorride</td></tr>
+</tbody></table>
+
+<p><strong>I trend funzionano per fedeltà:</strong> stesso testo, stessa struttura, stessi
+tempi. L'unica cosa nostra è lo sguardo finale in camera. Il riferimento ha fatto
+<strong>1,7 milioni di view</strong>.</p>
+
+<!-- ============ 5 ============ -->
+<div class="page"></div>
+<p class="occhiello">Video 5 &nbsp;·&nbsp; Trend</p>
+<h2><span class="num">5 ·</span> Quando il cliente ci chiede il caffè</h2>
+<p class="scheda"><b>18 secondi</b> &nbsp;·&nbsp; Esme dietro il bancone &nbsp;·&nbsp; zero parlato
+&nbsp;·&nbsp; <a href="https://www.instagram.com/reels/DePF4aio64q/">Guarda il riferimento →</a></p>
+
+<div class="nota">
+  <b>Titolo fisso in alto:</b> "QUANDO IL CLIENTE CI CHIEDE IL CAFFÈ:"
+</div>
+
+<table>
+<thead><tr><th>Sec</th><th>Scritta a schermo</th><th>Faccia di Esme</th></tr></thead>
+<tbody>
+<tr><td>0—3</td><td>"Un caffè" · "Un macchiato"</td><td>Neutra, quasi annoiata</td></tr>
+<tr><td>3—6</td><td>"Un deca macchiato freddo in tazza grande"</td><td>Sopracciglio che sale</td></tr>
+<tr><td>6—9</td><td>"Un cappuccino senza schiuma ma con tanta schiuma"</td><td>Confusione totale</td></tr>
+<tr><td>9—12</td><td>"Un orzo con latte d'avena tiepido, non caldo, tiepido"</td><td>Fissa la camera, immobile</td></tr>
+<tr><td>12—15</td><td>"Un espresso. Basta."</td><td><strong>Orgoglio</strong>, doppio pollice su</td></tr>
+<tr><td>15—18</td><td>"Un cappuccino alle sei di sera"</td><td>Disperazione, si copre la faccia</td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>Usate lo stesso audio dell'originale</b> ("Usa l'audio" su Instagram). In questo trend la
+  musica è metà del meccanismo: ogni reazione dura una battuta musicale, poi taglio.
+</div>
+<p>Scritte grandi, bianche, al centro. <strong>Il cappuccino alle sei chiude</strong> perché è il
+peccato che ogni italiano riconosce: è la riga che fa commentare.</p>
+
+<!-- ============ 6 ============ -->
+<div class="page"></div>
+<p class="occhiello">Video 6 &nbsp;·&nbsp; Trend</p>
+<h2><span class="num">6 ·</span> Hai 20 euro: costruisci la tua serata perfetta</h2>
+<p class="scheda"><b>30 secondi</b> &nbsp;·&nbsp; Esme &nbsp;·&nbsp; al bancone</p>
+
+<p class="intro">In alto a destra un <strong>contatore</strong> che parte da <strong>20 €</strong>
+e scende a ogni scelta.</p>
+
+<table>
+<thead><tr><th>Sec</th><th>Esme dice</th><th>Si vede</th></tr></thead>
+<tbody>
+<tr><td>0—4</td><td>"Hai venti euro. Costruiamo la tua serata perfetta al BarBar!"</td><td>Esme sventola la banconota. Contatore <strong>20 €</strong></td></tr>
+<tr><td>4—9</td><td>"Si parte con lo spritz! <span class="vuoto"></span> euro."</td><td>Spritz servito. Il contatore scende</td></tr>
+<tr><td>9—14</td><td>"Ci vuole qualcosa da mangiare... <span class="vuoto"></span> euro."</td><td>Tagliere o aperitivo in macro</td></tr>
+<tr><td>14—19</td><td>"Uno shottino per il brindisi! <span class="vuoto"></span> euro."</td><td>Shot versato, Esme brinda in camera</td></tr>
+<tr><td>19—24</td><td>"Ne restano <span class="vuoto"></span>... e allora <span class="vuoto"></span>!"</td><td>L'ultima scelta porta il contatore <strong>esattamente a zero</strong></td></tr>
+<tr><td>24—30</td><td>"Zero euro, serata perfetta! E tu cosa ti prendi con venti euro? Scrivilo nei commenti!"</td><td>Contatore <strong>0 €</strong>. Ultimo fotogramma</td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>I prezzi veri vanno messi sul posto</b>, scegliendo le cose in modo che il totale arrivi
+  <b>esattamente a 20</b>: il contatore che tocca zero è la soddisfazione del video.
+</div>
+<p><strong>La domanda nei commenti è il motore del trend:</strong> ognuno scrive la sua
+combinazione.</p>
+<p><strong>Variante "il tuo drink perfetto":</strong> stessa struttura, ma si costruisce un drink
+scegliendo base (gin, rum, vodka), mixer e guarnizione, e si chiede nei commenti la combinazione
+preferita.</p>
+
+</body></html>

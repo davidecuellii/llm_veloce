@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<title>BarBar — Copioni di settembre</title>
+<style>
+  @page { size: A4 portrait; margin: 16mm 15mm 14mm; }
+  @page :first { margin: 0; }
+
+  :root{
+    --ink:#202020; --body:#33322E; --muted:#6B6B6B; --line:#DAD8CF; --soft:#EFEDE6;
+    --giallo:#FFEE32; --oro:#8A7B00; --paper:#FFFFFF;
+    --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  body{margin:0; font-family:var(--sans); font-size:10.8pt; line-height:1.55;
+       color:var(--body); background:var(--paper);}
+
+  /* ---------- copertina ---------- */
+  .cover{background:#202020; color:#D6D6D6; height:297mm; width:100%;
+         padding:70mm 22mm 22mm; page-break-after:always; position:relative;}
+  .cover .kicker{font-size:9.5pt; letter-spacing:.22em; text-transform:uppercase; color:#8C8C8C; margin:0 0 14mm;}
+  .cover h1{font-size:40pt; line-height:1.02; letter-spacing:-.02em; color:var(--giallo);
+            margin:0 0 6mm; font-weight:800;}
+  .cover .sub{font-size:16pt; color:#D6D6D6; margin:0 0 3mm; font-weight:400;}
+  .cover .meta{font-size:11pt; color:#8C8C8C; margin:0;}
+  .cover .foot{position:absolute; bottom:22mm; left:22mm; right:22mm;
+               border-top:1px solid #3A3A3A; padding-top:5mm; font-size:9.5pt; color:#8C8C8C;
+               display:flex; justify-content:space-between;}
+
+  /* ---------- tipografia ---------- */
+  h2{font-size:17pt; line-height:1.15; letter-spacing:-.01em; color:var(--ink);
+     margin:0 0 2mm; font-weight:800;}
+  h2 .num{color:var(--oro);}
+  h3{font-size:9pt; letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+     margin:7mm 0 2mm; font-weight:700;}
+  p{margin:0 0 3mm;} strong{color:var(--ink); font-weight:700;}
+  em{color:var(--muted);}
+  ul{margin:0 0 3mm; padding-left:5mm;} li{margin-bottom:1.5mm;}
+
+  .scheda{font-size:9.5pt; color:var(--muted); border-bottom:1px solid var(--line);
+          padding-bottom:3mm; margin-bottom:4mm;}
+  .scheda b{color:var(--ink);}
+
+  .intro{font-size:11pt; color:var(--body); margin-bottom:4mm;}
+
+  /* ---------- battute ---------- */
+  .beat{margin:0 0 4mm; page-break-inside:avoid;}
+  .tc{display:inline-block; background:var(--ink); color:var(--giallo);
+      font-size:8pt; font-weight:700; letter-spacing:.1em; padding:1mm 2.5mm;
+      border-radius:1mm; margin-bottom:2mm; text-transform:uppercase;}
+  .tc span{color:#D6D6D6; font-weight:400;}
+  .righe{border-left:2.5px solid var(--giallo); padding-left:4mm; margin-left:.5mm;}
+  .r{margin:0 0 2.2mm;}
+  .chi{font-weight:800; color:var(--ink); letter-spacing:.02em;}
+  .az{color:var(--muted); font-style:italic;}
+  .vuoto{display:inline-block; min-width:20mm; border-bottom:1.5px solid var(--ink);
+         background:var(--soft); height:1.15em; vertical-align:-.2em; margin:0 1px;}
+
+  .nota{background:var(--soft); border-left:3px solid var(--ink); padding:3mm 4mm;
+        font-size:9.8pt; margin:4mm 0; page-break-inside:avoid;}
+  .nota b{color:var(--ink);}
+
+  table{width:100%; border-collapse:collapse; font-size:10pt; margin:0 0 4mm;}
+  thead{display:table-header-group;}
+  tr{page-break-inside:avoid;}
+  h3{page-break-after:avoid;}
+  h2{page-break-after:avoid;}
+  .scheda, .intro{page-break-after:avoid;}
+  ul{page-break-inside:avoid;}
+  th{text-align:left; font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase;
+     color:var(--muted); border-bottom:1.5px solid var(--ink); padding:0 3mm 1.5mm 0;}
+  td{padding:2mm 3mm 2mm 0; border-bottom:1px solid var(--line); vertical-align:top;}
+  td:first-child{white-space:nowrap;}
+
+  .page{page-break-before:always;}
+  .titolone{font-size:26pt; font-weight:800; color:var(--ink); letter-spacing:-.02em;
+            margin:0 0 2mm;}
+  .occhiello{font-size:9pt; letter-spacing:.2em; text-transform:uppercase; color:var(--oro);
+             margin:0 0 2mm; font-weight:700;}
+</style></head><body>
+
+<div class="cover">
+  <p class="kicker">Veloce Digital &nbsp;·&nbsp; Piano contenuti</p>
+  <h1>BarBar</h1>
+  <p class="sub">I copioni da girare</p>
+  <p class="meta">Cinque video da 30 secondi &nbsp;·&nbsp; Settembre 2026</p>
+  <div class="foot"><span>Piazza Duomo, Brescia</span><span>Davide · 331 204 3165</span></div>
+</div>
+
+<p class="occhiello">Prima di iniziare</p>
+<h2>Come funzionano questi video</h2>
+
+<p class="intro">Cinque video da <strong>30 secondi</strong>. Protagonista <strong>Esme</strong>,
+sempre in parlato diretto a camera. Gli spazi vuoti <span class="vuoto"></span> vanno riempiti
+prima di girare.</p>
+
+<h3>Il registro di Esme</h3>
+<p>Squillante, veloce, iperattiva. Frasi corte.</p>
+<div class="nota">
+  <b>Le pause valgono più delle parole.</b> Dove il copione segna un beat, è lì che il video
+  tiene. Le parolacce non sono un problema sulla pagina, ma non le mettiamo a copione: se
+  escono girando, si tengono.
+</div>
+
+<h3>Quattro regole valide per tutti e cinque</h3>
+<ul>
+  <li><strong>Nei primi 3 secondi non si vede il locale.</strong> Si vede la faccia di Esme, o
+      un problema. Il bar entra dopo.</li>
+  <li><strong>La chiusura è sempre la stessa e non si allunga:</strong> <em>"Ti aspettiamo al
+      BarBar."</em> Nessun link, nessun "seguici", nessuna seconda richiesta.</li>
+  <li><strong>L'ultima battuta è l'ultimo fotogramma.</strong> Dopo, stop.</li>
+  <li><strong>Ogni video funziona per chi non vi ha mai visto.</strong> Niente riferimenti a
+      video precedenti.</li>
+</ul>
+
+<h3>Da dove arrivano questi copioni</h3>
+<p>Due video già vostri, riletti secondo dove hanno funzionato.</p>
+<p>Il reel di <strong>Ferragosto</strong>, quello con Piazza Duomo trasformata in spiaggia,
+tiene grazie all'<strong>elenco a raffica seguito dal ribaltone</strong>. Quella meccanica è
+il video 1.</p>
+<p>Il reel della <strong>macchina di Jäger</strong> è il contenuto più visto della pagina:
+<strong>22.251 view</strong>, contro le 1.500–5.700 di tutto il resto. Le tre cose che lo
+fanno funzionare sono ricopiate dentro il video 4.</p>
+
+<!-- ============ 1 ============ -->
+<div class="page"></div>
+<p class="occhiello">Video 1</p>
+<h2><span class="num">1 ·</span> Rientro dalle vacanze</h2>
+<p class="scheda"><b>30 secondi</b> &nbsp;·&nbsp; Esme &nbsp;·&nbsp; esterno, in piazza
+&nbsp;·&nbsp; riferimento: il vostro reel di Ferragosto</p>
+
+<table>
+<thead><tr><th>Sec</th><th>Esme dice</th><th>Si vede</th></tr></thead>
+<tbody>
+<tr><td>0—4,5</td><td>"Lo so che sei appena tornato dalle vacanze e adesso ti fa schifo tutto."</td><td>Faccia, primo piano. Niente locale</td></tr>
+<tr><td>4,5—9</td><td>"Formentera. Ibiza. Tenerife. La Sardegna. Finito. Tutto finito."</td><td>Uno stacco per meta, ritmo di elenco</td></tr>
+<tr><td>9—13</td><td>"Però il sole a Brescia non è mica finito."</td><td>Stop, cambio ritmo. Pan verso l'alto</td></tr>
+<tr><td>13—20</td><td>"È ancora qui. Sopra Piazza Duomo. Tavolino fuori, ghiaccio nel bicchiere, e non devi neanche prendere l'aereo."</td><td>Piazza, tavolini, drink che si versa</td></tr>
+<tr><td>20—26</td><td>"Le vacanze sono finite. L'aperitivo no."</td><td>Esme, un beat di pausa</td></tr>
+<tr><td>26—30</td><td>"Ti aspettiamo qui al BarBar."</td><td>Ultimo fotogramma su Esme</td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>L'elenco delle mete va tagliato secco</b>, una parola per stacco. È quello che tiene il
+  ritmo nel reel di riferimento: se diventa una frase sola, il video si siede.
+</div>
+
+<!-- ============ 2 ============ -->
+<div class="page"></div>
+<p class="occhiello">Video 2</p>
+<h2><span class="num">2 ·</span> Karaoke del giovedì</h2>
+<p class="scheda"><b>30 secondi</b> &nbsp;·&nbsp; Esme &nbsp;·&nbsp; giovedì <b>17 settembre</b>,
+dalle 20/21 &nbsp;·&nbsp; appuntamento fisso settimanale</p>
+
+<table>
+<thead><tr><th>Sec</th><th>Esme dice</th><th>Si vede</th></tr></thead>
+<tbody>
+<tr><td>0—4</td><td>"Il giovedì sera a Brescia non c'è mai niente da fare. Mai."</td><td>Faccia. Nessun microfono, nessun locale</td></tr>
+<tr><td>4—9</td><td>"E allora da giovedì 17 il karaoke torna qui al BarBar."</td><td>Stacco sul locale</td></tr>
+<tr><td>9—15</td><td>"Non una serata. <strong>Ogni</strong> giovedì."</td><td>Esme, beat di pausa sul "ogni"</td></tr>
+<tr><td>15—23</td><td>"Dalle nove in poi. Tu, il microfono, e una canzone che non sai cantare. E va benissimo così."</td><td>Primo piano microfono, poi qualcuno che stona ridendo</td></tr>
+<tr><td>23—27</td><td>"Giovedì 17, Piazza Duomo."</td><td>Piazza</td></tr>
+<tr><td>27—30</td><td>"Ti aspettiamo al BarBar."</td><td>Ultimo fotogramma su Esme</td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>La riga che vale il video è "Non una serata. Ogni giovedì."</b> È l'unica informazione che
+  trasforma un evento singolo in un appuntamento, e va detta con la pausa in mezzo.
+</div>
+<p>Il microfono non entra in campo fino al secondo 15: prima si vende il problema, poi la
+soluzione.</p>
+
+<!-- ============ 3 ============ -->
+<div class="page"></div>
+<p class="occhiello">Video 3</p>
+<h2><span class="num">3 ·</span> Venerdì con DJ</h2>
+<p class="scheda"><b>30 secondi</b> &nbsp;·&nbsp; Esme &nbsp;·&nbsp; venerdì <b>18 settembre</b>
+&nbsp;·&nbsp; aperitivo e cucina, DJ set dalle 21 a chiusura</p>
+
+<table>
+<thead><tr><th>Sec</th><th>Esme dice</th><th>Si vede</th></tr></thead>
+<tbody>
+<tr><td>0—4</td><td>"Il venerdì è sempre lo stesso problema: o vai a cena, o esci. Devi scegliere."</td><td>Faccia, primo piano</td></tr>
+<tr><td>4—8</td><td>"Venerdì 18 qui non devi scegliere."</td><td>Stacco sul locale</td></tr>
+<tr><td>8—16</td><td>"Si parte con l'aperitivo, si mangia, si beve,"</td><td>Piatti, bicchieri, tavoli pieni</td></tr>
+<tr><td>16—23</td><td>"e dalle nove parte il DJ set. Fino a chiusura."</td><td>Console, mani sul mixer, luci</td></tr>
+<tr><td>23—27</td><td>"Quindi ceni, e sei già dentro la serata."</td><td>Piazza che si riempie</td></tr>
+<tr><td>27—30</td><td>"Venerdì 18, Piazza Duomo. Ti aspettiamo al BarBar."</td><td>Ultimo fotogramma su Esme</td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>La promessa vera non è "c'è il DJ", è "non ti devi spostare".</b> Il video vende la
+  comodità. La musica è la prova, non l'argomento.
+</div>
+
+<!-- ============ 4 ============ -->
+<div class="page"></div>
+<p class="occhiello">Video 4 &nbsp;·&nbsp; Format ricorrente</p>
+<h2><span class="num">4 ·</span> Drink del mese: Boilermaker</h2>
+<p class="scheda"><b>30 secondi</b> &nbsp;·&nbsp; Esme &nbsp;·&nbsp; al bancone
+&nbsp;·&nbsp; primo episodio di una serie mensile</p>
+
+<p class="intro">Ogni mese un drink diverso, sempre la stessa struttura. Questo copione ricalca
+il vostro reel della macchina di Jäger.</p>
+
+<table>
+<thead><tr><th>Sec</th><th>Esme dice</th><th>Si vede</th></tr></thead>
+<tbody>
+<tr><td>0—4</td><td>"Uè. Se tu bevi whisky, allora devi assolutamente vedere questo drink."</td><td>Esme si sporge verso la camera con lo shot in mano</td></tr>
+<tr><td>4—9</td><td>"Si chiama Boilermaker, ed è il drink di settembre qui al BarBar."</td><td>Stacco sul bicchiere</td></tr>
+<tr><td>9—17</td><td>"Funziona così: la birra. Lo shot di whisky. E lo shot va <strong>dentro</strong> la birra."</td><td>Macro sulla preparazione. Lo shot che cade è il momento chiave</td></tr>
+<tr><td>17—22</td><td>"Aspetta che lo provo." <span class="az">(beve, reazione, non parla)</span></td><td>Primo piano faccia. <strong>Tre secondi senza parlato</strong></td></tr>
+<tr><td>22—27</td><td>"Ok. Questo è il modo più veloce di bere una birra in tutta Brescia."</td><td>Esme, bicchiere già mezzo vuoto</td></tr>
+<tr><td>27—30</td><td>"Tutto settembre, qui in Piazza Duomo. Ti aspettiamo."</td><td>Ultimo fotogramma</td></tr>
+</tbody></table>
+
+<h3>Le tre mosse copiate dal reel da 22.000 view</h3>
+<ul>
+  <li><strong>"Uè" più il tu diretto.</strong> Apre parlando a una categoria precisa, non a
+      tutti. Chi beve whisky si sente chiamato in causa nel primo secondo.</li>
+  <li><strong>Il superlativo geografico.</strong> "Il più ___ di tutta Brescia". Nell'originale
+      era <em>"lo shottino più ghiacciato di tutta Brescia"</em>.</li>
+  <li><strong>La pausa-assaggio.</strong> A metà video Esme smette di parlare e beve. Sembrano
+      tre secondi sprecati e invece sono quelli che tengono su il watch time: chi guarda resta
+      per la reazione.</li>
+</ul>
+
+<div class="nota">
+  Lo shot che cade dentro la birra è l'equivalente della macchinetta: <b>l'oggetto da
+  inquadrare.</b> Va girato in macro e va sentito.
+</div>
+
+<!-- ============ 5 ============ -->
+<div class="page"></div>
+<p class="occhiello">Video 5</p>
+<h2><span class="num">5 ·</span> Selezione di birre</h2>
+<p class="scheda"><b>30 secondi</b> &nbsp;·&nbsp; Esme &nbsp;·&nbsp; al bancone, sulle spine</p>
+
+<table>
+<thead><tr><th>Sec</th><th>Esme dice</th><th>Si vede</th></tr></thead>
+<tbody>
+<tr><td>0—4</td><td>"Tu bevi birra? Ok. Allora guarda queste però."</td><td>Esme si sporge verso la camera</td></tr>
+<tr><td>4—9</td><td>"Perché 'una birra' non vuol dire niente."</td><td>Stacco sul bancone, spine in fila</td></tr>
+<tr><td>9—19</td><td>"C'è la <span class="vuoto"></span>. La <span class="vuoto"></span>. La <span class="vuoto"></span>. E la <span class="vuoto"></span>, che è quella che non ti aspetti."</td><td><strong>Uno stacco per birra.</strong> Macro sulla spillatura, schiuma che sale</td></tr>
+<tr><td>19—25</td><td>"E se non sai quale prendere, chiedi. Te la scegliamo noi."</td><td>Esme che passa un bicchiere sopra il bancone</td></tr>
+<tr><td>25—30</td><td>"Tutte qui, in Piazza Duomo. Ti aspettiamo al BarBar."</td><td>Ultimo fotogramma</td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>I secondi 9—19 sono quattro tagli separati</b>, non una carrellata sul bancone. Una birra
+  per stacco, esattamente come l'elenco delle mete nel video 1.
+</div>
+<p><strong>L'ultima birra deve essere la più strana.</strong> "Quella che non ti aspetti"
+funziona solo se la quarta è davvero diversa dalle altre tre.</p>
+
+<!-- ============ note finali ============ -->
+<div class="page"></div>
+<p class="occhiello">Due cose da sapere</p>
+<h2>Perché il Boilermaker dice "whisky" e non "birra"</h2>
+
+<p>Il Boilermaker è birra più whisky, quindi il gancio poteva pescare da tutti e due. Ma nello
+stesso mese esce anche la selezione di birre, che apre con <em>"tu bevi birra?"</em>.</p>
+<p>Due video con la stessa apertura a pochi giorni di distanza si annullano: il secondo sembra
+il primo e viene scrollato via.</p>
+<div class="nota">
+  Tenendo la birra su uno e il whisky sull'altro si chiamano <b>due pubblici diversi</b> e il
+  mese copre più gente. Se preferite invertirli, si cambiano insieme.
+</div>
+
+<h3>Cosa serve prima di girare</h3>
+<table>
+<tbody>
+<tr><td><strong>I nomi delle quattro birre</strong></td><td>video 5, gli spazi vuoti</td></tr>
+<tr><td><strong>Conferma orario karaoke</strong></td><td>il copione dice "dalle nove"</td></tr>
+<tr><td><strong>Il Boilermaker preparato bene</strong></td><td>serve una spillatura pulita e uno shot che cade dritto</td></tr>
+<tr><td><strong>Qualcuno che canta</strong></td><td>anche solo quattro secondi, e deve stonare</td></tr>
+</tbody></table>
+
+<h3>Ordine di ripresa consigliato</h3>
+<p>Tutto in una sessione, spostando la camera il meno possibile.</p>
+<table>
+<thead><tr><th>Blocco</th><th>Postazione</th><th>Video</th></tr></thead>
+<tbody>
+<tr><td><strong>1</strong></td><td>Bancone</td><td>4 · Boilermaker &nbsp;·&nbsp; 5 · Selezione birre</td></tr>
+<tr><td><strong>2</strong></td><td>Dentro il locale</td><td>2 · Karaoke &nbsp;·&nbsp; 3 · Venerdì DJ</td></tr>
+<tr><td><strong>3</strong></td><td>Fuori, in piazza</td><td>1 · Rientro dalle vacanze</td></tr>
+</tbody></table>
+
+<div class="nota">
+  <b>Il blocco 3 va girato con il sole.</b> Il video 1 vende la luce sulla piazza: con il cielo
+  grigio non funziona, e conviene rimandarlo di un giorno.
+</div>
+
+</body></html>

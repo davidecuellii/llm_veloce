@@ -209,12 +209,44 @@ Mentre lavori con Claude, escono informazioni utili (un cliente ha deciso qualco
 lead, una cosa imparata). Questo deve entrare nel Cervello **anche per Davide e per gli altri**.
 Funziona così, e ti serve un account GitHub (una volta sola):
 
-### 10.1 Una volta sola: account e accesso
+### 10.1 Una volta sola: creare l'account GitHub e collegarlo (15 minuti)
 
-1. Crea un account gratuito su <https://github.com/signup> (se non ce l'hai). Usa la tua email di lavoro.
-2. Scrivi a Davide **il tuo nome utente GitHub**: lui ti aggiunge come collaboratore. Riceverai una email di invito: apri il link e clicca **Accept invitation**.
-3. Avvia Claude dentro `llm_veloce` e scrivi: `Configura GitHub per inviare il mio lavoro`.
-   Claude ti guida: ti dà un **codice di 8 caratteri**, apri <https://github.com/login/device>, incolla il codice, accedi e autorizza. Non devi scrivere password nel Terminale.
+**Cos'è GitHub:** il sito dove vive il Cervello online. Serve un tuo account personale per poter
+inviare i tuoi aggiornamenti. È gratuito. Segui i passi nell'ordine.
+
+**A. Crea l'account**
+1. Apri <https://github.com/signup> nel browser.
+2. Inserisci la **tua email di lavoro** e clicca **Continue**.
+3. Scegli una **password** (almeno 15 caratteri, oppure 8 con numeri e lettere minuscole). Salvala nel tuo gestore di password o su un foglio al sicuro. Clicca **Continue**.
+4. Scegli uno **username** (il tuo nome pubblico, es. `mario-rossi`). Se è occupato, GitHub te ne propone altri. Clicca **Continue**.
+5. Se ti chiede se vuoi email di novità/prodotto, scrivi `n` e continua.
+6. Risolvi il **piccolo puzzle** di verifica (una immagine da ruotare o scegliere): serve a dimostrare che sei una persona.
+7. Clicca **Create account**.
+8. GitHub ti manda un **codice di 8 cifre** via email: aprilo, copia il codice e incollalo nella pagina.
+9. Se ti propone domande iniziali (es. "Quanti siete nel team?"), puoi cliccare **Skip personalization** in fondo. Scegli il **piano Free** (gratuito) se te lo chiede.
+
+**B. Scrivi il tuo username a Davide**
+Mandagli un messaggio con scritto: "Il mio username GitHub è: ______". Lui ti aggiunge come collaboratore.
+
+**C. Accetta l'invito**
+1. Controlla la tua email (cerca anche in Spam): troverai un messaggio *"@davidecuellii invited you to collaborate on davidecuellii/llm_veloce"*.
+2. Clicca **View invitation**, poi **Accept invitation**.
+3. Fatto: da ora puoi inviare il tuo lavoro.
+
+**D. Collega il tuo computer all'account (la fa quasi tutta Claude)**
+1. Apri il Terminale, scrivi `cd ~/Desktop/llm_veloce`, premi Invio, poi scrivi `claude` e premi Invio.
+2. Scrivi: `Configura GitHub per inviare il mio lavoro`.
+3. Claude ti chiede **nome e cognome** e la **email** (la stessa dell'account GitHub): rispondi.
+4. Claude installa da solo lo strumento che serve (`gh`) e ti mostra un **codice di 8 caratteri** e un link.
+5. Apri il link <https://github.com/login/device>, **incolla il codice**, clicca **Continue**, poi **Authorize github**. Se ti chiede la password è il sito di GitHub (sicuro): inseriscila lì, **mai nel Terminale o in chat con Claude**.
+6. Torna al Terminale: Claude scrive che l'accesso è riuscito. Per controllare scrivi: `Verifica di essere connesso a GitHub`. Deve dire "Logged in" con il tuo username.
+
+Fatto: non devi rifarlo mai più su questo computer. Se cambi computer, ripeti solo il punto D.
+
+**Se qualcosa non va**
+- *Non arriva l'email di invito*: dillo a Davide, controlla Spam e che l'username sia scritto giusto.
+- *Il codice è scaduto*: scrivi a Claude "rifai il login a GitHub" e riceverai un codice nuovo.
+- *Sei bloccato*: scrivi a Davide con uno screenshot, o chiedi a Claude "Aiutami a configurare GitHub, non so cosa fare" e seguilo passo passo.
 
 ### 10.2 Ogni volta che hai lavorato
 

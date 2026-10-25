@@ -189,26 +189,61 @@ Regole pratiche:
 
 ---
 
-## 9. Passo 5: tenere il Cervello aggiornato
+## 9. Tenere il Cervello aggiornato (ogni mattina)
 
-Davide aggiorna la cartella online. Per ricevere gli aggiornamenti, **prima di iniziare a
-lavorare** apri il Terminale e scrivi:
+Il Cervello cresce: Davide e gli altri colleghi lo aggiornano. **Prima di iniziare a lavorare**
+avvia Claude dentro `llm_veloce` e scrivi:
 
-```bash
-cd ~/Desktop/llm_veloce
-git pull
+```
+/aggiorna
 ```
 
-Se risponde `Already up to date`, non c'è niente di nuovo.
+Claude scarica le novità e ti riassume cosa è cambiato. (Se preferisci il Terminale:
+`cd ~/Desktop/llm_veloce` poi `git pull`.)
 
 ---
 
-## 10. Cose da sapere
+## 10. Far crescere il Cervello: inviare il tuo lavoro a Davide
 
-- **Non modificare i file originali** della cartella a mano e non caricare nulla su GitHub: la cartella la aggiorna solo Davide. Se vuoi che una cosa entri nel Cervello, mandagliela.
+Mentre lavori con Claude, escono informazioni utili (un cliente ha deciso qualcosa, un nuovo
+lead, una cosa imparata). Questo deve entrare nel Cervello **anche per Davide e per gli altri**.
+Funziona così, e ti serve un account GitHub (una volta sola):
+
+### 10.1 Una volta sola: account e accesso
+
+1. Crea un account gratuito su <https://github.com/signup> (se non ce l'hai). Usa la tua email di lavoro.
+2. Scrivi a Davide **il tuo nome utente GitHub**: lui ti aggiunge come collaboratore. Riceverai una email di invito: apri il link e clicca **Accept invitation**.
+3. Avvia Claude dentro `llm_veloce` e scrivi: `Configura GitHub per inviare il mio lavoro`.
+   Claude ti guida: ti dà un **codice di 8 caratteri**, apri <https://github.com/login/device>, incolla il codice, accedi e autorizza. Non devi scrivere password nel Terminale.
+
+### 10.2 Ogni volta che hai lavorato
+
+1. Chiedi a Claude di salvare quello che è emerso nel Cervello, ad esempio:
+   `Aggiorna il Cervello con quello che abbiamo deciso oggi sul cliente X.`
+2. Controlla che quanto scritto sia corretto (Claude ti dice quali file ha modificato).
+3. Scrivi:
+
+```
+/invia-lavoro
+```
+
+Claude controlla che non ci siano dati personali o password, ti chiede conferma e invia gli
+aggiornamenti a Davide come **Pull Request** (una "proposta di modifica"). Ti mostra un link.
+**Non vai mai a modificare direttamente la versione principale:** Davide guarda la proposta
+e la approva con un clic; da quel momento entra nel Cervello di tutti.
+
+### 10.3 Cosa NON inviare
+Password, token, codici fiscali, IBAN, dati personali di privati, video pesanti. Non modificare
+file già presenti in `raw/` (sono documenti originali): si possono solo aggiungere nuovi.
+
+---
+
+## 10-bis. Altre cose da sapere
+
 - I **video e le animazioni pesanti non sono inclusi**: restano sul computer di Davide.
 - Alcuni documenti con dati personali non sono nella versione condivisa.
-- Se `git pull` si lamenta di "modifiche locali", significa che hai cambiato dei file: copia fuori i tuoi lavori e scrivi a Davide.
+- Se `/aggiorna` si lamenta di "modifiche non inviate", usa prima `/invia-lavoro`.
+- Se il Cervello ti sembra aver capito male un cliente, **verifica con Davide** prima di usarlo.
 
 ---
 
@@ -220,6 +255,7 @@ Se risponde `Already up to date`, non c'è niente di nuovo.
 | `claude: command not found` | Chiudi e riapri il Terminale; se persiste rifai il Passo 2. |
 | `Repository not found` al clone | Controlla di aver copiato bene il link. Se è corretto, il progetto non è più pubblico: chiedi a Davide. |
 | Il login a Claude non parte | Verifica di avere un piano Pro/Max e riprova con `claude`, poi `/login`. |
+| `/invia-lavoro` dice "permission denied" o "403" | Non sei ancora collaboratore: scrivi a Davide il tuo nome utente GitHub e accetta l'invito via email. |
 | `No such file or directory` | Sei nella cartella sbagliata: scrivi `cd ~/Desktop/llm_veloce`. |
 | Claude risponde in modo generico | Controlla di aver avviato `claude` **dentro** la cartella `llm_veloce`. |
 
@@ -237,4 +273,4 @@ cd llm_veloce                                            # 4. entra nella cartel
 claude                                                   # 5. avvia Claude
 ```
 
-Aggiornare in futuro: `cd ~/Desktop/llm_veloce` poi `git pull`.
+Ogni giorno, dentro `llm_veloce`: `/aggiorna` all'inizio, `/invia-lavoro` alla fine.

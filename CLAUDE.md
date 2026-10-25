@@ -41,3 +41,9 @@ Preserve historical knowledge. Never alter `raw/`; do not rewrite historical out
 without a request. Use wikilinks for wiki pages. Route through [[system/map]]; use
 `clients/` for client facts, `prospects/` for leads, `knowledge/` for cross-client
 learnings, and `output/` only for deliverables/history.
+
+## Condivisione con i collaboratori
+
+La memoria è condivisa su GitHub. A inizio lavoro usa `/aggiorna`; a fine lavoro, se hai persistito
+conoscenza durevole, proponi `/invia-lavoro` (Pull Request, mai push su `main`).
+Regole in [[system/sync]].

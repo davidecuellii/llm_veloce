@@ -1,9 +1,9 @@
 ---
 type: prospect
-status: prospect
+status: cliente
 tags: [gelateria, pasticceria, food, brescia, tiktok-shop, adv]
 created: 2026-10-24
-updated: 2026-10-24
+updated: 2026-11-04
 ---
 
 # Gelateria Mille

@@ -1,9 +1,9 @@
 ---
 type: prospect
-status: prospect
+status: cliente
 tags: [cartoleria, articoli-regalo, eventi, multiservizi, bergamo, dalmine]
 created: 2026-10-24
-updated: 2026-10-24
+updated: 2026-11-04
 ---
 
 # Cartoleria Zeus (Dalmine, BG)
